@@ -1,0 +1,269 @@
+<h1 id="test-1-post-mediante-markdown">Test 1: Post mediante Markdown</h1>
+
+<h2 id="configuración-básica">Configuración básica</h2>
+
+<p>Un blog post files debe tener el siguiente formato:</p>
+
+<p><code class="language-plaintext highlighter-rouge">AAAA-MM-DD-filename.md</code></p>
+
+<p>Donde <code class="language-plaintext highlighter-rouge">AAAA</code> es el año con 4 dígitos, <code class="language-plaintext highlighter-rouge">MM</code> es el mes con 2 dígitos, <code class="language-plaintext highlighter-rouge">DD</code> es el día con 2 dígitos, y <code class="language-plaintext highlighter-rouge">filename</code> es un nombre de referencia para recordarte de que se trataba el post (el título real se indica adentro). La extensión <code class="language-plaintext highlighter-rouge">.md</code> se usa para archivos markdown.</p>
+
+<p>La primera línea del archivo debe comenzar con <code class="language-plaintext highlighter-rouge"># Mi título</code> para que se defina “Mi título” como el título del post. Dentro del post, se pueden hacer subtítulos <code class="language-plaintext highlighter-rouge">## Mi subtítulo</code> (y sub-subtítulos, <code class="language-plaintext highlighter-rouge">### Mi sub-subtítulo</code>, pero ya es desaconsejado.)</p>
+
+<h1 id="configuración-avanzada">Configuración avanzada</h1>
+
+<p>Para agregar una descripción, categorías (etiquetas/tags), y toc (table of contents - tabla de contenidos) es necesario agregar un contenido específico encerrado por <code class="language-plaintext highlighter-rouge">---</code>. Por ejemplo, las primeras 10 líneas de este post son las siguientes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+toc: true
+description: Ejemplo usando markdown con fastpages.
+categories: [fastpages, markdown]
+comments: true
+---
+# Test 1: Post mediante Markdown
+
+## Configuración básica
+
+Un blog post files debe tener el siguiente formato:
+
+</code></pre></div></div>
+
+<p>Para desactivar la funcionalidad basta con eliminarla o dejarla vacía.</p>
+
+<h2 id="formato-básico">Formato básico</h2>
+
+<h2 id="se-pueden-usar-cursivas-negritas-negritas-cursivas-código-también-notas-a-pie-de-página--también-una-línea-horizontal">Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>. También notas a pie de página <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. También una línea horizontal:</h2>
+
+<p>´´´
+Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>. También notas a pie de página <sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. También una línea horizontal:
+—
+´´´</p>
+
+<h2 id="links">Links</h2>
+
+<p>Se pueden crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a> o simplemenente <a href="">https://www.markdownguide.org/cheat-sheet/</a>, (https://www.markdownguide.org/cheat-sheet/).</p>
+
+<p>´´´
+Se pueden crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a> o simplemenente <a href="">https://www.markdownguide.org/cheat-sheet/</a>, (https://www.markdownguide.org/cheat-sheet/).
+´´´</p>
+
+<p>OBS: Siempre se me olvida el orden. Regla nemotécnica “cuasi = no es” (CUACI NOE): cuadrado antes de círculo, nombre antes de enlace.</p>
+
+<h2 id="listas">Listas</h2>
+
+<p>Acá hay una lista (regular):</p>
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+</ul>
+
+<p>Acá hay una lista numerada:</p>
+
+<ol>
+  <li>item 1</li>
+  <li>item 2</li>
+</ol>
+
+<p>´´´
+Acá hay una lista (regular):</p>
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+</ul>
+
+<p>Acá hay una lista numerada:</p>
+
+<ol>
+  <li>item 1</li>
+  <li>item 2
+´´´</li>
+</ol>
+
+<h2 id="código">Código</h2>
+
+<p>Texto preformateado general:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Do a thing in a programming language
+do_thing()
+</code></pre></div></div>
+
+<p>Código de python y su salida:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Prints '2'
+</span><span class="k">print</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Texto preformateado general:
+
+    # Do a thing in a programming language
+    do_thing()
+
+Código de python y su salida:
+
+```python
+# Prints '2'
+print(1+1)
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2 ```
+</code></pre></div></div>
+
+<h2 id="imágenes">Imágenes</h2>
+
+<p><img src="/blog/images/logo.png" alt="" title="fast.ai's logo" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](/blog/images/logo.png "fast.ai's logo")
+</code></pre></div></div>
+
+<h2 id="videos">Videos</h2>
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/XfoYk_Z5AkI" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;center class="youtube-iframe-wrapper"&gt;
+    &lt;iframe width="730" height="315" src="https://www.youtube.com/embed/XfoYk_Z5AkI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+</code></pre></div></div>
+
+<h2 id="tablas">Tablas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Columna 1</th>
+      <th>Columna 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Una cosa</td>
+      <td>Otra cosa</td>
+    </tr>
+    <tr>
+      <td>Una cosa más</td>
+      <td>Otra cosa más</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Columna 1 | Columna 2 |
+|-|-|
+| Una cosa | Otra cosa |
+| Una cosa más | Otra cosa más |
+</code></pre></div></div>
+
+<h2 id="citas-y-otras-formas-de-destacar">Citas y otras formas de destacar</h2>
+
+<p>Citas:</p>
+<blockquote>
+  <p>Esta es una cita</p>
+</blockquote>
+
+<p>Alerta:</p>
+<div class="Toast Toast--warning googoo">
+   <span class="Toast-icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg></span>
+   <span class="Toast-content">Puedes incluir alertas</span>
+</div>
+
+<p>Información:</p>
+<div class="Toast">
+   <span class="Toast-icon"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+   <span class="Toast-content">Puedes destacar información</span>
+</div>
+
+<p>Warning:</p>
+<div class="flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+    <strong>Warning: </strong>There will be no second warning!
+</div>
+
+<p>Important:</p>
+<div class="flash flash-warn">
+    <svg class="octicon octicon-zap" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 00-.01.004L3.286 8.571A.25.25 0 003.462 9H6.75a.75.75 0 01.694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0012.538 7H9.25a.75.75 0 01-.683-1.06l2.008-4.418.003-.006a.02.02 0 00-.004-.009.02.02 0 00-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 012.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 01-.871.354h-.302a1.25 1.25 0 01-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"></path></svg>
+    <strong>Important: </strong>Pay attention! It&#8217;s important.
+</div>
+
+<p>Tip:</p>
+<div class="flash flash-success">
+    <svg class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z"></path></svg>
+    <strong>Tip: </strong>This is my tip.
+</div>
+
+<p>Nota:</p>
+<div class="flash">
+    <svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <strong>Note: </strong>Take note of this.
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Citas:
+&gt; Esta es una cita
+
+Alerta:
+&lt;div class="Toast Toast--warning googoo"&gt;
+   &lt;span class="Toast-icon"&gt;&lt;svg class="octicon octicon-alert octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;
+   &lt;span class="Toast-content"&gt;Puedes incluir alertas&lt;/span&gt;
+&lt;/div&gt;
+
+
+Información:
+&lt;div class="Toast"&gt;
+   &lt;span class="Toast-icon"&gt;&lt;svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;
+   &lt;span class="Toast-content"&gt;Puedes destacar información&lt;/span&gt;
+&lt;/div&gt;
+
+
+Warning:
+&lt;div class="flash flash-error"&gt;
+    &lt;svg class="octicon octicon-alert octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;strong&gt;Warning: &lt;/strong&gt;There will be no second warning!
+&lt;/div&gt;
+
+Important:
+&lt;div class="flash flash-warn"&gt;
+    &lt;svg class="octicon octicon-zap octicon octicon-zap" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 00-.01.004L3.286 8.571A.25.25 0 003.462 9H6.75a.75.75 0 01.694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0012.538 7H9.25a.75.75 0 01-.683-1.06l2.008-4.418.003-.006a.02.02 0 00-.004-.009.02.02 0 00-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 012.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 01-.871.354h-.302a1.25 1.25 0 01-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;strong&gt;Important: &lt;/strong&gt;Pay attention! It&amp;#8217;s important.
+&lt;/div&gt;
+
+Tip:
+&lt;div class="flash flash-success"&gt;
+    &lt;svg class="octicon octicon-checklist octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z"&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;strong&gt;Tip: &lt;/strong&gt;This is my tip.
+&lt;/div&gt;
+
+Nota:
+&lt;div class="flash"&gt;
+    &lt;svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;strong&gt;Note: &lt;/strong&gt;Take note of this.
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h2 id="tweets">Tweets</h2>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Altair 4.0 is released! <a href="https://t.co/PCyrIOTcvv">https://t.co/PCyrIOTcvv</a><br />Try it with:<br /><br />  pip install -U altair<br /><br />The full list of changes is at <a href="https://t.co/roXmzcsT58">https://t.co/roXmzcsT58</a> ...read on for some highlights. <a href="https://t.co/vWJ0ZveKbZ">pic.twitter.com/vWJ0ZveKbZ</a></p>&mdash; Jake VanderPlas (@jakevdp) <a href="https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw">December 11, 2019</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class='jekyll-twitter-plugin'&gt;&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Altair 4.0 is released! &lt;a href="https://t.co/PCyrIOTcvv"&gt;https://t.co/PCyrIOTcvv&lt;/a&gt;&lt;br&gt;Try it with:&lt;br&gt;&lt;br&gt;  pip install -U altair&lt;br&gt;&lt;br&gt;The full list of changes is at &lt;a href="https://t.co/roXmzcsT58"&gt;https://t.co/roXmzcsT58&lt;/a&gt; ...read on for some highlights. &lt;a href="https://t.co/vWJ0ZveKbZ"&gt;pic.twitter.com/vWJ0ZveKbZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jake VanderPlas (@jakevdp) &lt;a href="https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw"&gt;December 11, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h2 id="notas-a-pie-de-página">Notas a pie de página</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[^1]: Esta es la nota al pie de página.
+</code></pre></div></div>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Esta es la nota al pie de página. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>

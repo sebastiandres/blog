@@ -1,0 +1,20 @@
+<h1 id="blog-en-githubio">Blog en github.io</h1>
+
+<p>Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.</p>
+
+<p>Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en <a href="https://sebastiandres.github.io/blog/">https://sebastiandres.github.io/blog/</a>. Sin embargo, me pareció que rompe la expectativa tradicional, puesto que <a href="https://sebastiandres.github.io/">https://sebastiandres.github.io/</a> arroja un error (página 404-no encontrada).</p>
+
+<p><img src="/blog/images/404.png" alt="" title="El sitio sebastiandres.github.io No funcionaba ni redirigía al blog." /></p>
+
+<p>Se me ocurrió que una forma fácil de solucionar lo anterior es tener un repositorio “github_username.github.io”, en mi caso sebastiandres.github.io, y que contuviera una página html que redirigiera a <a href="https://sebastiandres.github.io/blog/">https://sebastiandres.github.io/blog/</a>. Un “hack” de 2 minutos y que permite responder a la expectativa, sin mayores dolores de cabeza de configuración o código:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Refresh" content="0; url=https://sebastiandres.github.io/blog/" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Redirigiendo al &lt;a href="https://sebastiandres.github.io/blog/"&gt;blog&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
