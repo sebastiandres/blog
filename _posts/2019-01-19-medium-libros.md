@@ -1,11 +1,13 @@
 ---
-description: ¿Libros a buen precio? BP Digital y BookDepository.
 toc: false
+hide: false
+layout: post
+description: ¿Libros a buen precio? BP Digital y BookDepository.
 categories: [opinión, literatura, medium]
+title: Consejos de libros al mejor precio
+image: images/2019-01-19-medium-libros/image.jpeg
 comments: true
 ---
-
-# Consejos de libros al mejor precio
 
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
 
