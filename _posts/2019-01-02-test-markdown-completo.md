@@ -1,9 +1,10 @@
 ---
-toc: false
+layout: post
+title: "Test 1: Post mediante Markdown"
 description: "Un ejempo minimal usando markdown con fastpages."
 categories: [fastpages, markdown]
+toc: false
 comments: true
-title: "Test 1: Post mediante Markdown"
 ---
 
 ## Configuración básica

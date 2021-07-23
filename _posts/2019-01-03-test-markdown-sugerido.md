@@ -1,9 +1,10 @@
 ---
-toc: false
+layout: post
+title: "Test 2: Uso típico de Markdown"
 description: "Ejemplo típico"
 categories: [fastpages, markdown]
+toc: false
 comments: true
-title: "Test 2: Uso típico de Markdown"
 ---
 
 ## Sección 1
