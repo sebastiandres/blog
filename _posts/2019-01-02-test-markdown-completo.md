@@ -1,10 +1,10 @@
 ---
-toc: true
-description: Ejemplo usando markdown con fastpages.
+toc: false
+description: "Un ejempo minimal usando markdown con fastpages."
 categories: [fastpages, markdown]
 comments: true
+title: "Test 1: Post mediante Markdown"
 ---
-# Test 1: Post mediante Markdown
 
 ## Configuración básica
 

@@ -1,6 +1,7 @@
 ---
 description: Enlaces a los repositorios y videos.
 toc: false
+layout: post
 categories: [python, pycon, charlas]
 comments: true
 ---

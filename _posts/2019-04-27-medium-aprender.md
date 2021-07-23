@@ -1,6 +1,7 @@
 ---
 description: ¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?
 toc: false
+layout: post
 categories: [opinión, educación, medium]
 comments: true
 ---

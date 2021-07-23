@@ -1,6 +1,7 @@
 ---
 description: Videos, slides y resúmenes. 
 toc: false
+layout: post
 categories: [opinión, backport, medium]
 comments: true
 ---

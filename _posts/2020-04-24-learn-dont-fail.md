@@ -1,6 +1,7 @@
 ---
 description: Similitudes en 3 gráficos distintos
 toc: false
+layout: post
 categories: [opinión, startup, tecnología]
 comments: true
 ---

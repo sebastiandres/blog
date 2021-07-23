@@ -1,6 +1,7 @@
 ---
 description: Reflexiones sobre el talento, la suerte y la pobreza. 
 toc: false
+layout: post
 categories: [opinión, backport, medium]
 comments: true
 ---

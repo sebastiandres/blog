@@ -1,11 +1,13 @@
 ---
-toc: true
-description: Ejemplo típico
+toc: false
+description: "Ejemplo típico"
 categories: [fastpages, markdown]
 comments: true
+title: "Test 2: Uso típico de Markdown"
 ---
-# Test 2: Uso típico de Markdown
 
+## Sección 1
+Lista con ejemplos
 * *cursivas* o _cursivas_
 * **negritas**
 * `código` [^1]
@@ -17,6 +19,5 @@ print(1+1)
 ```
 
 ![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-
 
 [^1]: Esta es la nota al pie de página.

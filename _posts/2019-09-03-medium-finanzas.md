@@ -1,6 +1,7 @@
 ---
 description: Educación y manejo en Web y Apps.
 toc: false
+layout: post
 categories: [opinión, finanzas, medium]
 comments: true
 ---

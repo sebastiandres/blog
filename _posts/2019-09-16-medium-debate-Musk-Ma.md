@@ -1,6 +1,7 @@
 ---
 description: ¿Quién tiene la razón en IA y Tech? 
 toc: false
+layout: post
 categories: [opinión, tecnología, medium]
 comments: true
 ---

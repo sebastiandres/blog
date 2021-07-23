@@ -1,6 +1,8 @@
 ---
+toc: false
 description: Y está sobrevalorada
 categories: [opinion]
+layout: post
 comments: true
 ---
 
