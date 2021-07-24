@@ -172,7 +172,7 @@
   
       ,"page2": {
           "title": "Charlas",
-          "content": "He participado en las siguientes charlas: . UNSA Argentina: Sin límites con Python. 09 Abril 2021. | PyCon Argentina: Coding as a Service: Librería pypsdier, aprendizajes y metodología. Noviembre 2020 * [Pycon Colombia)(https://sebastiandres.github.io/talk_2020_02_pycon_colombia_rise_and_poll/): ¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos. 8 Mayo 2020. | Universidad Adolfo Ibáñez: Charla sobre “Matrices en la vida real”. 24 Octubre 2019. | Meetup Python (2/2): Charla sobre la librería sklearn, para el meetup de Python Valparaíso. 27 abril 2016. | Meetup Python (1/2): Charla sobre la librería pandas, para el meetup de Python Valparaíso. 30 marzo 2016. | .",
+          "content": "He participado en las siguientes charlas. En cada caso, en el enlace podrás seleccionar el modo de visualización del contenido (video, slides, código, etc.): . UNSA Argentina: Sin límites con Python. 09 Abril 2021. | PyCon Argentina: Coding as a Service: Librería pypsdier, aprendizajes y metodología. Noviembre 2020. * Pycon Colombia: ¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos. 8 Mayo 2020. | Universidad Adolfo Ibáñez: Charla sobre “Matrices en la vida real”. 24 Octubre 2019. | Meetup Python (2/2): Charla sobre la librería sklearn, para el meetup de Python Valparaíso. 27 abril 2016. | Meetup Python (1/2): Charla sobre la librería pandas, para el meetup de Python Valparaíso. 30 marzo 2016. | .",
           "url": "https://sebastiandres.github.io/blog/charlas/",
           "relUrl": "/charlas/",
           "date": ""
