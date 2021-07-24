@@ -2,6 +2,13 @@
 layout: default-mediumify
 ---
 
+<!-- Put title and text from previous page ==================== -->
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content | markdownify }}
+
 <!-- Featured ================================================== -->
 <section class="featured-posts">
   <div class="section-title">
@@ -13,7 +20,7 @@ layout: default-mediumify
 
       {% if post.featured == true %}
 
-          {% include m_featuredbox.html %}
+          {% include mediumify_featuredbox.html %}
 
       {% endif %}
 
@@ -35,7 +42,7 @@ layout: default-mediumify
 
       {% for post in paginator.posts %}
 
-      {% include m_postbox.html %}
+          {% include mediumify_postbox.html %}
 
       {% endfor %}
 
@@ -47,6 +54,6 @@ layout: default-mediumify
 <div class="bottompagination">
 <div class="pointerup"><i class="fa fa-caret-up"></i></div>
 <span class="navigation" role="navigation">
-  {% include m_pagination.html %}
+  {% include mediumify_pagination.html %}
 </span>
 </div>

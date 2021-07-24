@@ -6,7 +6,7 @@ layout: post
 title: "Fastpages 2: reloaded"
 description: "Las grandes ideas nunca mueren."
 categories: [fastpages]
-image: images/2019-01-19-medium-libros/trex.png
+image: images/trex.png
 permalink: /fastpages2/
 comments: true
 ---
