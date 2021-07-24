@@ -181,15 +181,6 @@
   
 
   
-      ,"page3": {
-          "title": "Inicio",
-          "content": "Destacados . Consejos de libros al mejor precio . Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y... . 19 Jan 2019 &lt;/span&gt; . Entradas . Fastpages 2: reloaded . Personalizando la página principal . 30 Jul 2021 &lt;/span&gt; . No fallar rápido; Sí aprender rápido . En el mundo de startups hay un consejo que dice “Fallar rápido” (Fail fast). Tiene como sentido el no tener miedo a fallar, y a intentarlo hasta lograrlo. Sin embargo,... . 24 Apr 2020 &lt;/span&gt; . La rutina óptima es aburrida . Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero estoy muy lejos como para... . 26 Mar 2020 &lt;/span&gt; . Pycon Colombia 2020 - Las charlas . Hace algún tiempo hice un post con los keynotes de la PyCon Colombia 2020. Ahora es el turno de las charlas. Para cada speaker, se pone el enlace al video,... . 24 Mar 2020 &lt;/span&gt; . Blog en github.io . Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.... . 10 Mar 2020 &lt;/span&gt; . Keynotes de la PyCon 2020 Colombia . “Came for the language, stayed for the community” - Brett Cannon . 11 Feb 2020 &lt;/span&gt; . &laquo; Anterior 1 2 3 Siguiente &raquo;",
-          "url": "https://sebastiandres.github.io/blog/",
-          "relUrl": "/",
-          "date": ""
-      }
-      
-  
 
   
   
@@ -222,25 +213,7 @@
   
 
   
-      ,"page12": {
-          "title": "Inicio",
-          "content": "{% if page.url == “/” %} . Destacados . {% for post in site.posts %} {% if post.featured == true %} {% include m_featuredbox.html %} {% endif %} {% endfor %} {% endif %} . Entradas . {% for post in paginator.posts %} {% include m_postbox.html %} {% endfor %} {% include m_pagination.html %}",
-          "url": "https://sebastiandres.github.io/blog/page2/",
-          "relUrl": "/page2/",
-          "date": ""
-      }
-      
-  
 
-  
-      ,"page13": {
-          "title": "Inicio",
-          "content": "{% if page.url == “/” %} . Destacados . {% for post in site.posts %} {% if post.featured == true %} {% include m_featuredbox.html %} {% endif %} {% endfor %} {% endif %} . Entradas . {% for post in paginator.posts %} {% include m_postbox.html %} {% endfor %} {% include m_pagination.html %}",
-          "url": "https://sebastiandres.github.io/blog/page3/",
-          "relUrl": "/page3/",
-          "date": ""
-      }
-      
   
 
   
