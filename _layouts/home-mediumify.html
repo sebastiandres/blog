@@ -14,18 +14,17 @@ layout: default
   <div class="section-title">
       <h2><span>Entradas destacadas</span></h2>
   </div>
+
   <div class="row">
+    {% for post in site.posts %}
 
-  {% for post in site.posts %}
+        {% if post.featured == true %}
 
-      {% if post.featured == true %}
+            {% include mediumify_featuredbox.html %}
 
-          {% include mediumify_featuredbox.html %}
+        {% endif %}
 
-      {% endif %}
-
-  {% endfor %}
-
+    {% endfor %}
   </div>
 </section>
 
@@ -33,19 +32,15 @@ layout: default
 <section class="recent-posts">
 
   <div class="section-title">
-
       <h2><span>Todas las entradas</span></h2>
-
   </div>
 
   <div class="row listrecent">
-
       {% for post in paginator.posts %}
 
           {% include mediumify_postbox.html %}
 
       {% endfor %}
-
   </div>
 
 </section>
