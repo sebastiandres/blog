@@ -2,12 +2,13 @@
 layout: default
 ---
 
-<!-- Put title and text from previous page ==================== -->
-{%- if page.title -%}
-<h1 class="page-heading">{{ page.title }}</h1>
-{%- endif -%}
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
 
-{{ content | markdownify }}
+  {{ content | markdownify }}
+</div>
 
 <!-- Featured ================================================== -->
 <section class="featured-posts">
@@ -27,28 +28,3 @@ layout: default
     {% endfor %}
   </div>
 </section>
-
-<!-- Posts Index ================================================== -->
-<section class="recent-posts">
-
-  <div class="section-title">
-      <h2><span>Todas las entradas</span></h2>
-  </div>
-
-  <div class="row listrecent">
-      {% for post in paginator.posts %}
-
-          {% include mediumify_postbox.html %}
-
-      {% endfor %}
-  </div>
-
-</section>
-
-<!-- Pagination ================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-  {% include mediumify_pagination.html %}
-</span>
-</div>
