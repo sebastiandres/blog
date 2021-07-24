@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss"
+	],
+	"sourcesContent": [
+		"/* We need to add display:inline in order to align the '>>' of the 'read more' link */\n.post-excerpt p {\n\tdisplay:inline;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,sFAAsF;AACtF,AAAA,aAAa,CAAC,CAAC,CAAC,EACf,OAAO,EAAC,MAAM,GACd"
+}

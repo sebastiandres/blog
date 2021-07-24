@@ -183,7 +183,7 @@
   
       ,"page3": {
           "title": "Inicio",
-          "content": "Featured . Fastpages 2: reloaded . Personalizando la página principal . 30 Jul 2021 &lt;/span&gt; . La rutina óptima es aburrida . Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero... . 26 Mar 2020 &lt;/span&gt; . All Stories . Fastpages 2: reloaded . Personalizando la página principal . 30 Jul 2021 &lt;/span&gt; . No fallar rápido; Sí aprender rápido . En el mundo de startups hay un consejo que dice “Fallar rápido” (Fail fast). Tiene como sentido el no tener miedo a fallar, y a intentarlo hasta lograrlo. Sin embargo,... . 24 Apr 2020 &lt;/span&gt; . La rutina óptima es aburrida . Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero estoy muy lejos como para... . 26 Mar 2020 &lt;/span&gt; . Pycon Colombia 2020 - Las charlas . Hace algún tiempo hice un post con los keynotes de la PyCon Colombia 2020. Ahora es el turno de las charlas. Para cada speaker, se pone el enlace al video,... . 24 Mar 2020 &lt;/span&gt; . Blog en github.io . Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.... . 10 Mar 2020 &lt;/span&gt; . Keynotes de la PyCon 2020 Colombia . “Came for the language, stayed for the community” - Brett Cannon . 11 Feb 2020 &lt;/span&gt; . Elon Musk y Jack Ma . En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space... . 16 Sep 2019 &lt;/span&gt; . Reconociendo nuestros privilegios . Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco... . 09 Sep 2019 &lt;/span&gt; . Finanzas Modernas . Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida... . 03 Sep 2019 &lt;/span&gt; . Lo que nos motiva a aprender y trabajar . Estoy leyendo “Who Own the Learning” de Alan November. La anécdota inicial del libro me encanta. Alan cuenta que tuvo que volver a la escuela, durante el verano, para reprender... . 27 Apr 2019 &lt;/span&gt; . &laquo; Prev 1 2 Next &raquo;",
+          "content": "Destacados . Fastpages 2: reloaded . Personalizando la página principal . 30 Jul 2021 &lt;/span&gt; . La rutina óptima es aburrida . Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero... . 26 Mar 2020 &lt;/span&gt; . Entradas . Fastpages 2: reloaded . Personalizando la página principal . 30 Jul 2021 &lt;/span&gt; . No fallar rápido; Sí aprender rápido . En el mundo de startups hay un consejo que dice “Fallar rápido” (Fail fast). Tiene como sentido el no tener miedo a fallar, y a intentarlo hasta lograrlo. Sin embargo,... . 24 Apr 2020 &lt;/span&gt; . La rutina óptima es aburrida . Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero estoy muy lejos como para... . 26 Mar 2020 &lt;/span&gt; . Pycon Colombia 2020 - Las charlas . Hace algún tiempo hice un post con los keynotes de la PyCon Colombia 2020. Ahora es el turno de las charlas. Para cada speaker, se pone el enlace al video,... . 24 Mar 2020 &lt;/span&gt; . Blog en github.io . Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.... . 10 Mar 2020 &lt;/span&gt; . Keynotes de la PyCon 2020 Colombia . “Came for the language, stayed for the community” - Brett Cannon . 11 Feb 2020 &lt;/span&gt; . Elon Musk y Jack Ma . En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space... . 16 Sep 2019 &lt;/span&gt; . Reconociendo nuestros privilegios . Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco... . 09 Sep 2019 &lt;/span&gt; . Finanzas Modernas . Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida... . 03 Sep 2019 &lt;/span&gt; . Lo que nos motiva a aprender y trabajar . Estoy leyendo “Who Own the Learning” de Alan November. La anécdota inicial del libro me encanta. Alan cuenta que tuvo que volver a la escuela, durante el verano, para reprender... . 27 Apr 2019 &lt;/span&gt; . &laquo; Anterior 1 2 Siguiente &raquo;",
           "url": "https://sebastiandres.github.io/blog/",
           "relUrl": "/",
           "date": ""
@@ -192,7 +192,10 @@
   
 
   
-      ,"page4": {
+  
+
+  
+      ,"page5": {
           "title": "Proyectos",
           "content": "Gráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. | Code snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app. | .",
           "url": "https://sebastiandres.github.io/blog/proyectos/",
@@ -219,9 +222,9 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "Inicio",
-          "content": "{% if page.url == “/” %} . Featured . {% for post in site.posts %} {% if post.featured == true %} {% include m_featuredbox.html %} {% endif %} {% endfor %} {% endif %} . All Stories . {% for post in paginator.posts %} {% include m_postbox.html %} {% endfor %} {% include m_pagination.html %}",
+          "content": "{% if page.url == “/” %} . Destacados . {% for post in site.posts %} {% if post.featured == true %} {% include m_featuredbox.html %} {% endif %} {% endfor %} {% endif %} . Entradas . {% for post in paginator.posts %} {% include m_postbox.html %} {% endfor %} {% include m_pagination.html %}",
           "url": "https://sebastiandres.github.io/blog/page2/",
           "relUrl": "/page2/",
           "date": ""
@@ -233,7 +236,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://sebastiandres.github.io/blog/robots.txt",
@@ -241,6 +244,9 @@
           "date": ""
       }
       
+  
+
+  
   
 
 }
