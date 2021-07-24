@@ -1,11 +1,7 @@
 ---
 layout: page
-title: About Me
+title: Autor
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión.-
