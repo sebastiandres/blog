@@ -1,4 +1,5 @@
 ---
+featured: true
 hide: false
 toc: false
 title: La rutina óptima es aburrida
@@ -7,7 +8,6 @@ categories: [opinion]
 layout: post
 permalink: /rutina-optima/
 comments: true
-sticky_rank: 1
 ---
 
 Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero estoy muy lejos como para saberlo. Hacer todas las tareas diarias que deberíamos no es fácil, y mantener una rutina es _-aceptémoslo de una vez por todas-_ aburrido. Esto hace que frecuentemente sintamos que no estamos avanzando en la vida.
