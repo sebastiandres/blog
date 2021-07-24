@@ -1,12 +1,13 @@
 ---
-description: Videos, slides y resúmenes. 
+hide: false
 toc: false
+title: Keynotes de la PyCon 2020 Colombia
+description: Videos, slides y resúmenes. 
 layout: post
-categories: [opinión, backport, medium]
+categories: [pycon, keynote]
 comments: true
 ---
 
-# Keynotes de la PyCon 2020 Colombia
 
 > “Came for the language, stayed for the community” - Brett Cannon
 
@@ -115,10 +116,3 @@ La comunidad de python científico persigue los ideales de la ciencia: (1) la bu
 * ¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).
 * Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,
 * Hay un libro sobre como usar Jupyter como herramienta pedagógica: [libro](https://jupyter4edu.github.io/jupyter-edu-book/).
-
-s
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37) el 11-02-2020.
-
----

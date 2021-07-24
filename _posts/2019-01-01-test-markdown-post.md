@@ -1,11 +1,12 @@
 ---
+hide: true
+toc: false
 layout: post
 title: An Example Markdown Post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
 toc: false
 ---
-# Example Markdown Post
 
 ## Basic setup
 
@@ -96,8 +97,6 @@ key: value
 
 
 ## Footnotes
-
-
 
 [^1]: This is the footnote.
 

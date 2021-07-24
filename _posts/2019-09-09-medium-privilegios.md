@@ -1,11 +1,12 @@
 ---
-description: Reflexiones sobre el talento, la suerte y la pobreza. 
+hide: false
 toc: false
 layout: post
+title: Reconociendo nuestros privilegios
+description: Reflexiones sobre el talento, la suerte y la pobreza. 
 categories: [opinión, backport, medium]
 comments: true
 ---
-# Reconociendo nuestros privilegios
 
 Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco incluso que no lo vi completo; al mirarlo nuevamente con mayor detalle me di cuenta que los últimos 40 segundos tienen un texto bíblico. El video es el siguiente:
 
@@ -56,10 +57,3 @@ Daniel Matamala en esta columna de La Tercera, relata los resultados de Meneses,
 Estos datos desmienten la idea de una sociedad que dice recompensar el talento y el esfuerzo de sus hijos. En el mercado del trabajo pesan el elitismo disfrazado de “roce social”, la endogamia vestida de “redes” y la discriminación enmascarada como “buena presencia”.»
 
 Los datos dicen que existe una movilidad social mucho más reducida de lo que debería. Donde el talento de muchos se pierde bajo el peso de sus carencias, de falta de condiciones y privilegios, y por no poseer un colchón económica para superponerse a las malas rachas. Y para peor, donde frecuentemente los privilegiados no se reconocen como tal.
-
-
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/reconociendo-nuestros-privilegios-reflexiones-sobre-el-talento-la-suerte-y-la-pobreza-7b7cf89ad8c8) el 19-01-2019.
-
----

@@ -1,12 +1,12 @@
 ---
-description: Similitudes en 3 gráficos distintos
+hide: true
 toc: false
 layout: post
+title: No fallar rápido; Sí aprender rápido
+description: Similitudes en 3 gráficos distintos
 categories: [opinión, startup, tecnología]
 comments: true
 ---
-
-# No fallar rápido; Sí aprender rápido
 
 En el mundo de startups hay un consejo que dice "Fallar rápido" (Fail fast). Tiene como sentido el no tener miedo a fallar, y a intentarlo hasta lograrlo. Sin embargo, el consejo es engañoso. El tema no es fallar rápido, sino aprender rápido. De lo contrario, se seguirá fallando. De hecho, para llegar a crear algo completamente innovador siempre se pasa por momentos de aprendizaje (no necesariamente fracasos). Hay 3 gráficos que muestran esto:
 * Efecto Dunning-Kruger 

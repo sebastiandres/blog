@@ -1,11 +1,12 @@
 ---
-description: Enlaces a los repositorios y videos.
+hide: false
 toc: false
 layout: post
-categories: [python, pycon, charlas]
+title: Pycon Colombia 2020 - Las charlas
+description: Enlaces a los repositorios y videos.
+categories: [pycon, charlas]
 comments: true
 ---
-# Pycon Colombia 2020 - Las charlas
 
 Hace algún tiempo hice un post con los keynotes de la PyCon Colombia 2020. Ahora es el turno de las charlas. Para cada speaker, se pone el enlace al video, a las slides, un repositorio y twitter, si existen.
 

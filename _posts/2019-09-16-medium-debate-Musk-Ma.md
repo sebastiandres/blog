@@ -1,11 +1,12 @@
 ---
-description: ¿Quién tiene la razón en IA y Tech? 
+hide: false
 toc: false
 layout: post
+title: Elon Musk y Jack Ma
+description: ¿Quién tiene la razón en IA y Tech? 
 categories: [opinión, tecnología, medium]
 comments: true
 ---
-# Elon Musk y Jack Ma
 
 En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X & Tesla y Alibaba&Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.
 
@@ -42,9 +43,3 @@ En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opues
 * Elon Musk: “Creo que los humanos resolverán los problemas de sustentabilidad del planeta. No es complacencia, debemos hacer algo. Pero podemos hacerlo”. “Con neurolink la edad no importará. Podrás salvar tu estado y restaurarlo, como en un juego. Podemos solucionar el tema del envejecimiento, pero no basta con yoga y alimentación. Es necesario cambiar el ADN. ¿La gente estará de acuerdo con manipular el ADN? Ese es el problema. Es necesario detener el reloj del ADN. ¿Tenemos que cambiarlo? Quizás morir es algo bueno. Es bueno tener un ciclo de vida”
 * Jack Ma: “Las personas inteligentes saben lo que quieren. Las personas sabias saben lo que no quieren”. “Hay que limpiar esta tierra, es un desafío más grande que ir al espacio”. “Está bien hacer errores. Está bien aprender de los errores. Está bien morir”.
 * Opinión: La conversación sobre la vida eterna y guardar la conciencia se asemeja demasiado a la serie “Altered Carbon”. Y tal como en la serie, eso genera una serie de problemas políticos y humanos al generar un estado anti-natural, o al menos, uno al que los seres humanos no se han enfrentado antes. ¿Cómo castigar a un criminal de por vida? ¿Si la persona está en la mente, que diferencia hace cambiar de cuerpo o “envase”? ¿Qué distribución de poder se obtiene con ricos que perpetúan su riqueza durante siglos? Por otra parte, también aparecen las temáticas de la película de ciencia ficción “Ellysium” con separaciones radicales en el acceso a la tecnología y salud dependiendo de las condiciones económicas. ¿Cómo evitar que las brechas que han ido disminuyendo en los últimos años no cambien de rumbo y comiencen a aumentar nuevamente? Probablemente, la respuesta está en la educación y la política. Educación, para adaptarnos a los tiempos futuros, y saber que podemos y tenemos que exigir mejores y más justas leyes. Y buenos políticos, para hacerlas.
-
----
-
-Inicialmente publicado en [medium](https://planetachatbot.com/debate-de-elon-musk-y-jack-ma-3d24c6bd48f2) el 16-09-2019.
-
----

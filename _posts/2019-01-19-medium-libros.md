@@ -1,11 +1,12 @@
 ---
-toc: false
 hide: false
+toc: false
 layout: post
-description: ¿Libros a buen precio? BP Digital y BookDepository.
-categories: [opinión, literatura, medium]
 title: Consejos de libros al mejor precio
+description: ¿Libros a buen precio? BP Digital y BookDepository.
+categories: [opinión, literatura]
 image: images/2019-01-19-medium-libros/image.jpeg
+permalink: /consejos-libros/
 comments: true
 ---
 
@@ -41,9 +42,3 @@ Link: [https://www.bookdepository.com/](https://www.bookdepository.com/)
 Consejos: 
 1. Revisar bien el idioma del libro. En una oportunidad encargué un libro y aunque el título venía en inglés, el contenido venía en alemán. Al revisar, efectivamente en la página se indicaba que el libro venía en idioma alemán. 
 2. Revisar la sección de ofertas (bargains) que tiene algunos libros interesantes a precios inmejorables. Sobretodo para releer a los clásicos en idioma original.
-
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2) el 19-01-2019.
-
----

@@ -1,14 +1,16 @@
 ---
-description: ¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?
+hide: false
 toc: false
 layout: post
+title: Lo que nos motiva a aprender y trabajar
+description: ¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?
 categories: [opinión, educación, medium]
+permalink: /november-aprender/
 comments: true
 ---
 
-# Lo que nos motiva a aprender y trabajar
-
 Estoy leyendo *“Who Own the Learning”* de Alan November. La anécdota inicial del libro me encanta. Alan cuenta que tuvo que volver a la escuela, durante el verano, para reprender un alumno que había entrado sin autorización a la sala de computación. Sin embargo, el estudiante no había realizado daños, sino que simplemente había pasado varias horas sentado frente a la pantalla aprendiendo en una profunda concentración. Era una paradoja: ¿tenía que regañar a un alumno por hacer lo que debe realizarse en una escuela, sólo por no respetar las reglas? Este estudiante estaba aprendiendo por cuenta propia, con una alta motivación intrínseca e incluso contra las mismas restricciones que la escuela le imponía. El estudiante mostraba con orgullo el código que había desarrollado, y atribuía su facilidad para aprender porque el computador le entregaba rápidamente retroalimentación sobre cada línea en su código. Creo que a todos nosotros en el mundillo de la informática nos ha pasado un momento similar, el momento en que algo hace click en la cabeza y nos hace gritar eureka, embriagados con el haber aprendido algo por nuestra propia cuenta gracias a la retroalimentación inmediata en la pantalla. Ese estudiante, en unas horas, pudo aprender más por su propia cuenta que en un semestre de clases gracias a su concentración, interés y motivación.
+
 Lo que me ha sorprendido al leer el libro es que los elementos principales de la narrativa son los mismos de un video que había visto hace un tiempo y que me había causado mucho impacto:
 
 <center>
@@ -30,9 +32,3 @@ El libro de November, y el video de Daniel Pink, llegan a la misma conclusión: 
 <iframe width="600" height="400" src="https://youtube.com/embed/ebJHzpEy4bE" frameborder="0" allowfullscreen></iframe>
 </center>
 *Alan November — Who Owns the Learning (11 minutos, 2011)*
-
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/lo-que-nos-motiva-a-aprender-y-trabajar-95eb30c9cf95) el 27-04-2019.
-
----
