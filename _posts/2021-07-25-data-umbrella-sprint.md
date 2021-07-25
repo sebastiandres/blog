@@ -6,12 +6,15 @@ layout: post
 title: "Experiencias del Sprint de Data Umbrella"
 description: "Lo que aprendí en mi primer sprint contribuyendo a código abierto."
 categories: [codigo abierto, sklearn]
-image: images/trex.png
+image: images/2021-07-25-data-umbrella-sprint/data-umbrella.jpg
 permalink: /sprint-data-umbrella/
 comments: true
 ---
 
 Desde hace mucho tiempo tenía el deseo de contribuir _“en algún momento”_ a un proyecto de código abierto. Sin embargo ese momento apropiado siempre era pospuesto para más adelante, cuando tuviera más experiencia y más tiempo. Por eso, cuando me contaron sobre el Sprint de Data Umbrella, no dudé y me inscribí. Era la oportunidad perfecta para obligarme a aprender. No hay nada como un poco de presión social para mover los engranajes de un procrastinador. 
+
+¿Que es [Data Umbrella](https://dataumbrella.org/)? 
+
 
 Llevo muchos años usando git, python y librerías como pandas, numpy o matplotlib. Tengo varios repositorios en github y bitbucket, y hago commits frecuentemente. Sin embargo, mis proyectos siempre son acotados e individuales, y no tenía experiencia contribuyendo a código abierto. Y ¿que aprendí? Pues que podría haber contribuido mucho tiempo atrás.
 

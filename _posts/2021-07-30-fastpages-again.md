@@ -6,10 +6,14 @@ layout: post
 title: "Fastpages 2: reloaded"
 description: "Las grandes ideas nunca mueren."
 categories: [fastpages]
-image: images/trex.png
+image: images/logo.png
 permalink: /fastpages2/
 comments: true
 ---
+
+Ya perdí la cuenta de la cantidad de veces que he armado un sitio web para 
+publicar posts y jupyter notebook. Esta vez espero ser más constante.
+Estuve averiguando sobre como funciona, y acá aprovecho de poner mis notas. 
 
 ## ¿Cómo funciona fastpages?
 
