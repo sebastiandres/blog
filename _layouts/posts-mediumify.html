@@ -9,21 +9,6 @@ layout: default
 
 {{ content | markdownify }}
 
-<!-- Featured ================================================== -->
-<section class="featured-posts">
-  <div class="section-title">
-      <h2><span>Todas las Entradas v2</span></h2>
-  </div>
-
-  <div class="row">
-    {% for post in site.posts %}
-
-          {% include mediumify_postbox.html %}
-
-    {% endfor %}
-  </div>
-</section>
-
 <!-- Posts Index ================================================== -->
 <section class="recent-posts">
 
