@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sebastiandres.github.io/blog/markdown/2019/01/01/test-markdown-post.html</loc>
+<loc>https://sebastiandres.github.io/blog/fastpages/markdown/2019/01/01/test-markdown-post.html</loc>
 <lastmod>2019-01-01T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -25,11 +25,11 @@
 <lastmod>2019-09-03T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/2019/09/09/medium-privilegios.html</loc>
 <lastmod>2019-09-09T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/medium/2019/09/16/medium-debate-Musk-Ma.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/2019/09/16/medium-debate-Musk-Ma.html</loc>
 <lastmod>2019-09-16T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -37,7 +37,7 @@
 <lastmod>2020-02-11T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/fastpages%20trick/2020/03/10/Redirect.html</loc>
+<loc>https://sebastiandres.github.io/blog/fastpages/2020/03/10/Redirect.html</loc>
 <lastmod>2020-03-10T00:00:00-05:00</lastmod>
 </url>
 <url>
