@@ -4,7 +4,7 @@ toc: false
 layout: post
 title: Lo que nos motiva a aprender y trabajar
 description: ¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?
-categories: [opinión, educación, medium]
+categories: [opinión, educación]
 permalink: /november-aprender/
 comments: true
 ---

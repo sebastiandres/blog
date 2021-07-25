@@ -1,4 +1,5 @@
 ---
+featured: true
 hide: false
 toc: false
 title: Keynotes de la PyCon 2020 Colombia

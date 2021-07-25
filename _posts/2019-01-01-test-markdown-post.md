@@ -1,10 +1,11 @@
 ---
+featured: false
 hide: true
 toc: false
 layout: post
 title: An Example Markdown Post
 description: A minimal example of using markdown with fastpages.
-categories: [markdown]
+categories: [fastpages, markdown]
 toc: false
 ---
 

@@ -1,10 +1,11 @@
 ---
+featured: false
 hide: false
 toc: false
 layout: post
 title: Elon Musk y Jack Ma
 description: ¿Quién tiene la razón en IA y Tech? 
-categories: [opinión, tecnología, medium]
+categories: [opinión, tecnología]
 comments: true
 ---
 

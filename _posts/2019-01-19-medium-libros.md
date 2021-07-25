@@ -5,7 +5,7 @@ toc: false
 layout: post
 title: Consejos de libros al mejor precio
 description: ¿Libros a buen precio? BP Digital y BookDepository.
-categories: [opinión, literatura]
+categories: [consejo, literatura]
 image: images/2019-01-19-medium-libros/image.jpeg
 permalink: /consejos-libros/
 comments: true

@@ -1,4 +1,5 @@
 ---
+featured: true
 hide: false
 toc: false
 title: La rutina óptima es aburrida

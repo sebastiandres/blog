@@ -1,10 +1,11 @@
 ---
+featured: true
 hide: false
 toc: false
 layout: post
 title: Reconociendo nuestros privilegios
 description: Reflexiones sobre el talento, la suerte y la pobreza. 
-categories: [opinión, backport, medium]
+categories: [opinión]
 comments: true
 ---
 
@@ -21,13 +22,13 @@ Uno de mis amigos de facebook respondió con vehemencia, manifestando “lo inú
 Me parece que el primer punto es evidente y está fuera de debate. Las diferencias existen debido a las distintas configuraciones familiares, sociales y económicas, y con toda seguridad siempre existirán. Ese no es el punto en cuestión.
 Respecto al segundo punto, existe un webcomic del ilustrador Toby Morris que también habla sobre los privilegios y que lo ilustra de otra manera. El enlace original está en este link y encontré la versión traducida en este otro sitio. Coloco acá las imágenes para hacer más directa y lineal la lectura:
 
-![]({{ site.baseurl }}/images/privilegios/1_IpLw7imp_5g5Af5VIfhBlQ.gif "1")
+![]({{ site.baseurl }}/images/2019-09-09-medium-privilegios/1_IpLw7imp_5g5Af5VIfhBlQ.gif "1")
 
-![]({{ site.baseurl }}/images/privilegios/2_I-Qin_2FUx5zHnw16L7WiQ.gif "2")
+![]({{ site.baseurl }}/images/2019-09-09-medium-privilegios/2_I-Qin_2FUx5zHnw16L7WiQ.gif "2")
 
-![]({{ site.baseurl }}/images/privilegios/3_c_9UfU9Bf-kepBaJAnzYGw.gif "3")
+![]({{ site.baseurl }}/images/2019-09-09-medium-privilegios/3_c_9UfU9Bf-kepBaJAnzYGw.gif "3")
 
-![]({{ site.baseurl }}/images/privilegios/4_iazMOxw7tHO5FVZBYovWYw.gif "4")
+![]({{ site.baseurl }}/images/2019-09-09-medium-privilegios/4_iazMOxw7tHO5FVZBYovWYw.gif "4")
 
 On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/
 
