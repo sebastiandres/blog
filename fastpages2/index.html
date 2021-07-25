@@ -87,7 +87,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -103,21 +103,73 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h2 id="personalizando-la-página-principal">Personalizando la página principal</h2>
+    <h2 id="cómo-funciona-fastpages">¿Cómo funciona fastpages?</h2>
 
-<p>Editar ./index.html.</p>
+<p>Al crear un blog con fastpages se generan 2 ramas:</p>
+<ul>
+  <li>En la rama <a href="https://github.com/sebastiandres/blog/tree/master">master</a> 
+se encuentran los posts en formato markdown, 
+jupyter notebooks o word, los archivos de configuración, y distintos 
+archivo de html, css y javascript.</li>
+  <li>En la rama <a href="https://github.com/sebastiandres/blog/tree/gh-pages">gh-pages</a> 
+se encuentra únicamente el html que se genera 
+a partir del contenido de la rama master, y que se despliega como 
+una página web en <code class="language-plaintext highlighter-rouge">&lt;username&gt;.github.io/&lt;repository-name&gt;</code> 
+gracias a Github Pages (sino, se vería como el clásico repositorio de código).</li>
+</ul>
+
+<p>Cuando haces push de un cambio a master, se ejecutan automáticamente 3 acciones
+mediante github actions:</p>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">check_config.yaml</code>: Revisa que los archivos de configuración 
+sean consistentes y tengan la información necesaria. Esto toma usualmente unos 15 segundos.</li>
+  <li><code class="language-plaintext highlighter-rouge">ci.yaml</code>: Toma unos 90 segundos en completar los siguientes pasos.
+    <ul>
+      <li>Crea un ambiente linux donde se realizarán todas las operaciones.</li>
+      <li>Chequea que tengas permiso hayas definido <code class="language-plaintext highlighter-rouge">SSH_DEPLOY_KEYS</code></li>
+      <li>Descarga la ultima versión del repositorio (la versión que recien pusheaste) de la rama master.</li>
+      <li>Convierte a markdown todos los archivos de jupyter notebook y word.</li>
+      <li>Descarga el tema de Jekyll <code class="language-plaintext highlighter-rouge">minima</code> para tener todos los html, css y javascript necesarios.</li>
+      <li>Usa Jekyll para convertir todos los markdowns a páginas web con el tema <code class="language-plaintext highlighter-rouge">minima</code>.</li>
+      <li>Copia el html generado a la rama gh-pages.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">gh-pages.yaml</code>: Revisa que todo se haya generado correctamente (creo).</li>
+</ol>
+
+<h2 id="personalizando-la-página-principal">Personalizando la página principal</h2>
+
+<p>Para personalizar la página principal, basta con modificar <code class="language-plaintext highlighter-rouge">./index.html</code>.
+La página principal que se verá en el sitio web se genera de manera encadenada. 
+En <code class="language-plaintext highlighter-rouge">index.html</code> se define que se usará el layout <code class="language-plaintext highlighter-rouge">home.html</code>, 
+que a su vez define que usará el layout <code class="language-plaintext highlighter-rouge">default.html</code>.
+Es posible modificar <code class="language-plaintext highlighter-rouge">./layouts/home.html</code> tomará el texto de ./index.html y lo convertirá 
+de markdown a html, y le agregará un contenido adicional.</p>
 
 <h2 id="personalizando-el-favicon">Personalizando el favicon</h2>
 
-<p>Lo del favicon https://realfavicongenerator.net/</p>
+<p>El favicon se puede modificar reemplazando directamente <code class="language-plaintext highlighter-rouge">images/favicon.ico</code>, o bien,
+editando el archivo <code class="language-plaintext highlighter-rouge">_includes/favicons.html</code> para definir una ruta diferente.</p>
 
-<p>Editar _includes/favicons.html o reemplazar directamente images/favicon.ico</p>
+<p>Es posible generar un favicon de manera gratuita en <a href="https://realfavicongenerator.net/">realfavicongenerator</a>.</p>
 
-<h2 id="personalizando-el-about-me">Personalizando el “about me”</h2>
+<h2 id="agregar-nuevas-páginas">Agregar nuevas páginas</h2>
 
-<p>Editar _pages/aboutme.md</p>
+<p>Para agregar nuevas páginas, basta con agregar los archivos en la carpeta <code class="language-plaintext highlighter-rouge">_pages</code>.
+Los archivos agregados pueden ser html o markdown, pero tienen la misma estructura:</p>
 
-<h2 id="personalizando-el-theme">Personalizando el theme</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/desired-path/</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Desired Name</span>
+<span class="na">search_exclude</span><span class="pi">:</span> <span class="no">true</span>
+<span class="nn">---</span>
+
+SOME TEXT IN HTML OR MARKDOWN
+</code></pre></div></div>
+
+<p>El layout debe ser default o uno de los layouts definidos en la carpeta <code class="language-plaintext highlighter-rouge">_layouts</code>. 
+Se puede usar html o markdown, según lo que sea más conveniente usar.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
