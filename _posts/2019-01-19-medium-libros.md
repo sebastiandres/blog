@@ -11,6 +11,8 @@ permalink: /consejos-libros/
 comments: true
 ---
 
+![]({{ site.baseurl }}/images/2019-01-19-medium-libros/image.jpeg "¿Cómo conseguir libros a buen precio?")
+
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
 
 ## BP Digital
