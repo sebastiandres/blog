@@ -222,18 +222,10 @@
   
 
   
-
   
 
   
-
-  
-
-  
-  
-
-  
-      ,"page13": {
+      ,"page9": {
           "title": "Proyectos",
           "content": "Gráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. | Code snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app. | linktree emulator: El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github. | ppt to rise library y web app: Para convertir una presentación powerpoint a RISE (Jupyter Notebook). | pypsdier: Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales. | polite: Sistema de encuestas experimental minimalista. | .",
           "url": "https://sebastiandres.github.io/blog/proyectos/",
@@ -263,7 +255,7 @@
   
 
   
-      ,"page21": {
+      ,"page17": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://sebastiandres.github.io/blog/robots.txt",
