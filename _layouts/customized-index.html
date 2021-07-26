@@ -15,7 +15,7 @@ layout: default
   <div class="row listrecent">
       {% for post in site.posts %}
         {% if post.featured == true %}
-          {% if post.hidden == false %}
+          {% if post.hide == false %}
             {% include mediumify_postbox.html %}
           {% endif %}
         {% endif %}
