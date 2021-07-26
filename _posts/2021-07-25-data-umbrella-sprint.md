@@ -25,9 +25,13 @@ Durante el sprint, el hecho de organizaros para programar de a pares también fu
 
 Al reflexionar sobre mi experiencia en el Sprint, me doy cuenta que tenía la expectativa que me faltaban muchas cosas por aprender. 
 
-![]({{ site.baseurl }}/images/expectativa.png "Expectativa: Me falta mucho para poder contribuir :'(.")
+![]({{ site.baseurl }}/images/2021-07-25-data-umbrella-sprint/expectativa.png "Expectativa: Me falta mucho para poder contribuir :'(.")
 
-Resumiendo, en el sprint aprendí que no era cierto que se requiere ser un super-programador para contribuir a código abierto. La realidad es que, de partida, no existe una única manera de contribuir. Hay un abanico interminable de posibles trabajos, desde los más sencillos a los más avanzados, y un largo camino de aprendizaje. Por eso, es importante darse cuenta que no se trata de que _“no sabes”_ sino que _“no sabes **aún**”_, y que hay una comunidad dispuesta a apoyarte en ese proceso de aprendizaje. Y el trabajo de Data Umbrella con los grupos poco representados resulta muy valioso para precisamente poder derribar todos esos mitos y barreras de entrada.
+Resumiendo, en el sprint aprendí que no era cierto que se requiere ser un super-programador para contribuir a código abierto. La realidad es que, de partida, no existe una única manera de contribuir. Hay un abanico interminable de posibles trabajos, desde los más sencillos a los más avanzados, y un largo camino de aprendizaje. Por eso, es importante darse cuenta que no se trata de que _“no sabes”_ sino que _“no sabes **aún**”_, y que hay una comunidad dispuesta a apoyarte en ese proceso de aprendizaje. 
+
+![]({{ site.baseurl }}/images/2021-07-25-data-umbrella-sprint/realidad.png "Realidad: ¡podría haber contribuído mucho antes! :D")
+
+El trabajo de Data Umbrella con los grupos de poca representación resulta muy valioso para precisamente poder derribar todos esos mitos y barreras de entrada.
 
 > El mejor día para empezar fue ayer. El segundo mejor día para empezar es hoy.
-![]({{ site.baseurl }}/images/realidad.png "Realidad: ¡podría haber contribuído mucho antes! :D")
+
