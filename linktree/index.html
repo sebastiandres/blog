@@ -12,11 +12,11 @@
 <link rel="canonical" href="https://sebastiandres.github.io/blog/linktree/" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/linktree/" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/images/logo.png" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/linktree.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Imitando un directorio de enlaces sólo con recursos gratuitos","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/linktree/"},"url":"https://sebastiandres.github.io/blog/linktree/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/logo.png","headline":"Emulador de Linktree","dateModified":"2021-06-01T00:00:00-05:00","datePublished":"2021-06-01T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"description":"Imitando un directorio de enlaces sólo con recursos gratuitos","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/linktree/"},"url":"https://sebastiandres.github.io/blog/linktree/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/preview/linktree.png","headline":"Emulador de Linktree","dateModified":"2021-06-01T00:00:00-05:00","datePublished":"2021-06-01T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/trex-favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -108,7 +108,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p>Un directorio de enlaces permite tener entregar un link único y memorable, que puedes actualizar posteriormente a haberlo compartido. Donde, por ejemplo, al dar una charla pudiera decir “el código y la presentación estarán en este link”, pero donde posteriormente sea posible agregarle la grabación de la charla o un resultados de una encuesta. Probé con Linktree, pero pronto lo llené con demasiados enlaces y se volvió confuso y difícil de navegar. Necesitaba una forma de agrupar de manera temática y con un grado flexible de niveles de profundad. En efecto, si a alguien no le interesa el tema “X” probablemente no le interesaría el video de “X”, el código de “X”, la presentación de “X” en html o pdf.</p>
 
-<p><img src="/blog/2021-06-01-linktree/comparacion.png" alt="" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." /></p>
+<p><img src="/blog/images/2021-06-01-linktree/comparacion.png" alt="" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." /></p>
 
 <p>Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha).
 Necesitaba una manera de tener un directorio de enlaces con un nombre memorable, fácil de compartir y personalizar, pero permitiendo mantener distintos niveles de agrupación. Desafío adicional: Cuando se trata de recursos en línea, soy un tacaño extremo. Así que buscaba una solución que pudiera implementar sin costos mensuales recurrentes.</p>
@@ -119,7 +119,7 @@ Necesitaba una manera de tener un directorio de enlaces con un nombre memorable,
   <li><strong>Primera versión</strong>: Un único archivo html, simple y funcional. Imita los colores y botones sólo con html y css, sin javascript, incluyendo la animación del botón. Comienzo a desplegarlo en mis repositorios y enlazarlos desde linktree. Basta con activar cada repositorio como github pages para que github proporcione un enlace fijo y estable para index.html (o README.md). No es perfecto, pero funciona, ya se cumple el funcionamiento mínimo. Problemas detectados: el tipo y tamaño de fuente es similar pero no es correcto. El despliegue en un smartphone es muy distinto entre linktree y imitación (tacaña).</li>
 </ul>
 
-<p><img src="/blog/2021-06-01-linktree/v1.png" alt="" title="Resultado de la primera versión: web (izquierda) y mobile (derecha). Un resultado sorprendentemente similar para la cantidad de código y esfuerzo." /></p>
+<p><img src="/blog/images/2021-06-01-linktree/v1.png" alt="" title="Resultado de la primera versión: web (izquierda) y mobile (derecha). Un resultado sorprendentemente similar para la cantidad de código y esfuerzo." /></p>
 
 <ul>
   <li>
@@ -136,7 +136,7 @@ Tercera versión: Ajustes a las propiedades del css para imitar mejor linktree (
 
 <p><strong>* Sexta (y última) versión</strong>: Revisión general del código para optimizarlo y limpiarlo. Se eliminan algunas propiedades css innecesarias. Hay 3 archivos: El archivo principal es index.html donde se definen los enlaces, y se utilizan los archivos latest_style.css (estilo) y latest_copyright.html (versión de emulador). Cada nueva página con enlaces sólo necesita definir los enlaces, ¡el estilo y copyright ya está definido! Problemas detectados: Nada por ahora.</p>
 
-<p><img src="/blog/2021-06-01-linktree/vf.png" alt="" title="El resultado final: web (izquierda) y mobile (derecha). Las versiones son prácticamente indistinguibles." /></p>
+<p><img src="/blog/images/2021-06-01-linktree/vf.png" alt="" title="El resultado final: web (izquierda) y mobile (derecha). Las versiones son prácticamente indistinguibles." /></p>
 
 <p><strong>Sneak peak:</strong></p>
 
@@ -209,7 +209,7 @@ Tercera versión: Ajustes a las propiedades del css para imitar mejor linktree (
 <p>¿Y cómo se ve todo al final?
 Se ve así:</p>
 
-<p><img src="/blog/2021-06-01-linktree/vfinal.gif" alt="" title="El resultado final funciona sorprendentemente bien. La transición es suave y no se nota que son 2 servicios distintos." /></p>
+<p><img src="/blog/images/2021-06-01-linktree/vfinal.gif" alt="" title="El resultado final funciona sorprendentemente bien. La transición es suave y no se nota que son 2 servicios distintos." /></p>
 
 <h2 id="aprendizajes">Aprendizajes:</h2>
 
