@@ -1,6 +1,6 @@
 ---
 featured: true
-hide: false
+hide: true
 toc: false
 layout: post
 title: "Cómo contribuir al Código Abierto"
