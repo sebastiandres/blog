@@ -6,7 +6,7 @@ layout: post
 title: "Experiencias del Sprint de Data Umbrella"
 description: "Lo que aprendí en mi primer sprint contribuyendo a código abierto."
 categories: [codigo abierto, sklearn]
-image: images/2021-07-25-data-umbrella-sprint/data-umbrella.jpg
+image: images/preview/data-umbrella.jpg
 permalink: /sprint-data-umbrella/
 comments: true
 ---
