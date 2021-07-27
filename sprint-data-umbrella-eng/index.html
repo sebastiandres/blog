@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Data Umbrella Sprint - My Experience | sebastiandres</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Data Umbrella Sprint - My Experience" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Things I learned from my first open source sprint" />
+<meta property="og:description" content="Things I learned from my first open source sprint" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/sprint-data-umbrella-eng/" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/sprint-data-umbrella-eng/" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/data-umbrella.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Things I learned from my first open source sprint","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/sprint-data-umbrella-eng/"},"url":"https://sebastiandres.github.io/blog/sprint-data-umbrella-eng/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/preview/data-umbrella.png","headline":"Data Umbrella Sprint - My Experience","dateModified":"2021-07-25T00:00:00-05:00","datePublished":"2021-07-25T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/trex-favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/blog/assets/css/screen.css" rel="stylesheet">
+
+<link href="/blog/assets/css/main.css" rel="stylesheet">
+
+<script src="/blog/assets/js/jquery.min.js"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/search/">Buscar</a><a class="page-link" style="border: none" href="/blog/charlas/">Charlas</a><a class="page-link" style="border: none" href="/blog/enlaces/">Enlaces</a><a class="page-link" style="border: none" href="/blog/posts/">Entradas</a><a class="page-link" style="border: none" href="/blog/etiquetas/">Etiquetas</a><a class="page-link" style="border: none" href="/blog/proyectos/">Proyectos</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Data Umbrella Sprint - My Experience</h1><p class="page-description">Things I learned from my first open source sprint</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-07-25T00:00:00-05:00" itemprop="datePublished">
+        Jul 25, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#codigo abierto">codigo abierto</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#sklearn">sklearn</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>For a long time I wanted to contribute <em>“at some point”</em> to an open source project. That ideal moment was always postponed until later, when I had more experience and more time. So when I was told about the Data Umbrella Sprint, I didn’t hesitate and signed up. It was the perfect opportunity to force myself to learn. There’s nothing like a little social pressure to push the gears of a procrastinator.</p>
+
+<p>To be honest, I didn’t knew <a href="https://dataumbrella.org/">Data Umbrella</a>. It’s an organization that is concerned with providing support to underrepresented groups, whether by gender, race, age, sexual orientation or otherwise, in the fields of Machine Learning, Data Science and Artificial Intelligence. The sprint held on June 26th had a focus on Latin America, because of the low participation in these topics. Data Umbrella’s work with underrepresented groups is very valuable in breaking down all the myths and entry barriers that may be holding back new talents.</p>
+
+<p>What I liked most about the Data Umbrella Sprint was the organization: they had a very precise checklist of the topics to review, with videos explaining each step by step. It was easy to estimate how much time you needed to prepare or learn before the sprint. This really helped assuring you would have all the required knowledge for the sprint. The use of discord also helped a lot to provide a community and informal aspect, and served to answer questions and get to know each other. Introducing yourself to a new group is always difficult, and for newbies the challenge may be even greater. Having a pre-sprint and post-sprint helps to consolidate the human and community aspect, solve the technical problems that always arise, and gain confidence.</p>
+
+<p>During the sprint, we worked with pair-programming and proved to be of great help. With Leonardo Rocco we worked on 2 issues:</p>
+<ul>
+  <li><a href="https://github.com/scikit-learn/scikit-learn/pull/20381">DOC Ensures that ARDRegression passes numpydoc validation #20381</a></li>
+  <li><a href="https://github.com/scikit-learn/scikit-learn/pull/20405">DOC ensures FastICA estimator passes the numpydoc validation #20405</a></li>
+</ul>
+
+<p>I can proudly say that both pull requests have been accepted!</p>
+
+<p>Reflecting on the sprint experience, I realize that I had the expectation that I had a lot of things to learn.</p>
+
+<p><img src="/blog/images/2021-07-25-data-umbrella-sprint-eng/expectation.png" alt="" title="Expectation: I still have to learn to be able to contribute :'(." /></p>
+
+<p>In the sprint I learned that you don’t need to be a super-programmer to contribute to open source. 
+The reality is that to begin with, there is no single way to contribute. There is an endless range of possible jobs, from the simplest to the most advanced, and a long learning curve. Therefore, it is important to realize that it is not that <em>“you don’t know”</em> but that <em>“you don’t know <strong>yet</strong>“</em>, and that there is a community willing to support you in that learning process. 
+We are all in a learning process. Getting involved in collaborative projects is precisely a way to accelerate learning, and in the process, contribute to the libraries you use the most.</p>
+
+<p><img src="/blog/images/2021-07-25-data-umbrella-sprint-eng/reality.png" alt="" title="Reality: I could have contributed much earlier! :D" /></p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/sprint-data-umbrella-eng/" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
