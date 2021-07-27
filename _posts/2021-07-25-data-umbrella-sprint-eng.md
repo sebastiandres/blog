@@ -11,7 +11,7 @@ permalink: /sprint-data-umbrella-eng/
 comments: true
 ---
 
-For a long time I wanted to contribute _"at some point"_ to an open source project. That ideal moment was always postponed until later, when I had more experience and more time. So when I was told about the Data Umbrella Sprint, I didn't hesitate and signed up. It was the perfect opportunity to force myself to learn. There's nothing like a little social pressure to push the gears of a procrastinator.
+For a long time I wanted to contribute _"at some point"_ to an open source project. That ideal moment was always postponed until later, when I had more experience and more time. So when I was read about the Data Umbrella Sprint on several telegram channels related to python and programming, I didn't hesitate and signed up. It was the perfect opportunity to force myself to learn. There's nothing like a little social pressure to push the gears of a procrastinator.
 
 To be honest, I didn't knew [Data Umbrella](https://dataumbrella.org/). It's an organization that is concerned with providing support to underrepresented groups, whether by gender, race, age, sexual orientation or otherwise, in the fields of Machine Learning, Data Science and Artificial Intelligence. The sprint held on June 26th had a focus on Latin America, because of the low participation in these topics. Data Umbrella's work with underrepresented groups is very valuable in breaking down all the myths and entry barriers that may be holding back new talents.
 
@@ -32,3 +32,7 @@ The reality is that, to begin with, there is no single way to contribute. There 
 We are all in a learning process, from newbies to seasoned coders. Getting involved in collaborative projects is precisely a way to accelerate learning, and in the process, contribute to the libraries you use the most.
 
 ![]({{ site.baseurl }}/images/2021-07-25-data-umbrella-sprint-eng/reality.png "Reality: I could have contributed much earlier! :D")
+
+There is a great report of the sprint on [Reshama's blog](https://reshamas.github.io/data-umbrella-latam-2021-scikit-learn-sprint-report/). The participant's distribution by country is quite surprising. I would have guessed a more uniform distribution, while it's largely concentrated on Argentina and Brasil. We will have to do something about that!
+
+Besides community and individual contributions, another big piece on open code are grants and funding from companies. Go ask your manager for budget to financing the tools you use day-to-day! In particular, this sprint was funded in part by a grant from [Code for Science & Society](https://eventfund.codeforscience.org/). Community and transparency at its best: you can get all the details for the grant online: [Grant number GBMF8449](https://www.moore.org/grant-detail?grantId=GBMF8449) at [Gordon and Betty Moore Foundation](https://www.moore.org/).

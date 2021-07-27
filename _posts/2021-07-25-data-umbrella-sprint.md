@@ -11,7 +11,7 @@ permalink: /sprint-data-umbrella/
 comments: true
 ---
 
-Desde hace mucho tiempo tenía el deseo de contribuir _“en algún momento”_ a un proyecto de código abierto. Sin embargo ese momento ideal siempre era pospuesto para más adelante, cuando tuviera más experiencia y más tiempo. Por eso, cuando me contaron sobre el Sprint de Data Umbrella, no dudé y me inscribí. Era la oportunidad perfecta para obligarme a aprender. No hay nada como un poco de presión social para mover los engranajes de un procrastinador.
+Desde hace mucho tiempo tenía el deseo de contribuir _“en algún momento”_ a un proyecto de código abierto. Sin embargo ese momento ideal siempre era pospuesto para más adelante, cuando tuviera más experiencia y más tiempo. Por eso, cuando leí sobre el Sprint de Data Umbrella en varios canales de Telegram de python y programación, no dudé y me inscribí. Era la oportunidad perfecta para obligarme a aprender. No hay nada como un poco de presión social para mover los engranajes de un procrastinador.
 
 Para ser sincero, no ubicaba a [Data Umbrella](https://dataumbrella.org/). Se trata de una organización que se preocupa de proporcionar apoyo a grupos poco representado, ya sea por género, raza, edad, orientación sexual u otros, en los campos de Machine Learning, Data Science e Inteligencia Artificial. El sprint que realizaron el 26 de Junio tenía como foco Latinoamérica, que tiene una participación baja en estos temas. El trabajo de Data Umbrella con los grupos de poca representación resulta muy valioso para  derribar todos los mitos y barreras de entrada que pueden estar frenando la llegada de nuevos talentos.
 
@@ -32,3 +32,7 @@ La realidad es que, de partida, no existe una única manera de contribuir. Hay u
 Todos estamos en un proceso de aprendizaje. Involucrarse en proyectos colaborativos es precisamente una manera de acelerar el aprendizaje, y de paso, contribuir a las librerías que más usas.
 
 ![]({{ site.baseurl }}/images/2021-07-25-data-umbrella-sprint/realidad.png "Realidad: ¡podría haber contribuído mucho antes! :D")
+
+Hay un excelente informe del sprint en el [blog de Reshama](https://reshamas.github.io/data-umbrella-latam-2021-scikit-learn-sprint-report/). La distribución de los participantes por países es bastante sorprendente. Imaginaba una distribución más uniforme, pero la mayoria de los participantes son de Argentina y Brasil. ¡Hay hacer algo al respecto!
+
+Además de las contribuciones comunitarias e individuales, otro elemento importante del código abierto son las subvenciones y la financiación por parte de empresas. ¡Pídele a tu jefe presupuesto para financiar las herramientas que usas a diario! En particular, este sprint fue financiado en parte por una subvención de [Code for Science & Society](https://eventfund.codeforscience.org/). Esto es comunidad y transparencia en estado puro: puedes obtener todos los detalles de la subvención en línea: [Grant number GBMF8449](https://www.moore.org/grant-detail?grantId=GBMF8449) en [Gordon and Betty Moore Foundation](https://www.moore.org/).
