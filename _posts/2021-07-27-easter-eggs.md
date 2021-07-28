@@ -6,7 +6,7 @@ layout: post
 title: "Easter Eggs"
 description: "Customizando fastpages."
 categories: [fastpages]
-image: images/monty-python-pig.png
+image: images/preview/monty-python-pig.png
 permalink: /fastpages-easter-eggs/
 comments: true
 ---
@@ -22,10 +22,10 @@ Bastó editar el archivo `_pages/404.html`, y agregarle una nueva imagen.
 
 ## Pie animado
 
-Un desafío mayor fue agregar un pie animado que se moviera sin mover otros elementos.
+Un desafío mayor fue agregar un pie animado que se moviera sin desplazar otros elementos.
 Para ello, tuve que generar un css específico:
 
-```html
+```css
 img.monty-python-foot {
     position: absolute;
     top: -900px;
