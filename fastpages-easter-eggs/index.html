@@ -12,11 +12,11 @@
 <link rel="canonical" href="https://sebastiandres.github.io/blog/fastpages-easter-eggs/" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/fastpages-easter-eggs/" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/images/monty-python-pig.png" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/monty-python-pig.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-07-27T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Customizando fastpages.","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/fastpages-easter-eggs/"},"url":"https://sebastiandres.github.io/blog/fastpages-easter-eggs/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/monty-python-pig.png","headline":"Easter Eggs","dateModified":"2021-07-27T00:00:00-05:00","datePublished":"2021-07-27T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"description":"Customizando fastpages.","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/fastpages-easter-eggs/"},"url":"https://sebastiandres.github.io/blog/fastpages-easter-eggs/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/preview/monty-python-pig.png","headline":"Easter Eggs","dateModified":"2021-07-27T00:00:00-05:00","datePublished":"2021-07-27T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -130,22 +130,22 @@ Bastó editar el archivo <code class="language-plaintext highlighter-rouge">_pag
 
 <h2 id="pie-animado">Pie animado</h2>
 
-<p>Un desafío mayor fue agregar un pie animado que se moviera sin mover otros elementos.
+<p>Un desafío mayor fue agregar un pie animado que se moviera sin desplazar otros elementos.
 Para ello, tuve que generar un css específico:</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>img.monty-python-foot {
-    position: absolute;
-    top: -900px;
-    z-index: 99;
-    animation: move_down 4s;
-}
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">img</span><span class="nc">.monty-python-foot</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">-900px</span><span class="p">;</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">99</span><span class="p">;</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="n">move_down</span> <span class="m">4s</span><span class="p">;</span>
+<span class="p">}</span>
 
-@keyframes move_down {
-    0% { transform: translateY(-1200px); }
-    50% { transform: translateY(800px); }
-    100% { transform: translateY(-1200px);
-    }
-}
+<span class="k">@keyframes</span> <span class="n">move_down</span> <span class="p">{</span>
+    <span class="err">0</span><span class="o">%</span> <span class="p">{</span> <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-1200px</span><span class="p">);</span> <span class="p">}</span>
+    <span class="err">50</span><span class="o">%</span> <span class="p">{</span> <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">800px</span><span class="p">);</span> <span class="p">}</span>
+    <span class="err">100</span><span class="o">%</span> <span class="p">{</span> <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-1200px</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 <p>Luego, en las páginas donde quisiera aplicarlo, bastaba con agregar una imagen
 con la clase respectiva:</p>
