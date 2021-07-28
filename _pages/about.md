@@ -4,6 +4,8 @@ title: Acerca de
 permalink: /about/
 ---
 
+<img src="{{ site.baseurl }}/images/monty_python_foot.png" height=800px class="monty-python-foot" />
+
 ## Sobre mí
 
 ¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión.
