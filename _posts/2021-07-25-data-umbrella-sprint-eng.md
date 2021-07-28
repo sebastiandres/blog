@@ -3,8 +3,8 @@ featured: true
 hide: false
 toc: false
 layout: post
-title: "Data Umbrella Sprint - My Experience"
-description: "Things I learned from my first open source sprint"
+title: "Data Umbrella Sprint - My Experience with open source"
+description: "Things I learned from my first open source sprint and pull request"
 categories: [codigo abierto, sklearn]
 image: images/preview/data-umbrella.png
 permalink: /sprint-data-umbrella-eng/
