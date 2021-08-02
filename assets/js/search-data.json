@@ -338,17 +338,6 @@
 
   
       ,"page3": {
-          "title": "Charlas",
-          "content": "He participado en las siguientes charlas: . UNSA Argentina - 09 Abril 2021. Charla “Sin límites con Python” realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer. | PyCon Argentina - Noviembre 2020. Charla “Coding as a Service: Librería pypsdier, aprendizajes y metodología” realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos. | Pycon Colombia - 8 Mayo 2020. Charla “¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos” realizada en la Pycon Colombia 2020, sobre como mezclar Jupyter, RISE y encuestas. | Universidad Adolfo Ibáñez - 24 Octubre 2019. Charla “Matrices en la vida real” realizada a estudiantes de primer año, sobre aplicaciones de las matrices en la industria. | Meetup Python (2/2) - 27 abril 2016. Charla sobre la librería sklearn, para el meetup de Python Valparaíso. | Meetup Python (1/2) - 30 marzo 2016. Charla sobre la librería pandas, para el meetup de Python Valparaíso. | . En cada caso, en el enlace podrás seleccionar el modo de visualización del contenido (video, slides, código, etc.). .",
-          "url": "https://sebastiandres.github.io/blog/charlas/",
-          "relUrl": "/charlas/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page4": {
           "title": "Enlaces",
           "content": "Inspirado por oink.in, acá iré poniendo algunos links de interés. . Lunes 26 Julio 2021: calmcode.io/: Videotutoriales de herramientas para opensource. Aprendí de la librería chime. | . | Sábado 24 Julio 2021: ideasgrab.com/: Repilación de +3500 ideas desde 2017. | . | .",
           "url": "https://sebastiandres.github.io/blog/enlaces/",
@@ -363,7 +352,7 @@
   
 
   
-      ,"page7": {
+      ,"page6": {
           "title": "Ficcion",
           "content": "Espero disfrutes estas historias. .",
           "url": "https://sebastiandres.github.io/blog/ficcion/",
@@ -376,8 +365,8 @@
   
 
   
-      ,"page9": {
-          "title": "Libros",
+      ,"page8": {
+          "title": "Leyendo",
           "content": "Opiniones de algunos libros. .",
           "url": "https://sebastiandres.github.io/blog/libros/",
           "relUrl": "/libros/",
@@ -390,9 +379,9 @@
   
 
   
-      ,"page11": {
-          "title": "Proyectos",
-          "content": ". Gráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. | Code snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app. | linktree emulator: El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github. | ppt to rise library y web app: Para convertir una presentación powerpoint a RISE (Jupyter Notebook). | pypsdier: Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales. | polite: Sistema de encuestas experimental minimalista. | .",
+      ,"page10": {
+          "title": "Charlas y Proyectos",
+          "content": ". Charlas . UNSA Argentina - 09 Abril 2021. Charla “Sin límites con Python” realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer. | PyCon Argentina - Noviembre 2020. Charla “Coding as a Service: Librería pypsdier, aprendizajes y metodología” realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos. | Pycon Colombia - 8 Mayo 2020. Charla “¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos” realizada en la Pycon Colombia 2020, sobre como mezclar Jupyter, RISE y encuestas. | Universidad Adolfo Ibáñez - 24 Octubre 2019. Charla “Matrices en la vida real” realizada a estudiantes de primer año, sobre aplicaciones de las matrices en la industria. | Meetup Python (2/2) - 27 abril 2016. Charla sobre la librería sklearn, para el meetup de Python Valparaíso. | Meetup Python (1/2) - 30 marzo 2016. Charla sobre la librería pandas, para el meetup de Python Valparaíso. | . En cada caso, en el enlace podrás seleccionar el modo de visualización del contenido (video, slides, código, etc.). . Proyectos . Gráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. | Code snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app. | linktree emulator: El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github. | ppt to rise library y web app: Para convertir una presentación powerpoint a RISE (Jupyter Notebook). | pypsdier: Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales. | polite: Sistema de encuestas experimental minimalista. | .",
           "url": "https://sebastiandres.github.io/blog/proyectos/",
           "relUrl": "/proyectos/",
           "date": ""
@@ -424,7 +413,7 @@
   
 
   
-      ,"page21": {
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://sebastiandres.github.io/blog/robots.txt",
