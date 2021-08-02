@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Tutorial de RISE | sebastiandres</title>
+<title>Tutorial de RISE - Aspectos preliminares | sebastiandres</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Tutorial de RISE" />
+<meta property="og:title" content="Tutorial de RISE - Aspectos preliminares" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Usando jupyter notebooks para presentaciones interactivas" />
-<meta property="og:description" content="Usando jupyter notebooks para presentaciones interactivas" />
-<link rel="canonical" href="https://sebastiandres.github.io/blog/tutorial-rise/" />
-<meta property="og:url" content="https://sebastiandres.github.io/blog/tutorial-rise/" />
+<meta name="description" content="Funcionalidades de jupyter notebooks útiles para presentaciones interactivas" />
+<meta property="og:description" content="Funcionalidades de jupyter notebooks útiles para presentaciones interactivas" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/tutorial-rise-0/" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/tutorial-rise-0/" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/rise.gif" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/2021-08-01-rise/basic_usage.gif" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-01T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-08-02T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Usando jupyter notebooks para presentaciones interactivas","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise/"},"url":"https://sebastiandres.github.io/blog/tutorial-rise/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/images/preview/rise.gif","headline":"Tutorial de RISE","dateModified":"2021-08-01T00:00:00-05:00","datePublished":"2021-08-01T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"description":"Funcionalidades de jupyter notebooks útiles para presentaciones interactivas","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise-0/"},"url":"https://sebastiandres.github.io/blog/tutorial-rise-0/","@type":"BlogPosting","image":"https://sebastiandres.github.io/blog/2021-08-01-rise/basic_usage.gif","headline":"Tutorial de RISE - Aspectos preliminares","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -97,13 +97,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE</h1><p class="page-description">Usando jupyter notebooks para presentaciones interactivas</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-01T00:00:00-05:00" itemprop="datePublished">
-        Aug 1, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE - Aspectos preliminares</h1><p class="page-description">Funcionalidades de jupyter notebooks útiles para presentaciones interactivas</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
+        Aug 2, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -124,19 +124,19 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-01-tutorial-rise.ipynb" role="button" target="_blank">
+    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-02-tutorial-rise-parte-0.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-01-tutorial-rise.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-02-tutorial-rise-parte-0.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-01-tutorial-rise.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-02-tutorial-rise-parte-0.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
@@ -148,52 +148,26 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2021-08-01-tutorial-rise.ipynb
+# file to edit: _notebooks/2021-08-02-tutorial-rise-parte-0.ipynb
 -->
 
 <div class="container" id="notebook-container">
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Creo que existe poco material sobre cómo utilizar la librería RISE, especialmente en español. En esta serie de artículos dedicados espero poder contribuir a disminuir esa brecha.</em></p>
-<p><em>Si encuentras errores o existe alguna funcionalidad no documentada, ¡no dudes en comentar!</em></p>
+<p><strong>Nota</strong>:
+Este documento es el preámbulo de la entrega por partes del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de RISE</a>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#160;&#191;Qu&#233;-es-RISE?">&#160;&#191;Qu&#233; es RISE?<a class="anchor-link" href="#&#160;&#191;Qu&#233;-es-RISE?"> </a></h4><p>RISE es una extensión a los jupyter notebooks que permite transformarlos en una presentación interactiva. 
-Toda las celdas pueden editarse y ejecutarse directamente, <strong>durante</strong> la presentación. Esto es práctico si necesitas corregir un error en una celda de texto. Más importante aún, puedes ejecutar código directamente en el kernel. En una misma diapositiva puedes tener múltiples celdas y elegir cuál ejecutar, o corregir el texto y volver a ejecutar.</p>
-<p><img src="/blog/images/copied_from_nb/./2021-08-01-rise/basic_usage.gif" alt="" /></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#160;&#191;Porqu&#233;-es-mejor?">&#160;&#191;Porqu&#233; es mejor?<a class="anchor-link" href="#&#160;&#191;Porqu&#233;-es-mejor?"> </a></h4><p>Primero, porque simplifica enormemente la generación de material. El jupyter notebook es simultáneamente la presentación, el código, el apunte y texto oficial, y no necesitas actualizar en múltiples lugares. Detesto sacar una captura de pantalla a un código, porque tendré que estar eternamente actualizando esa imagen. O, si escribo un código, nunca queda con el formato correcto y como es "código muerto" que no se ejecuta nunca, es fácil que contenga errores.</p>
-<p>Segundo, porque simplifica la distribución del material. La presentación contiene todo lo que la audiencia necesita: explicaciones, imágenes, videos y código. Proporcionando un archivo requirements.txt es fácil recrear un ambiente con las librerías necesarias para ejecutar el código. Almacenando el jupyter notebook en github, es además fácil compartir el archivo ipynb del jupyter notebook, un html o pdf pre-generado fácil de visualizar o incluso un enlace a un repositorio binder donde la presentación se puede volver a visualizar de manera interactiva. Entregar múltiples opciones le entrega facilidades a la audiencia y permite generar más impacto.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#160;&#191;Qu&#233;-desventajas-tiene?">&#160;&#191;Qu&#233; desventajas tiene?<a class="anchor-link" href="#&#160;&#191;Qu&#233;-desventajas-tiene?"> </a></h4><p>La principal desventaja es que actualmente RISE funciona únicamente con Jupyter Notebook.</p>
-<p>No funciona con Jupyter Lab (<em>aún</em>) ni con Google Colaboratory (<em>probablemente nunca</em>).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Sobre-el-tutorial">Sobre el tutorial<a class="anchor-link" href="#Sobre-el-tutorial"> </a></h4><p>Como el jupyter notebook se transforma en una presentación, se heredan todas las funcionalidades, tanto de texto (markdown, latex) como de código (gráficos, display, widgets) del formato jupyter notebook. Probablemente ya conoces muchos de estas funcionalidades. Podrás encontrar esos aspectos que no son propiamente de RISE en <a href="https://sebastiandres.github.io/blog/TBD/">funcionalidades de jupyter notebook útiles para presentaciones interactivas</a>.</p>
-<p>En este tutorial se divide en tres partes:</p>
+<p>APUNTES:</p>
 <ul>
-<li><a href="https://sebastiandres.github.io/blog/TBD/">Aspectos básico</a>: Cómo instalar la librería, cómo crear una presentación y como realizar una presentación exitosa.</li>
-<li><a href="https://sebastiandres.github.io/blog/TBD/">Aspectos intermedios</a>: Cómo configurar el diseño en RISE y cómo compartir tu presentación. </li>
-<li><a href="https://sebastiandres.github.io/blog/TBD/">Aspectos avanzados</a>: Cómo crear columnas, cómo realizar encuestas, cómo portar una presentación de powerpoint a jupyter notebook y otros consejos.</li>
+<li>SONIDO</li>
+<li>VIDEO</li>
+<li>Widgets</li>
 </ul>
 
 </div>
@@ -201,12 +175,17 @@ Toda las celdas pueden editarse y ejecutarse directamente, <strong>durante</stro
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Enlaces:</p>
-<ul>
-<li><a href="https://rise.readthedocs.io/en/stable/">Documentación oficial de RISE</a></li>
-<li><a href="https://sebastiandres.github.io/talk_2020_02_pycon_colombia_rise_and_poll/">Charla en PyCon Colombia 2020</a> donde hablo de RISE y cómo hacer encuestas.</li>
-<li><a href="https://linktr.ee/sebastiandres">Otras charlas y eventos</a> donde uso librería RISE.</li>
-</ul>
+<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="IPython.Display">IPython.Display<a class="anchor-link" href="#IPython.Display"> </a></h2><p>Audio
+Video
+HTML
+repl</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Ipywidgets">Ipywidgets<a class="anchor-link" href="#Ipywidgets"> </a></h2><p>Matpllotlib widgets</p>
 
 </div>
 </div>
@@ -223,7 +202,7 @@ Toda las celdas pueden editarse y ejecutarse directamente, <strong>durante</stro
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/tutorial-rise/" hidden></a>
+</script><a class="u-url" href="/blog/tutorial-rise-0/" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
