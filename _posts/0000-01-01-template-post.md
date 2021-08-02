@@ -1,11 +1,11 @@
 ---
-featured: true
-hide: true
+featured: false
+hide: false
 toc: false
 layout: post
 title: Template
 description: "Descripcion"
-categories: [fastpages, markdown]
+categories: [fastpages, markdown, template]
 image: images/logo.png
 permalink: /markdown-test/
 comments: true
@@ -19,13 +19,15 @@ Donde `AAAA` es el año con 4 dígitos, `MM` es el mes con 2 dígitos, `DD` es e
  
 ```
 ---
+featured: false
 hide: false
 toc: false
 layout: post
-title: "Test 1: Post mediante Markdown"
-description: Un ejempo minimal usando markdown con fastpages.
-categories: [fastpages, markdown]
-toc: false
+title: Template
+description: "Descripcion"
+categories: [fastpages, markdown, template]
+image: images/logo.png
+permalink: /markdown-test/
 comments: true
 ---
 ```
