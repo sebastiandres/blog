@@ -288,10 +288,32 @@
   
     
         ,"post26": {
+            "title": "Nombre del cuento",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .",
+            "url": "https://sebastiandres.github.io/blog/escritura/-0001/12/31/template-story.html",
+            "relUrl": "/escritura/-0001/12/31/template-story.html",
+            "date": " • Dec 31, -0001"
+        }
+        
+    
+  
+    
+        ,"post27": {
             "title": "Template",
-            "content": "Configuración básica . El archivo de un post files debe tener el formato _posts/AAAA-MM-DD-some-filename.md . Donde AAAA es el año con 4 dígitos, MM es el mes con 2 dígitos, DD es el día con 2 dígitos, y some-filename es un nombre de referencia, más que nada para recordarte de que se trataba el post. El título real se indica adentro). La extensión .md se usa para archivos markdown, como es esperable. El inicio del archivo debe tener los siguiente: . hide: false toc: false layout: post title: &quot;Test 1: Post mediante Markdown&quot; description: Un ejempo minimal usando markdown con fastpages. categories: [fastpages, markdown] toc: false comments: true . Formato básico . Se pueden usar cursivas, negritas, negritas cursivas, código. También notas a pie de página 1. También una línea horizontal: . . Links . Se pueden crear links o simplemenente https://www.markdownguide.org/cheat-sheet/, (https://www.markdownguide.org/cheat-sheet/). . Listas . Acá hay una lista (regular): . item 1 | item 2 | . Acá hay una lista numerada: . item 1 | item 2 | Código . Texto preformateado general: . # Do a thing in a programming language do_thing() . Código de python: . # Prints &#39;2&#39; print(1+1) . Imágenes . . Videos . Tablas . Columna 1 Columna 2 . Una cosa | Otra cosa | . Una cosa más | Otra cosa más | . Citas y otras formas de destacar . Citas: . Esta es una cita . Alerta: . . Puedes incluir alertas Información: . . Puedes destacar información Warning: . . Warning: There will be no second warning! Important: . . Important: Pay attention! It&#8217;s important. Consejo: . . Tip: This is my tip. Nota: . . Note: Take note of this. Tweets . Playing around with @streamlit. Amazing how they have simplified and integrated everything. . &mdash; Sebastian Flores (@sebastiandres) July 8, 2021 Notas a pie de página . Esta es la nota al pie de página. &#8617; . |",
+            "content": "Configuración básica . El archivo de un post files debe tener el formato _posts/AAAA-MM-DD-some-filename.md . Donde AAAA es el año con 4 dígitos, MM es el mes con 2 dígitos, DD es el día con 2 dígitos, y some-filename es un nombre de referencia, más que nada para recordarte de que se trataba el post. El título real se indica adentro). La extensión .md se usa para archivos markdown, como es esperable. El inicio del archivo debe tener los siguiente: . featured: false hide: false toc: false layout: post title: Template description: &quot;Descripcion&quot; categories: [fastpages, markdown, template] image: images/logo.png permalink: /markdown-test/ comments: true . Formato básico . Se pueden usar cursivas, negritas, negritas cursivas, código. También notas a pie de página 1. También una línea horizontal: . . Links . Se pueden crear links o simplemenente https://www.markdownguide.org/cheat-sheet/, (https://www.markdownguide.org/cheat-sheet/). . Listas . Acá hay una lista (regular): . item 1 | item 2 | . Acá hay una lista numerada: . item 1 | item 2 | Código . Texto preformateado general: . # Do a thing in a programming language do_thing() . Código de python: . # Prints &#39;2&#39; print(1+1) . Imágenes . . Videos . Tablas . Columna 1 Columna 2 . Una cosa | Otra cosa | . Una cosa más | Otra cosa más | . Citas y otras formas de destacar . Citas: . Esta es una cita . Alerta: . . Puedes incluir alertas Información: . . Puedes destacar información Warning: . . Warning: There will be no second warning! Important: . . Important: Pay attention! It&#8217;s important. Consejo: . . Tip: This is my tip. Nota: . . Note: Take note of this. Tweets . Playing around with @streamlit. Amazing how they have simplified and integrated everything. . &mdash; Sebastian Flores (@sebastiandres) July 8, 2021 Notas a pie de página . Esta es la nota al pie de página. &#8617; . |",
             "url": "https://sebastiandres.github.io/blog/markdown-test/",
             "relUrl": "/markdown-test/",
+            "date": " • Dec 31, -0001"
+        }
+        
+    
+  
+    
+        ,"post28": {
+            "title": "Template de Opinión de Libro",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .",
+            "url": "https://sebastiandres.github.io/blog/lectura/-0001/12/31/template-book.html",
+            "relUrl": "/lectura/-0001/12/31/template-book.html",
             "date": " • Dec 31, -0001"
         }
         
@@ -341,12 +363,34 @@
   
 
   
-
+      ,"page7": {
+          "title": "Ficcion",
+          "content": "Espero disfrutes estas historias. .",
+          "url": "https://sebastiandres.github.io/blog/ficcion/",
+          "relUrl": "/ficcion/",
+          "date": ""
+      }
+      
   
+
   
 
   
       ,"page9": {
+          "title": "Libros",
+          "content": "Opiniones de algunos libros. .",
+          "url": "https://sebastiandres.github.io/blog/libros/",
+          "relUrl": "/libros/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+      ,"page11": {
           "title": "Proyectos",
           "content": ". Gráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. | Code snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app. | linktree emulator: El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github. | ppt to rise library y web app: Para convertir una presentación powerpoint a RISE (Jupyter Notebook). | pypsdier: Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales. | polite: Sistema de encuestas experimental minimalista. | .",
           "url": "https://sebastiandres.github.io/blog/proyectos/",
@@ -380,7 +424,7 @@
   
 
   
-      ,"page19": {
+      ,"page21": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://sebastiandres.github.io/blog/robots.txt",

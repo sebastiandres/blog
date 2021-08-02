@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://sebastiandres.github.io/blog/lectura/-0001/12/31/template-book.html</loc>
+<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
+</url>
+<url>
 <loc>https://sebastiandres.github.io/blog/markdown-test/</loc>
+<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/escritura/-0001/12/31/template-story.html</loc>
 <lastmod>-0001-12-31T23:58:48-05:50</lastmod>
 </url>
 <url>
@@ -127,7 +135,13 @@
 <loc>https://sebastiandres.github.io/blog/etiquetas/</loc>
 </url>
 <url>
+<loc>https://sebastiandres.github.io/blog/ficcion/</loc>
+</url>
+<url>
 <loc>https://sebastiandres.github.io/blog/</loc>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/libros/</loc>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/proyectos/</loc>
