@@ -1,6 +1,6 @@
 ---
-featured: true
-hide: true
+featured: false
+hide: false
 toc: false
 layout: post
 title: Nombre del cuento

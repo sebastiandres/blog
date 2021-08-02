@@ -3,8 +3,8 @@ featured: false
 hide: false
 toc: false
 layout: post
-title: Template
-description: "Descripcion"
+title: Template de entrada de Markdown
+description: "Descripcion de la entrada en markdown"
 categories: [fastpages, markdown, template]
 image: images/logo.png
 permalink: /markdown-test/
