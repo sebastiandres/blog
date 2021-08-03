@@ -1,6 +1,12 @@
 *.swp
 ~*
 *~
+*/hidden/*
+*/WIP*
+WIP*
+venv
+*/venv
+
 _site
 .sass-cache
 .jekyll-cache

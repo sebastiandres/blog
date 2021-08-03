@@ -11,7 +11,7 @@ permalink: /markdown-test/
 comments: true
 ---
 
-![]({{ site.baseurl }}/images/2021-03-28-trillion-dollar-coach/bielsa.png "")
+![]({{ site.baseurl }}/images/2021-03-28-trillion-dollar-coach/bielsa.jpeg "Un entrenador peculiar")
 
 Trillion Dollar Coach, traducido al español como “El coach de Silicon Valley”, es un libro escrito por Eric Schmidt, Jonathan Rosenberg y Alan Eagle, donde relatan los aprendizajes y consejos que recibieron de Bill Campbell, un coach con un estilo personal que rompía esquemas y convenciones.
 
