@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sebastiandres.github.io/blog/lectura/-0001/12/31/template-book.html</loc>
-<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
-</url>
-<url>
 <loc>https://sebastiandres.github.io/blog/markdown-test/</loc>
 <lastmod>-0001-12-31T23:58:48-05:50</lastmod>
 </url>
@@ -59,6 +55,14 @@
 <url>
 <loc>https://sebastiandres.github.io/blog/opini%C3%B3n/startup/tecnolog%C3%ADa/2020/04/24/learn-dont-fail.html</loc>
 <lastmod>2020-04-24T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/lectura/2021/01/01/book-review-atomic-habits.html</loc>
+<lastmod>2021-01-01T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/lectura/2021/01/01/book-review-flying-free.html</loc>
+<lastmod>2021-01-01T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/markdown-test/</loc>
@@ -118,6 +122,9 @@
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/about/</loc>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/buscando/</loc>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/search/</loc>
