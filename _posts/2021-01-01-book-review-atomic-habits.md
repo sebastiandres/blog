@@ -8,7 +8,6 @@ author: James Clear
 genre: No ficción
 description: ""
 categories: [lectura]
-image: images/logo.png
 comments: false
 ---
 

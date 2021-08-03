@@ -11,8 +11,6 @@ permalink: /about/
 ¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión.
 Me encantaría saber que opinas tú al respecto. Coméntame si hay algo en lo que pueda ayudarte.
 
-https://linktr.ee/sebastiandres
-
 ## Sobre el sitio
 
 Este sitio ha sido creado usando [fast-pages](https://github.com/fastai/fastpages). 
