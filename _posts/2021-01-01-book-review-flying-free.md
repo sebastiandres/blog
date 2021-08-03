@@ -1,0 +1,17 @@
+---
+featured: false
+hide: false
+toc: false
+layout: book-review
+title: Flying Free
+author: Cecilia Aragon
+genre: Biografía
+description: "Biografía"
+categories: [lectura]
+image: images/logo.png
+comments: false
+---
+
+Conocí a Cecilia en una charla en la UTFSM, y su sinceridad y humanidad me llamó profundamente la atención. No tenía idea que fue piloto acrobática de aviones, y su historia es increíble. Me devoré el libro y lo he recomendado a varios amigos. 
+
+9/10
