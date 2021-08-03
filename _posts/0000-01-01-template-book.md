@@ -2,7 +2,7 @@
 featured: false
 hide: false
 toc: false
-layout: post
+layout: book-review
 title: Template de Opinión de Libro
 description: "Descripción en una página del libro"
 categories: [lectura]

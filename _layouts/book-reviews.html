@@ -18,7 +18,17 @@ layout: default
     {% if post.hide != true %}
       {% if post.layout == "book-review" %}
         {% assign posts = posts|push:post%}
-      {% endif %}
+        <p> post.layout {{ post.layout}} </p>
+        <p> post.featured {{ post.featured}} </p>
+        <p> post.hide {{ post.hide}} </p>
+        <p> post.toc {{ post.toc}} </p>
+        <p> post.layout {{ post.layout}} </p>
+        <p> post.title {{ post.title}} </p>
+        <p> post.description {{ post.description}} </p>
+        <p> post.categories {{ post.categories}} </p>
+        <p> post.image {{ post.image}} </p>
+        <p> post.comments {{ post.comments}} </p>
+        {% endif %}
     {% endif %}
   {% endfor %}
 
