@@ -16,7 +16,7 @@ layout: default
   {% assign posts = ''|split:'' %}
   {% for post in rawposts %}
     {% if post.hide != true %}
-      {% if post.layout == story %}
+      {% if post.layout == "story" %}
         {% assign posts = posts|push:post%}
       {% endif %}
     {% endif %}
