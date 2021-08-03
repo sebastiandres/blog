@@ -1,12 +1,11 @@
 ---
 featured: false
-hide: false
+hide: true
 toc: false
-layout: post
+layout: story
 title: Nombre del cuento
 description: "Descripcion de la historia"
 categories: [escritura]
-image: images/logo.png
 comments: true
 ---
 

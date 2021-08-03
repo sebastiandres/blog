@@ -1,6 +1,6 @@
 ---
 featured: false
-hide: false
+hide: true
 toc: false
 layout: post
 title: Template de entrada de Markdown

@@ -1,12 +1,11 @@
 ---
 featured: false
-hide: false
+hide: true
 toc: false
 layout: book-review
 title: Template de Opinión de Libro
 description: "Descripción en una página del libro"
 categories: [lectura]
-image: images/logo.png
 comments: false
 ---
 
