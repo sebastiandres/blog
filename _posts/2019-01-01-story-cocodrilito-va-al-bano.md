@@ -4,13 +4,11 @@ hide: false
 toc: false
 layout: story
 title: Cocodrilito aprender a ir al baño
-description: ""
+description: "Un cuento escrito a 2 manos con mi hijo"
 categories: [escritura]
 image: 
 comments: true
 ---
-
-
 
 En una pequeña casita, en medio del África, vivían Papá Cocodrilo y Cocodilito. Papá Cocodrilo ya no se acordaba si Cocodrilito tenía 2 ó 3 años, pero sí sabía que ya era hora que fuera sólo al baño. Ya lo habían intentado antes, sin buenos resultados. Pero esta vez si les resultaría. Así que decidieron que Cocodrilito no usaría más pañales. Papá Cocodrilo no quería dejar solito a Cocodrilito en su primer día sin pañales, pero tenía que ir a cazar el almuerzo del día. No tuvo más remedio que decirle: Cocodrilito, si te dan ganas de hacer caca, grita muy fuerte, para que yo te escuche desde lejos. Y Cocodrilito preguntó: ¿Y qué tengo que gritar, papito? Y Papá cocodrilo le dijo: ¡Tienes que gritar, los más fuerte que puedas, caca, papá, caca! Así yo podré venir a ayudarte. Y entonces Papá Cocodrilo, se fue de la casa a cazar.
 
