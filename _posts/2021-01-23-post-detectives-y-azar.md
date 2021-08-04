@@ -1,6 +1,6 @@
 ---
 featured: true
-hide: true
+hide: false
 toc: false
 layout: post
 title: "El detective: entre la lógica y el azar"

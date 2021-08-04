@@ -1,6 +1,6 @@
 ---
 featured: true
-hide: true
+hide: false
 toc: false
 layout: post
 title: Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares

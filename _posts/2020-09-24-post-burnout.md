@@ -1,6 +1,6 @@
 ---
 featured: false
-hide: true
+hide: false
 toc: false
 layout: post
 title: Burnout — experiencia y aprendizaje

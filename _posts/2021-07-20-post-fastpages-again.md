@@ -1,6 +1,6 @@
 ---
 featured: true
-hide: true
+hide: false
 toc: false
 layout: post
 title: "Fastpages 2: reloaded"
