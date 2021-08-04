@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | sebastiandres</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tecnología, literatura y opinión." />
+<meta property="og:description" content="Tecnología, literatura y opinión." />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-02T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html"},"description":"Tecnología, literatura y opinión.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
+  <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HG9BYLK8FC');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/trex-favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/blog/assets/css/screen.css" rel="stylesheet">
+
+<link href="/blog/assets/css/main.css" rel="stylesheet">
+
+<script src="/blog/assets/js/jquery.min.js"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/buscar/">Buscar</a><a class="page-link" style="border: none" href="/blog/posts/">Entradas</a><a class="page-link" style="border: none" href="/blog/escritura/">Escribiendo</a><a class="page-link" style="border: none" href="/blog/lecturas/">Leyendo</a><a class="page-link" style="border: none" href="/blog/proyectos/">Charlas y Proyectos</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
+        Aug 2, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-02-tutorial-rise-parte-1.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-02-tutorial-rise-parte-1.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-02-tutorial-rise-parte-1.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-08-02-tutorial-rise-parte-1.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Tutorial-de-RISE---parte-1">Tutorial de RISE - parte 1<a class="anchor-link" href="#Tutorial-de-RISE---parte-1"> </a></h3><blockquote><p>Aspectos básicos para hacer presentaciones interactivas con jupyter notebook</p>
+</blockquote>
+<ul>
+<li>featured:false- hide: false</li>
+<li>toc: true </li>
+<li>badges: true</li>
+<li>comments: true</li>
+<li>categories: [jupyter, rise]</li>
+<li>image: 2021-08-01-rise/basic_usage.gif</li>
+<li>permalink: /tutorial-rise-1/</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta es la parte 1 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#160;&#191;Qu&#233;-es-RISE?">&#160;&#191;Qu&#233; es RISE?<a class="anchor-link" href="#&#160;&#191;Qu&#233;-es-RISE?"> </a></h2><p>RISE es una extensión a jupyter notebook que, en lugar de desplegar las celdas en una larga página web, las despliega en una presentación usando la librería <a href="https://revealjs.com/">revealjs</a>. Sigue siendo una página web, pero se controla el progreso de las celdas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#160;&#191;C&#243;mo-instalar?">&#160;&#191;C&#243;mo instalar?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-instalar?"> </a></h2><p>La instalación de la extensión RISE es extremadamente fácil.
+Basta con usar pip o conda:</p>
+
+<pre><code>pip install rise</code></pre>
+<p>o</p>
+
+<pre><code>conda install -c conda-forge rise</code></pre>
+<p>COLOCAR IMÁGEN SIN RISE</p>
+<p>IMAGEN PIP</p>
+<p>IMAGEN CON RISE</p>
+<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
+<p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;Qu&#233;-contenido-poner?">&#191;Qu&#233; contenido poner?<a class="anchor-link" href="#&#191;Qu&#233;-contenido-poner?"> </a></h2><p>Puedes mezclar contenido usando las celdas de markdown y código, según necesites:</p>
+<ul>
+<li><strong>Markdown</strong>: texto, latex, imágenes, tablas, etc.</li>
+<li><strong>Código</strong>: código, gráficos simples o interactivos, videos, sonido, iframes, javascript, entre otros.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;C&#243;mo-configurar-las-diapositivas?">&#191;C&#243;mo configurar las diapositivas?<a class="anchor-link" href="#&#191;C&#243;mo-configurar-las-diapositivas?"> </a></h2><p>A cada celda del notebook se le agregará metadata para saber cómo mostrarla en la presentación. El primer paso es entonces ver el tipo de slide de la celda. Para eso, deber ir a <code>View/Cell Toolbar/Slideshow</code>:</p>
+<p>IMAGE</p>
+<p>Existen varios tipos de celda con distintas funciones:</p>
+<ul>
+<li><code>-</code>: valor por defecto. Se concatena a la slide anterior.</li>
+<li><code>Slide</code>: iniciar una nueva diapositiva.</li>
+<li><code>Sub-slide</code>: iniciar una nueva sub-diapositiva.</li>
+<li><code>Fragment</code>: permite animar progresivamente. </li>
+<li><code>Skip</code>: salta (no muestra) la celda.</li>
+<li><code>Notes</code>: notas para el presentador.</li>
+</ul>
+<p>Diagrama con estados.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#160;&#191;C&#243;mo-moverse-por-las-slides?">&#160;&#191;C&#243;mo moverse por las slides?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-moverse-por-las-slides?"> </a></h2><ul>
+<li>Se accede a la próxima diapositiva o fragmento con <code>Espacio</code> (o la flecha derecha).</li>
+<li>Se retrocede a la diapositiva o fragmento anterior con <code>Shift Espacio</code> (o la flecha izquierda).</li>
+<li>Se avanza a la proxima sub-diapositiva con <code>Page Up</code>.</li>
+<li>Se retrocede la sub-diapositiva anterior con <code>Page Down</code>.</li>
+</ul>
+<p>OBS: En general, es dificil recordar el orden de las slides y sub-slides. Yo personalmente nunca uso sub-slides por esta razón.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;Qu&#233;-opciones-hay?">&#191;Qu&#233; opciones hay?<a class="anchor-link" href="#&#191;Qu&#233;-opciones-hay?"> </a></h2><p>Las funcionalidades se controlan con los siguientes botones:</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/botones.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;Se-puede-editar-durante-la-presentaci&#243;n?">&#191;Se puede editar durante la presentaci&#243;n?<a class="anchor-link" href="#&#191;Se-puede-editar-durante-la-presentaci&#243;n?"> </a></h2><p>Es posible editar y ejecutar las celdas de markdown y de código durante la presentación. 
+Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt Enter</code> para ejecutarla.</p>
+<p>IMAGEN</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;C&#243;mo-controlo-el-tama&#241;o?">&#191;C&#243;mo controlo el tama&#241;o?<a class="anchor-link" href="#&#191;C&#243;mo-controlo-el-tama&#241;o?"> </a></h2><p>Un problema común es que al conectar el computador a otra pantalla o datashow, no se alcanza a ver en la diapositiva todo el código, texto o imagen.</p>
+<p>Lo único que debes hacer es usar usar <code>Ctrl +</code> y <code>Ctrl -</code> para regular el tamaño (<code>Command +</code>y <code>Command -</code> en Mac), de la misma manera que regulas el tamaño de una página web.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#160;&#191;D&#243;nde-est&#225;n-las-notas-del-presentador?">&#160;&#191;D&#243;nde est&#225;n las notas del presentador?<a class="anchor-link" href="#&#160;&#191;D&#243;nde-est&#225;n-las-notas-del-presentador?"> </a></h2><p>Puedes abrir las notas del presentador presionando <code>t</code>.</p>
+<p>Para poder usar las notas del presentador necesitas tener al menos 2 pantallas: una pública para compartir y otra para mantener privada.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;C&#243;mo-activo-la-pizarra?">&#191;C&#243;mo activo la pizarra?<a class="anchor-link" href="#&#191;C&#243;mo-activo-la-pizarra?"> </a></h2><p>Es posible activar una pizarra (chalkboard) para realizar anotaciones durante la presentación.</p>
+<p>Para eso, en Edit/Edit Notebook Metadata, es necesario agregar el siguiente texto a la metadata del jupyter notebook:</p>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="err">...</span>
+ <span class="nt">&quot;rise&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;enable_chalkboard&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>IMAGEN</p>
+<p>Durante la presentación se puede utilizar la pizarra como muestra en la siguiente imagen:</p>
+<p>IMAGEN - CHALKBOARD</p>
+<p>Las anotaciones se preservan incluso al cerrar el modo presentación. Sin embargo, no se guardan al cerrar el notebook.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/blog/2021/08/02/tutorial-rise-parte-1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
