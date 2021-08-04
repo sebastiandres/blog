@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sebastiandres.github.io/blog/lectura/-0001/12/31/template-book-review.html</loc>
-<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
-</url>
-<url>
-<loc>https://sebastiandres.github.io/blog/markdown-test/</loc>
-<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
-</url>
-<url>
-<loc>https://sebastiandres.github.io/blog/escritura/-0001/12/31/template-story.html</loc>
-<lastmod>-0001-12-31T23:58:48-05:50</lastmod>
-</url>
-<url>
 <loc>https://sebastiandres.github.io/blog/escritura/2019/01/01/story-cocodrilito-va-al-bano.html</loc>
-<lastmod>2019-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://sebastiandres.github.io/blog/fastpages/markdown/2019/01/01/test-markdown-post.html</loc>
 <lastmod>2019-01-01T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -37,19 +21,19 @@
 <lastmod>2019-09-03T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/2019/09/09/medium-privilegios.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/2019/09/09/post-privilegios.html</loc>
 <lastmod>2019-09-09T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/2019/09/16/medium-debate-Musk-Ma.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/2019/09/16/post-debate-Musk-Ma.html</loc>
 <lastmod>2019-09-16T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/pycon/keynote/2020/02/11/medium-pycon.html</loc>
+<loc>https://sebastiandres.github.io/blog/pycon/keynote/2020/02/11/post-pycon.html</loc>
 <lastmod>2020-02-11T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/fastpages/2020/03/10/Redirect.html</loc>
+<loc>https://sebastiandres.github.io/blog/fastpages/2020/03/10/post-redirect.html</loc>
 <lastmod>2020-03-10T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -57,7 +41,7 @@
 <lastmod>2020-03-19T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/pycon/charlas/2020/03/24/pycon-colombia-charlas.html</loc>
+<loc>https://sebastiandres.github.io/blog/pycon/charlas/2020/03/24/post-pycon-colombia-charlas.html</loc>
 <lastmod>2020-03-24T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -65,7 +49,7 @@
 <lastmod>2020-03-26T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/startup/tecnolog%C3%ADa/2020/07/25/python-as-a-service.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/startup/tecnolog%C3%ADa/2020/07/25/post-python-as-a-service.html</loc>
 <lastmod>2020-07-25T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -73,7 +57,7 @@
 <lastmod>2020-08-03T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/2020/09/24/burnout.html</loc>
+<loc>https://sebastiandres.github.io/blog/opini%C3%B3n/2020/09/24/post-burnout.html</loc>
 <lastmod>2020-09-24T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -105,7 +89,7 @@
 <lastmod>2021-01-22T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://sebastiandres.github.io/blog/policial/comentario/2021/01/23/detectives-y-azar.html</loc>
+<loc>https://sebastiandres.github.io/blog/policial/comentario/2021/01/23/post-detectives-y-azar.html</loc>
 <lastmod>2021-01-23T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -119,6 +103,10 @@
 <url>
 <loc>https://sebastiandres.github.io/blog/escritura/2021/06/01/story-microcuentos-uplanner.html</loc>
 <lastmod>2021-06-01T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/fastpages2/</loc>
+<lastmod>2021-07-20T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/sprint-data-umbrella-eng/</loc>
@@ -135,10 +123,6 @@
 <url>
 <loc>https://sebastiandres.github.io/blog/jupyter/rise/2021/07/28/joining-excels.html</loc>
 <lastmod>2021-07-28T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://sebastiandres.github.io/blog/fastpages2/</loc>
-<lastmod>2021-07-30T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/tutorial-rise/</loc>
@@ -159,6 +143,10 @@
 <url>
 <loc>https://sebastiandres.github.io/blog/tutorial-rise-3/</loc>
 <lastmod>2021-08-02T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://sebastiandres.github.io/blog/fastpages/favicon/2021/08/04/post-favicon.html</loc>
+<lastmod>2021-08-04T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://sebastiandres.github.io/blog/about/</loc>
