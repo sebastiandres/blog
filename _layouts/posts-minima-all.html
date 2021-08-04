@@ -12,6 +12,7 @@ layout: default
   <!-- Assign all posts to variable -->
   {% assign rawposts = site.posts %}
 
+  <p> post.layout: {{post.layout}}</p>
   <!-- Hide posts if front matter flag hide:true -->
   {% assign posts = ''|split:'' %}
   {% for post in rawposts %}
@@ -19,8 +20,8 @@ layout: default
       {% if post.layout != "story" %}
         {% if post.layout != "book-review" %}
           {% assign posts = posts|push:post%}
-          {% endif %}
         {% endif %}
+      {% endif %}
     {% endif %}
   {% endfor %}
 
