@@ -19,7 +19,6 @@ layout: default
       {% if post.layout != "story" %}
         {% if post.layout != "book-review" %}
           {% assign posts = posts|push:post%}
-          <p> post.layout: {{post.layout}}</p>
         {% endif %}
       {% endif %}
     {% endif %}
