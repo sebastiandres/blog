@@ -7,6 +7,7 @@ title: Finanzas Modernas
 description: Educación y manejo en Web y Apps.
 categories: [opinión, finanzas]
 permalink: /consejos-finanzas/
+image: images/preview/money1.jpg
 comments: true
 ---
 

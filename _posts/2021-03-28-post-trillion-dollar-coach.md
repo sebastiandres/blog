@@ -7,7 +7,6 @@ title: Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de d�
 description: "¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?"
 categories: [fastpages, markdown]
 image: images/logo.png
-permalink: /markdown-test/
 comments: true
 ---
 
