@@ -6,6 +6,7 @@ layout: story
 title: Microcuentos 2021
 description: Cuentos enviados a Santiago en 100 palabras
 categories: [escritura]
+image: images/preview/story2.jpg
 comments: true
 ---
 

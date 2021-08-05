@@ -6,7 +6,7 @@ layout: story
 title: Cocodrilito aprender a ir al baño
 description: "Un cuento escrito a 2 manos con mi hijo"
 categories: [escritura]
-image: 
+image: images/preview/cocodrilo.jpg
 comments: true
 ---
 

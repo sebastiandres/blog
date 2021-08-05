@@ -6,6 +6,7 @@ layout: story
 title: Microcuentos tecnología
 description: Cuentos enviados a concurso uPlanner en 100 palabras
 categories: [escritura]
+image: images/preview/story3.jpg
 comments: true
 ---
 

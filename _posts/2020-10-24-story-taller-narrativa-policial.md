@@ -6,6 +6,7 @@ layout: story
 title: Trabajando en el SML 
 description: Taller de narrativa policial
 categories: [escritura]
+image: images/preview/crimen1.jpg
 comments: true
 ---
 

@@ -6,6 +6,7 @@ layout: story
 title: Microcuentos 2020
 description: Cuentos enviados a Santiago en 100 palabras
 categories: [escritura]
+image: images/preview/story1.jpg
 comments: true
 ---
 
