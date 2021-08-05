@@ -8,6 +8,7 @@ author: Cecilia Aragon
 genre: Biografía
 description: "Biografía"
 categories: [lectura]
+image: images/preview/book-review.jpg
 comments: false
 ---
 
