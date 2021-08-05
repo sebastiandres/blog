@@ -6,7 +6,7 @@ layout: post
 title: Los Tres Príncipes de Serendip
 description: "Un antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento."
 categories: [policial, cuento]
-image: images/preview/story2.png
+image: images/preview/story2.jpg
 comments: true
 ---
 

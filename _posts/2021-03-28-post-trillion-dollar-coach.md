@@ -6,7 +6,7 @@ layout: post
 title: Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares
 description: "¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?"
 categories: [fastpages, markdown]
-image: images/preview/preview.jpg
+image: images/2021-03-28-trillion-dollar-coach/preview.jpg
 comments: true
 ---
 

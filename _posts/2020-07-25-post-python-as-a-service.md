@@ -6,7 +6,7 @@ layout: post
 title: "PaaS: Python as a Service"
 description: Entregando python en la nube, más fácil que nunca.
 categories: [opinión, startup, tecnología]
-image: images/2020-07-25-python-as-a-service/paas.gif
+image: images/2020-07-25-python-as-a-service/pass.gif
 comments: true
 ---
 
@@ -35,7 +35,7 @@ Tengo buena memoria para algunas cosas, pero los cumpleaños no se cuentan entre
 
 La situación sería tan fácil como se muestra en el siguiente gif.
 
-![]({{ site.baseurl }}/images/2020-07-25-python-as-a-service/paas.gif "MyBinder carga el jupyter notebook, donde se instala la librería que hemos creado y ya se puede ejecutar.")
+![]({{ site.baseurl }}/images/2020-07-25-python-as-a-service/pass.gif "MyBinder carga el jupyter notebook, donde se instala la librería que hemos creado y ya se puede ejecutar.")
 
 Es posible configurar MyBinder (pero no en Google Colab) para que la librería ya venga instalada por defecto.
 
