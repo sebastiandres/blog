@@ -7,6 +7,7 @@ description: Y está sobrevalorada
 categories: [opinion]
 layout: post
 permalink: /rutina-optima/
+image: images/preview/rutina-optima.jpg
 comments: true
 ---
 
