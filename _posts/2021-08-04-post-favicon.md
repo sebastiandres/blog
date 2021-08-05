@@ -14,12 +14,12 @@ Ya había reemplazado el favicon del sitio, pero no me terminaba de convencer.
 Hoy mirando el logo de python me di cuenta que podía facilmente transformarse en una S,
 que me pareció muy adecuado para un favicon simple pero memorable. 
 
-![](images/2021-08-04-favicon/transformacion.png)
+![]({{ site.baseurl}}/images/2021-08-04-favicon/transformacion.png "Transformación del logo de python al favicon")
 
 La imagen final tiene algunos detalles en los bordes, pero no es relevante
 dado que al convertirlo a favicon se reduce enormemente el tamaño.
 
-![](images/2021-08-04-favicon/preview.png)
+![]({{ site.baseurl}}/images/2021-08-04-favicon/preview.png "Favicon obtenido")
 
 Hay varios servicios para generar un favicon a partir de una imagen, en este caso obtuve mejores resultados con [favicon.io](https://favicon.io/).
 
