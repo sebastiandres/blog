@@ -6,7 +6,7 @@ layout: post
 title: "El detective: entre la lógica y el azar"
 description: "Las raíces de la serendipia y la novela policial clásica en un cuento persa"
 categories: [policial, comentario]
-image: images/logo.png
+image: images/preview/story1.png
 comments: true
 ---
 

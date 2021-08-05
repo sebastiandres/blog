@@ -6,7 +6,7 @@ layout: post
 title: "Test 1: Post mediante Markdown"
 description: "Un ejempo minimal usando markdown con fastpages."
 categories: [fastpages, markdown]
-image: images/logo.png
+image: images/preview/trex.png
 permalink: /markdown-test/
 comments: true
 ---

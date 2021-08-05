@@ -6,7 +6,7 @@ layout: post
 title: "Fastpages 2: reloaded"
 description: "Las grandes ideas nunca mueren."
 categories: [fastpages]
-image: images/logo.png
+image: images/preview/fastpages.png
 permalink: /fastpages2/
 comments: true
 ---

@@ -6,6 +6,7 @@ layout: post
 title: Pycon Colombia 2020 - Las charlas
 description: Enlaces a los repositorios y videos.
 categories: [pycon, charlas]
+image: images/preview/pycon_co_2020.png
 comments: true
 ---
 

@@ -6,6 +6,7 @@ layout: post
 title: Reconociendo nuestros privilegios
 description: Reflexiones sobre el talento, la suerte y la pobreza. 
 categories: [opinión]
+image: images/preview/privilegio.jpg
 comments: true
 ---
 

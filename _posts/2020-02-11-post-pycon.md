@@ -6,6 +6,7 @@ title: Keynotes de la PyCon 2020 Colombia
 description: Videos, slides y resúmenes. 
 layout: post
 categories: [pycon, keynote]
+image: images/preview/pycon_co_2020.png
 comments: true
 ---
 
