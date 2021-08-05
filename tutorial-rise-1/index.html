@@ -3,19 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | sebastiandres</title>
+<title>Tutorial de RISE - parte 1 | sebastiandres</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Tutorial de RISE - parte 1" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Tecnología, literatura y opinión." />
-<meta property="og:description" content="Tecnología, literatura y opinión." />
-<link rel="canonical" href="https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html" />
-<meta property="og:url" content="https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html" />
+<meta name="description" content="Aspectos básicos para hacer presentaciones interactivas con jupyter notebooks" />
+<meta property="og:description" content="Aspectos básicos para hacer presentaciones interactivas con jupyter notebooks" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/tutorial-rise-1/" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/tutorial-rise-1/" />
 <meta property="og:site_name" content="sebastiandres" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/rise.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-02T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/2021/08/02/tutorial-rise-parte-1.html"},"description":"Tecnología, literatura y opinión.","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/tutorial-rise-1/","@type":"BlogPosting","headline":"Tutorial de RISE - parte 1","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/rise.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise-1/"},"description":"Aspectos básicos para hacer presentaciones interactivas con jupyter notebooks","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -96,7 +97,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE - parte 1</h1><p class="page-description">Aspectos básicos para hacer presentaciones interactivas con jupyter notebooks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
         Aug 2, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -106,6 +107,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#rise">rise</a>
+        
+      
+      </p>
     
 
     
@@ -133,7 +144,18 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="# ¿Qué-es-RISE?"> ¿Qué es RISE? </a></li>
+<li class="toc-entry toc-h2"><a href="# ¿Cómo-instalar?"> ¿Cómo instalar? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Qué-contenido-poner?">¿Qué contenido poner? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-configurar-las-diapositivas?">¿Cómo configurar las diapositivas? </a></li>
+<li class="toc-entry toc-h2"><a href="# ¿Cómo-moverse-por-las-slides?"> ¿Cómo moverse por las slides? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Qué-opciones-hay?">¿Qué opciones hay? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Se-puede-editar-durante-la-presentación?">¿Se puede editar durante la presentación? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-controlo-el-tamaño?">¿Cómo controlo el tamaño? </a></li>
+<li class="toc-entry toc-h2"><a href="# ¿Dónde-están-las-notas-del-presentador?"> ¿Dónde están las notas del presentador? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-activo-la-pizarra?">¿Cómo activo la pizarra? </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -142,40 +164,32 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tutorial-de-RISE---parte-1">Tutorial de RISE - parte 1<a class="anchor-link" href="#Tutorial-de-RISE---parte-1"> </a></h3><blockquote><p>Aspectos básicos para hacer presentaciones interactivas con jupyter notebook</p>
-</blockquote>
-<ul>
-<li>featured:false- hide: false</li>
-<li>toc: true</li>
-<li>badges: true</li>
-<li>comments: true</li>
-<li>categories: [jupyter, rise]</li>
-<li>image: 2021-08-01-rise/basic_usage.gif</li>
-<li>permalink: /tutorial-rise-1/</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Esta es la parte 1 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#160;&#191;Qu&#233;-es-RISE?">&#160;&#191;Qu&#233; es RISE?<a class="anchor-link" href="#&#160;&#191;Qu&#233;-es-RISE?"> </a></h2><p>RISE es una extensión a jupyter notebook que, en lugar de desplegar las celdas en una larga página web, las despliega en una presentación usando la librería <a href="https://revealjs.com/">revealjs</a>. Sigue siendo una página web, pero se controla el progreso de las celdas.</p>
+<h2 id=" ¿Qué-es-RISE?">
+<a class="anchor" href="#%C2%A0%C2%BFQu%C3%A9-es-RISE?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Qué es RISE?<a class="anchor-link" href="#%C2%A0%C2%BFQu%C3%A9-es-RISE?"> </a>
+</h2>
+<p>RISE es una extensión a jupyter notebook que, en lugar de desplegar las celdas en una larga página web, las despliega en una presentación usando la librería <a href="https://revealjs.com/">revealjs</a>. Sigue siendo una página web, pero se controla el progreso de las celdas.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#160;&#191;C&#243;mo-instalar?">&#160;&#191;C&#243;mo instalar?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-instalar?"> </a></h2><p>La instalación de la extensión RISE es extremadamente fácil.
+<h2 id=" ¿Cómo-instalar?">
+<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo instalar?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?"> </a>
+</h2>
+<p>La instalación de la extensión RISE es extremadamente fácil.
 Basta con usar pip o conda:</p>
 
 <pre><code>pip install rise</code></pre>
@@ -191,38 +205,58 @@ Basta con usar pip o conda:</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;Qu&#233;-contenido-poner?">&#191;Qu&#233; contenido poner?<a class="anchor-link" href="#&#191;Qu&#233;-contenido-poner?"> </a></h2><p>Puedes mezclar contenido usando las celdas de markdown y código, según necesites:</p>
+<h2 id="¿Qué-contenido-poner?">
+<a class="anchor" href="#%C2%BFQu%C3%A9-contenido-poner?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué contenido poner?<a class="anchor-link" href="#%C2%BFQu%C3%A9-contenido-poner?"> </a>
+</h2>
+<p>Puedes mezclar contenido usando las celdas de markdown y código, según necesites:</p>
 <ul>
-<li><strong>Markdown</strong>: texto, latex, imágenes, tablas, etc.</li>
-<li><strong>Código</strong>: código, gráficos simples o interactivos, videos, sonido, iframes, javascript, entre otros.</li>
+<li>
+<strong>Markdown</strong>: texto, latex, imágenes, tablas, etc.</li>
+<li>
+<strong>Código</strong>: código, gráficos simples o interactivos, videos, sonido, iframes, javascript, entre otros.</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;C&#243;mo-configurar-las-diapositivas?">&#191;C&#243;mo configurar las diapositivas?<a class="anchor-link" href="#&#191;C&#243;mo-configurar-las-diapositivas?"> </a></h2><p>A cada celda del notebook se le agregará metadata para saber cómo mostrarla en la presentación. El primer paso es entonces ver el tipo de slide de la celda. Para eso, deber ir a <code>View/Cell Toolbar/Slideshow</code>:</p>
+<h2 id="¿Cómo-configurar-las-diapositivas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-configurar-las-diapositivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo configurar las diapositivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-configurar-las-diapositivas?"> </a>
+</h2>
+<p>A cada celda del notebook se le agregará metadata para saber cómo mostrarla en la presentación. El primer paso es entonces ver el tipo de slide de la celda. Para eso, deber ir a <code>View/Cell Toolbar/Slideshow</code>:</p>
 <p>IMAGE</p>
 <p>Existen varios tipos de celda con distintas funciones:</p>
 <ul>
-<li><code>-</code>: valor por defecto. Se concatena a la slide anterior.</li>
-<li><code>Slide</code>: iniciar una nueva diapositiva.</li>
-<li><code>Sub-slide</code>: iniciar una nueva sub-diapositiva.</li>
-<li><code>Fragment</code>: permite animar progresivamente. </li>
-<li><code>Skip</code>: salta (no muestra) la celda.</li>
-<li><code>Notes</code>: notas para el presentador.</li>
+<li>
+<code>-</code>: valor por defecto. Se concatena a la slide anterior.</li>
+<li>
+<code>Slide</code>: iniciar una nueva diapositiva.</li>
+<li>
+<code>Sub-slide</code>: iniciar una nueva sub-diapositiva.</li>
+<li>
+<code>Fragment</code>: permite animar progresivamente. </li>
+<li>
+<code>Skip</code>: salta (no muestra) la celda.</li>
+<li>
+<code>Notes</code>: notas para el presentador.</li>
 </ul>
 <p>Diagrama con estados.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#160;&#191;C&#243;mo-moverse-por-las-slides?">&#160;&#191;C&#243;mo moverse por las slides?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-moverse-por-las-slides?"> </a></h2><ul>
+<h2 id=" ¿Cómo-moverse-por-las-slides?">
+<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo moverse por las slides?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?"> </a>
+</h2>
+<ul>
 <li>Se accede a la próxima diapositiva o fragmento con <code>Espacio</code> (o la flecha derecha).</li>
 <li>Se retrocede a la diapositiva o fragmento anterior con <code>Shift Espacio</code> (o la flecha izquierda).</li>
 <li>Se avanza a la proxima sub-diapositiva con <code>Page Up</code>.</li>
@@ -233,46 +267,66 @@ Basta con usar pip o conda:</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;Qu&#233;-opciones-hay?">&#191;Qu&#233; opciones hay?<a class="anchor-link" href="#&#191;Qu&#233;-opciones-hay?"> </a></h2><p>Las funcionalidades se controlan con los siguientes botones:</p>
-<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/botones.png" alt="" /></p>
+<h2 id="¿Qué-opciones-hay?">
+<a class="anchor" href="#%C2%BFQu%C3%A9-opciones-hay?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué opciones hay?<a class="anchor-link" href="#%C2%BFQu%C3%A9-opciones-hay?"> </a>
+</h2>
+<p>Las funcionalidades se controlan con los siguientes botones:</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/botones.png" alt=""></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;Se-puede-editar-durante-la-presentaci&#243;n?">&#191;Se puede editar durante la presentaci&#243;n?<a class="anchor-link" href="#&#191;Se-puede-editar-durante-la-presentaci&#243;n?"> </a></h2><p>Es posible editar y ejecutar las celdas de markdown y de código durante la presentación. 
+<h2 id="¿Se-puede-editar-durante-la-presentación?">
+<a class="anchor" href="#%C2%BFSe-puede-editar-durante-la-presentaci%C3%B3n?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Se puede editar durante la presentación?<a class="anchor-link" href="#%C2%BFSe-puede-editar-durante-la-presentaci%C3%B3n?"> </a>
+</h2>
+<p>Es posible editar y ejecutar las celdas de markdown y de código durante la presentación. 
 Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt Enter</code> para ejecutarla.</p>
 <p>IMAGEN</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;C&#243;mo-controlo-el-tama&#241;o?">&#191;C&#243;mo controlo el tama&#241;o?<a class="anchor-link" href="#&#191;C&#243;mo-controlo-el-tama&#241;o?"> </a></h2><p>Un problema común es que al conectar el computador a otra pantalla o datashow, no se alcanza a ver en la diapositiva todo el código, texto o imagen.</p>
+<h2 id="¿Cómo-controlo-el-tamaño?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-controlo-el-tama%C3%B1o?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo controlo el tamaño?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-controlo-el-tama%C3%B1o?"> </a>
+</h2>
+<p>Un problema común es que al conectar el computador a otra pantalla o datashow, no se alcanza a ver en la diapositiva todo el código, texto o imagen.</p>
 <p>Lo único que debes hacer es usar usar <code>Ctrl +</code> y <code>Ctrl -</code> para regular el tamaño (<code>Command +</code>y <code>Command -</code> en Mac), de la misma manera que regulas el tamaño de una página web.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#160;&#191;D&#243;nde-est&#225;n-las-notas-del-presentador?">&#160;&#191;D&#243;nde est&#225;n las notas del presentador?<a class="anchor-link" href="#&#160;&#191;D&#243;nde-est&#225;n-las-notas-del-presentador?"> </a></h2><p>Puedes abrir las notas del presentador presionando <code>t</code>.</p>
+<h2 id=" ¿Dónde-están-las-notas-del-presentador?">
+<a class="anchor" href="#%C2%A0%C2%BFD%C3%B3nde-est%C3%A1n-las-notas-del-presentador?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Dónde están las notas del presentador?<a class="anchor-link" href="#%C2%A0%C2%BFD%C3%B3nde-est%C3%A1n-las-notas-del-presentador?"> </a>
+</h2>
+<p>Puedes abrir las notas del presentador presionando <code>t</code>.</p>
 <p>Para poder usar las notas del presentador necesitas tener al menos 2 pantallas: una pública para compartir y otra para mantener privada.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#191;C&#243;mo-activo-la-pizarra?">&#191;C&#243;mo activo la pizarra?<a class="anchor-link" href="#&#191;C&#243;mo-activo-la-pizarra?"> </a></h2><p>Es posible activar una pizarra (chalkboard) para realizar anotaciones durante la presentación.</p>
+<h2 id="¿Cómo-activo-la-pizarra?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-activo-la-pizarra?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo activo la pizarra?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-activo-la-pizarra?"> </a>
+</h2>
+<p>Es posible activar una pizarra (chalkboard) para realizar anotaciones durante la presentación.</p>
 <p>Para eso, en Edit/Edit Notebook Metadata, es necesario agregar el siguiente texto a la metadata del jupyter notebook:</p>
 <div class="highlight"><pre><span></span><span class="p">{</span>
  <span class="err">...</span>
- <span class="nt">&quot;rise&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;enable_chalkboard&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+ <span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"enable_chalkboard"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 <p>IMAGEN</p>
@@ -287,7 +341,15 @@ Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt
 
 
 
-  </div><a class="u-url" href="/blog/2021/08/02/tutorial-rise-parte-1.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/tutorial-rise-1/" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
