@@ -103,7 +103,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -146,11 +146,11 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="# ¿Qué-es-RISE?"> ¿Qué es RISE? </a></li>
-<li class="toc-entry toc-h2"><a href="#¿Qué-contenido-poner?">¿Qué contenido poner? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Qué-contenido-puedo-poner?">¿Qué contenido puedo poner? </a></li>
 <li class="toc-entry toc-h2"><a href="# ¿Cómo-instalar?"> ¿Cómo instalar? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-configurar-lo-que-está-en-cada-diapositivas?">¿Cómo configurar lo que está en cada diapositivas? </a></li>
 <li class="toc-entry toc-h2"><a href="# ¿Cómo-moverse-por-las-slides?"> ¿Cómo moverse por las slides? </a></li>
-<li class="toc-entry toc-h2"><a href="#¿Cómo-son-las-transiciones?">¿Cómo son las transiciones? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-se-configuran-las-diapositivas?">¿Cómo se configuran las diapositivas? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Qué-opciones-hay?">¿Qué opciones hay? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Se-puede-editar-durante-la-presentación?">¿Se puede editar durante la presentación? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-controlo-el-tamaño?">¿Cómo controlo el tamaño? </a></li>
@@ -179,7 +179,8 @@ window.onload = wrap_img;
 <h2 id=" ¿Qué-es-RISE?">
 <a class="anchor" href="#%C2%A0%C2%BFQu%C3%A9-es-RISE?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Qué es RISE?<a class="anchor-link" href="#%C2%A0%C2%BFQu%C3%A9-es-RISE?"> </a>
 </h2>
-<p>RISE es una extensión a jupyter notebook que, en lugar de desplegar las celdas en una larga página web, las despliega en una presentación usando la librería <a href="https://revealjs.com/">revealjs</a>. Sigue siendo una página web, pero se controla el progreso de las celdas.</p>
+<p>RISE es una extensión a jupyter notebook que, en lugar de desplegar las celdas en una larga página web, las despliega en una presentación usando la librería de javascript <a href="https://revealjs.com/">reveal.js</a>.</p>
+<p>Sigue siendo una página web (al igual que el notebook), pero las celdas se agrupan en diapositivas.</p>
 
 </div>
 </div>
@@ -187,8 +188,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="¿Qué-contenido-poner?">
-<a class="anchor" href="#%C2%BFQu%C3%A9-contenido-poner?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué contenido poner?<a class="anchor-link" href="#%C2%BFQu%C3%A9-contenido-poner?"> </a>
+<h2 id="¿Qué-contenido-puedo-poner?">
+<a class="anchor" href="#%C2%BFQu%C3%A9-contenido-puedo-poner?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué contenido puedo poner?<a class="anchor-link" href="#%C2%BFQu%C3%A9-contenido-puedo-poner?"> </a>
 </h2>
 <p>Puedes mezclar contenido usando las celdas de markdown y código, según necesites:</p>
 <ul>
@@ -231,7 +232,7 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
+<p>También puedes agregar <code>rise</code> a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
 <p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
 
 </div>
@@ -243,7 +244,8 @@ Basta con usar pip o conda:</p>
 <h2 id="¿Cómo-configurar-lo-que-está-en-cada-diapositivas?">
 <a class="anchor" href="#%C2%BFC%C3%B3mo-configurar-lo-que-est%C3%A1-en-cada-diapositivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo configurar lo que está en cada diapositivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-configurar-lo-que-est%C3%A1-en-cada-diapositivas?"> </a>
 </h2>
-<p>Se requiere todavía un paso adicional. En el menú de jupyter notebook, es necesario seleccionar <code>View/Cell Toolbar/Slideshow</code> para que permita configurar el tipo de celda para diapositiva.</p>
+<p>Paciencia, se requiere todavía un paso adicional.</p>
+<p>En el menú de jupyter notebook, es necesario seleccionar <code>View/Cell Toolbar/Slideshow</code> para que permita configurar el tipo de celda para diapositiva.</p>
 <p>Esto se requiere porque a cada celda del notebook se le agregará metadata para saber en que diapositiva debe ir (o si se debe saltar).</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install3.png" alt=""></p>
 
@@ -272,8 +274,9 @@ Basta con usar pip o conda:</p>
 <li>Se avanza a la proxima sub-diapositiva con <code>Page Up</code>.</li>
 <li>Se retrocede la sub-diapositiva anterior con <code>Page Down</code>.</li>
 </ul>
+<p>Una diferencia de una presentación típica de PowerPoint es que existen 2 dimensiones: las diapositivas (slides) que avanzan de izquierda a derecha como es tradicional, pero también sub-diapositivas (subslides) que son slides opcionales y que avanzan de arriba a abajo.</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/revealjs-vertical-slides.gif" alt="" title="Gif oficial de reveal.js https://revealjs.com/vertical-slides/"></p>
-<p>OBS: En general, es dificil recordar el orden de las slides y sub-slides. Yo personalmente nunca uso sub-slides por esta razón y prefiero solo tener orden "horizontal".</p>
+<p>Observación: En general, es dificil recordar el orden de las slides y sub-slides. Yo personalmente nunca uso sub-slides por esta razón y prefiero solo tener orden "horizontal".</p>
 
 </div>
 </div>
@@ -281,25 +284,24 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="¿Cómo-son-las-transiciones?">
-<a class="anchor" href="#%C2%BFC%C3%B3mo-son-las-transiciones?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo son las transiciones?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-son-las-transiciones?"> </a>
+<h2 id="¿Cómo-se-configuran-las-diapositivas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-se-configuran-las-diapositivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo se configuran las diapositivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-se-configuran-las-diapositivas?"> </a>
 </h2>
-<p>Existen varios tipos de celda con distintas funciones:</p>
+<p>Existen varios tipos de celda con distintas funcionalidades:</p>
 <ul>
 <li>
-<code>-</code>: valor por defecto. Se concatena a la slide anterior.</li>
+<code>-</code>: valor por defecto. La celda se muestra con la slide anterior.</li>
 <li>
-<code>Slide</code>: iniciar una nueva diapositiva.</li>
+<code>Slide</code>: inicia una nueva diapositiva (dirección horizontal).</li>
 <li>
-<code>Sub-slide</code>: iniciar una nueva sub-diapositiva.</li>
+<code>Sub-slide</code>: iniciar una nueva sub-diapositiva (dirección vertical).</li>
 <li>
-<code>Fragment</code>: permite animar progresivamente. </li>
+<code>Fragment</code>: se concatena a la celda anterior, pero no se muestra inmediatamente. </li>
 <li>
-<code>Skip</code>: salta (no muestra) la celda.</li>
+<code>Skip</code>: no se muestra la celda en las diapositivas.</li>
 <li>
-<code>Notes</code>: notas para el presentador.</li>
+<code>Notes</code>: No se muestra en las diapositivas, sólo se muestra en las notas para el presentador.</li>
 </ul>
-<p><strong>Diagrama con estados.</strong></p>
 
 </div>
 </div>
@@ -310,6 +312,16 @@ Basta con usar pip o conda:</p>
 <h2 id="¿Qué-opciones-hay?">
 <a class="anchor" href="#%C2%BFQu%C3%A9-opciones-hay?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué opciones hay?<a class="anchor-link" href="#%C2%BFQu%C3%A9-opciones-hay?"> </a>
 </h2>
+<p>Existen múltiples funcionalides accesibles con el teclado durante la presentación, pero las principales a recordar son:</p>
+<ul>
+<li>
+<code>?</code>: ver todos los shortcuts.</li>
+<li>
+<code>,</code>: ocultar los botones.</li>
+<li>
+<code>\</code>: poner la pantalla en negro. Útil para discutir algo sin distracciones visuales.</li>
+<li>``:</li>
+</ul>
 <p>Las funcionalidades se controlan con los siguientes botones:</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/botones.png" alt=""></p>
 
@@ -379,6 +391,7 @@ Basta con usar pip o conda:</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Durante la presentación se puede utilizar la pizarra haciendo click en los íconos, que permiten dibujar en una pizarra o sobre las diapositivas.</p>
+<p>Es posible cambiar de color de lapiz presionando <code>s</code> y <code>q</code>. Se puede borrar la pizarra con <code>-</code>.</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/pizarra.gif" alt=""></p>
 <p>Las anotaciones se preservan incluso al cerrar el modo presentación. Sin embargo, no se guardan al cerrar el notebook.</p>
 
