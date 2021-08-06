@@ -148,8 +148,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="# ¿Qué-es-RISE?"> ¿Qué es RISE? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Qué-contenido-poner?">¿Qué contenido poner? </a></li>
 <li class="toc-entry toc-h2"><a href="# ¿Cómo-instalar?"> ¿Cómo instalar? </a></li>
-<li class="toc-entry toc-h2"><a href="#¿Cómo-configurar-las-diapositivas?">¿Cómo configurar las diapositivas? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-configurar-lo-que-está-en-cada-diapositivas?">¿Cómo configurar lo que está en cada diapositivas? </a></li>
 <li class="toc-entry toc-h2"><a href="# ¿Cómo-moverse-por-las-slides?"> ¿Cómo moverse por las slides? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-son-las-transiciones?">¿Cómo son las transiciones? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Qué-opciones-hay?">¿Qué opciones hay? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Se-puede-editar-durante-la-presentación?">¿Se puede editar durante la presentación? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-controlo-el-tamaño?">¿Cómo controlo el tamaño? </a></li>
@@ -221,7 +222,7 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Eso hará que se agregué el botón de iniciar presentación (destacado en rojo):</p>
+<p>Eso hará que se agregue el botón de iniciar presentación (destacado en rojo).</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install2.png" alt=""></p>
 
 </div>
@@ -230,7 +231,20 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
+<p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="¿Cómo-configurar-lo-que-está-en-cada-diapositivas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-configurar-lo-que-est%C3%A1-en-cada-diapositivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo configurar lo que está en cada diapositivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-configurar-lo-que-est%C3%A1-en-cada-diapositivas?"> </a>
+</h2>
 <p>Se requiere todavía un paso adicional. En el menú de jupyter notebook, es necesario seleccionar <code>View/Cell Toolbar/Slideshow</code> para que permita configurar el tipo de celda para diapositiva.</p>
+<p>Esto se requiere porque a cada celda del notebook se le agregará metadata para saber en que diapositiva debe ir (o si se debe saltar).</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install3.png" alt=""></p>
 
 </div>
@@ -248,8 +262,18 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
-<p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
+<h2 id=" ¿Cómo-moverse-por-las-slides?">
+<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo moverse por las slides?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?"> </a>
+</h2>
+<p>Al hacer click en el botón "Iniciar presentación", la presentación se iniciará en la celda que esté activa.</p>
+<ul>
+<li>Se accede a la próxima diapositiva o fragmento con <code>Espacio</code> (o la flecha derecha).</li>
+<li>Se retrocede a la diapositiva o fragmento anterior con <code>Shift Espacio</code> (o la flecha izquierda).</li>
+<li>Se avanza a la proxima sub-diapositiva con <code>Page Up</code>.</li>
+<li>Se retrocede la sub-diapositiva anterior con <code>Page Down</code>.</li>
+</ul>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/revealjs-vertical-slides.gif" alt="" title="Gif oficial de reveal.js https://revealjs.com/vertical-slides/"></p>
+<p>OBS: En general, es dificil recordar el orden de las slides y sub-slides. Yo personalmente nunca uso sub-slides por esta razón y prefiero solo tener orden "horizontal".</p>
 
 </div>
 </div>
@@ -257,11 +281,9 @@ Basta con usar pip o conda:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="¿Cómo-configurar-las-diapositivas?">
-<a class="anchor" href="#%C2%BFC%C3%B3mo-configurar-las-diapositivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo configurar las diapositivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-configurar-las-diapositivas?"> </a>
+<h2 id="¿Cómo-son-las-transiciones?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-son-las-transiciones?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo son las transiciones?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-son-las-transiciones?"> </a>
 </h2>
-<p>A cada celda del notebook se le agregará metadata para saber cómo mostrarla en la presentación. El primer paso es entonces ver el tipo de slide de la celda. Para eso, deber ir a <code>View/Cell Toolbar/Slideshow</code>:</p>
-<p>IMAGE</p>
 <p>Existen varios tipos de celda con distintas funciones:</p>
 <ul>
 <li>
@@ -277,24 +299,7 @@ Basta con usar pip o conda:</p>
 <li>
 <code>Notes</code>: notas para el presentador.</li>
 </ul>
-<p><strong>Diagrama con estados.*</strong></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id=" ¿Cómo-moverse-por-las-slides?">
-<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo moverse por las slides?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-moverse-por-las-slides?"> </a>
-</h2>
-<ul>
-<li>Se accede a la próxima diapositiva o fragmento con <code>Espacio</code> (o la flecha derecha).</li>
-<li>Se retrocede a la diapositiva o fragmento anterior con <code>Shift Espacio</code> (o la flecha izquierda).</li>
-<li>Se avanza a la proxima sub-diapositiva con <code>Page Up</code>.</li>
-<li>Se retrocede la sub-diapositiva anterior con <code>Page Down</code>.</li>
-</ul>
-<p>OBS: En general, es dificil recordar el orden de las slides y sub-slides. Yo personalmente nunca uso sub-slides por esta razón.</p>
+<p><strong>Diagrama con estados.</strong></p>
 
 </div>
 </div>
@@ -365,6 +370,7 @@ Basta con usar pip o conda:</p>
 <span class="p">}</span>
 </pre></div>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/metadata.gif" alt=""></p>
+<p><strong>Observación: Luego de editar la metadata, debes cerrar (detener) el notebook y volver a abrirlo, para que la metadata se cargue.</strong></p>
 
 </div>
 </div>
