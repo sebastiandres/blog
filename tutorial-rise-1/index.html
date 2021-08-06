@@ -146,8 +146,8 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="# ¿Qué-es-RISE?"> ¿Qué es RISE? </a></li>
-<li class="toc-entry toc-h2"><a href="# ¿Cómo-instalar?"> ¿Cómo instalar? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Qué-contenido-poner?">¿Qué contenido poner? </a></li>
+<li class="toc-entry toc-h2"><a href="# ¿Cómo-instalar?"> ¿Cómo instalar? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-configurar-las-diapositivas?">¿Cómo configurar las diapositivas? </a></li>
 <li class="toc-entry toc-h2"><a href="# ¿Cómo-moverse-por-las-slides?"> ¿Cómo moverse por las slides? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Qué-opciones-hay?">¿Qué opciones hay? </a></li>
@@ -186,28 +186,6 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id=" ¿Cómo-instalar?">
-<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo instalar?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?"> </a>
-</h2>
-<p>La instalación de la extensión RISE es extremadamente fácil.
-Basta con usar pip o conda:</p>
-
-<pre><code>pip install rise</code></pre>
-<p>o</p>
-
-<pre><code>conda install -c conda-forge rise</code></pre>
-<p>COLOCAR IMÁGEN SIN RISE</p>
-<p>IMAGEN PIP</p>
-<p>IMAGEN CON RISE</p>
-<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
-<p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="¿Qué-contenido-poner?">
 <a class="anchor" href="#%C2%BFQu%C3%A9-contenido-poner?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Qué contenido poner?<a class="anchor-link" href="#%C2%BFQu%C3%A9-contenido-poner?"> </a>
 </h2>
@@ -218,6 +196,60 @@ Basta con usar pip o conda:</p>
 <li>
 <strong>Código</strong>: código, gráficos simples o interactivos, videos, sonido, iframes, javascript, entre otros.</li>
 </ul>
+<p>Como regla general, si se muestra correctamente en el notebook, se verá bien en la diapositiva. ¡Sé creativo!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id=" ¿Cómo-instalar?">
+<a class="anchor" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?" aria-hidden="true"><span class="octicon octicon-link"></span></a> ¿Cómo instalar?<a class="anchor-link" href="#%C2%A0%C2%BFC%C3%B3mo-instalar?"> </a>
+</h2>
+<p>La instalación de la extensión RISE es extremadamente fácil.
+Basta con usar pip o conda:</p>
+
+<pre><code>pip install rise</code></pre>
+<p>o</p>
+
+<pre><code>conda install -c conda-forge rise</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Eso hará que se agregué el botón de iniciar presentación (destacado en rojo):</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install2.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se requiere todavía un paso adicional. En el menú de jupyter notebook, es necesario seleccionar <code>View/Cell Toolbar/Slideshow</code> para que permita configurar el tipo de celda para diapositiva.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install3.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Eso dejará todo configurado para poder seleccionar el tipo de celda respecto a la diapositiva.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/install4.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>También puedes agregarlo a tu archivo <code>requirements.txt</code> para que se instale automáticamente al generar un ambiente.</p>
+<p>En caso de tener problemas, revisa los <a href="https://rise.readthedocs.io/en/stable/installation.html">detalles adicionales de instalación</a>.</p>
 
 </div>
 </div>
@@ -245,7 +277,7 @@ Basta con usar pip o conda:</p>
 <li>
 <code>Notes</code>: notas para el presentador.</li>
 </ul>
-<p>Diagrama con estados.</p>
+<p><strong>Diagrama con estados.*</strong></p>
 
 </div>
 </div>
@@ -285,9 +317,10 @@ Basta con usar pip o conda:</p>
 <h2 id="¿Se-puede-editar-durante-la-presentación?">
 <a class="anchor" href="#%C2%BFSe-puede-editar-durante-la-presentaci%C3%B3n?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Se puede editar durante la presentación?<a class="anchor-link" href="#%C2%BFSe-puede-editar-durante-la-presentaci%C3%B3n?"> </a>
 </h2>
-<p>Es posible editar y ejecutar las celdas de markdown y de código durante la presentación. 
-Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt Enter</code> para ejecutarla.</p>
-<p>IMAGEN</p>
+<p>¡Sí!</p>
+<p>Es posible editar y ejecutar las celdas de markdown y de código durante la presentación.</p>
+<p>Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt Enter</code> para ejecutarla.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/editar.gif" alt=""></p>
 
 </div>
 </div>
@@ -300,6 +333,7 @@ Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt
 </h2>
 <p>Un problema común es que al conectar el computador a otra pantalla o datashow, no se alcanza a ver en la diapositiva todo el código, texto o imagen.</p>
 <p>Lo único que debes hacer es usar usar <code>Ctrl +</code> y <code>Ctrl -</code> para regular el tamaño (<code>Command +</code>y <code>Command -</code> en Mac), de la misma manera que regulas el tamaño de una página web.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/tamano.gif" alt=""></p>
 
 </div>
 </div>
@@ -312,6 +346,7 @@ Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt
 </h2>
 <p>Puedes abrir las notas del presentador presionando <code>t</code>.</p>
 <p>Para poder usar las notas del presentador necesitas tener al menos 2 pantallas: una pública para compartir y otra para mantener privada.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/notas_presentador.gif" alt=""></p>
 
 </div>
 </div>
@@ -329,10 +364,25 @@ Se usa el mismo sistema de doble click para acceder a modo edición, y <code>Alt
  <span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"enable_chalkboard"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-<p>IMAGEN</p>
-<p>Durante la presentación se puede utilizar la pizarra como muestra en la siguiente imagen:</p>
-<p>IMAGEN - CHALKBOARD</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/metadata.gif" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Durante la presentación se puede utilizar la pizarra haciendo click en los íconos, que permiten dibujar en una pizarra o sobre las diapositivas.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-1/pizarra.gif" alt=""></p>
 <p>Las anotaciones se preservan incluso al cerrar el modo presentación. Sin embargo, no se guardan al cerrar el notebook.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Eso concluye la primera parte 1 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.</p>
 
 </div>
 </div>
