@@ -7,16 +7,16 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Tutorial de RISE - parte 3" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Usando jupyter notebooks para presentaciones interactivas - aspectos avanzados" />
-<meta property="og:description" content="Usando jupyter notebooks para presentaciones interactivas - aspectos avanzados" />
+<meta name="description" content="Aspectos avanzados para hacer presentaciones interactivas con jupyter notebooks" />
+<meta property="og:description" content="Aspectos avanzados para hacer presentaciones interactivas con jupyter notebooks" />
 <link rel="canonical" href="https://sebastiandres.github.io/blog/tutorial-rise-3/" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/tutorial-rise-3/" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/2021-08-01-rise/basic_usage.gif" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/rise.gif" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-02T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-08-03T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/tutorial-rise-3/","@type":"BlogPosting","headline":"Tutorial de RISE - parte 3","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/2021-08-01-rise/basic_usage.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise-3/"},"description":"Usando jupyter notebooks para presentaciones interactivas - aspectos avanzados","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/tutorial-rise-3/","@type":"BlogPosting","headline":"Tutorial de RISE - parte 3","dateModified":"2021-08-03T00:00:00-05:00","datePublished":"2021-08-03T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/rise.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise-3/"},"description":"Aspectos avanzados para hacer presentaciones interactivas con jupyter notebooks","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -97,8 +97,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE - parte 3</h1><p class="page-description">Usando jupyter notebooks para presentaciones interactivas - aspectos avanzados</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
-        Aug 2, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE - parte 3</h1><p class="page-description">Aspectos avanzados para hacer presentaciones interactivas con jupyter notebooks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-03T00:00:00-05:00" itemprop="datePublished">
+        Aug 3, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -124,19 +124,19 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-02-tutorial-rise-parte-3.ipynb" role="button" target="_blank">
+    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-03-tutorial-rise-parte-3.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-02-tutorial-rise-parte-3.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-03-tutorial-rise-parte-3.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-02-tutorial-rise-parte-3.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-03-tutorial-rise-parte-3.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
@@ -144,93 +144,89 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-configurar-texto-y-columnas?">¿Cómo puedo configurar texto y columnas? </a></li>
+<li class="toc-entry toc-h2"><a href="#Convierte-tus-presentaciones-automáticamente">Convierte tus presentaciones automáticamente </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-hacer-actividades-interactivas?">¿Cómo puedo hacer actividades interactivas? </a></li>
+<li class="toc-entry toc-h2"><a href="#Usa-un-teclado-inalámbrico">Usa un teclado inalámbrico </a></li>
+<li class="toc-entry toc-h2"><a href="#Personalización-completa">Personalización completa </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2021-08-02-tutorial-rise-parte-3.ipynb
+# file to edit: _notebooks/2021-08-03-tutorial-rise-parte-3.ipynb
 -->
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="IPython.Display">IPython.Display<a class="anchor-link" href="#IPython.Display"> </a></h2><p>Audio
-Video
-HTML
-repl</p>
+<p>Esta es la parte 3 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.  WORK-IN-PROGRESS.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Ipywidgets">Ipywidgets<a class="anchor-link" href="#Ipywidgets"> </a></h2><p>Matpllotlib widgets</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Columnas">Columnas<a class="anchor-link" href="#Columnas"> </a></h2><p>Como las celdas de markdown aceptan html, es posible usar varios trucos. 
+<h2 id="¿Cómo-puedo-configurar-texto-y-columnas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-puedo-configurar-texto-y-columnas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo puedo configurar texto y columnas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-puedo-configurar-texto-y-columnas?"> </a>
+</h2>
+<p>Como las celdas de markdown aceptan html, es posible usar varios trucos. 
 Como por ejemplo poner doble columna… para tener 1 columna con texto y otra con imagen.</p>
 <p>O por ejemplo, hacer animaciones...</p>
+<p>Pero en general, mi consejo: keep it simple. Gastar 1 hora en una slide de 1 minuto es una mala inversión.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Encuestas">Encuestas<a class="anchor-link" href="#Encuestas"> </a></h2><p>Algo que aprendí es que es muy importante hacer 3 preguntas al finalizar toda presentación.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Almacenar-en-github-+-requeriments.txt">Almacenar en github + requeriments.txt<a class="anchor-link" href="#Almacenar-en-github-+-requeriments.txt"> </a></h2><p>Almacenando en github con un requirements.txt permite que la presentación pueda abrirse con binder.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Portar-tus-presentaciones-a-notebook+RISEs:-ppt2rise">Portar tus presentaciones a notebook+RISEs: ppt2rise<a class="anchor-link" href="#Portar-tus-presentaciones-a-notebook+RISEs:-ppt2rise"> </a></h2><p>Si tienes una presentación en powerpoint, puedes convertirla automáticamente. Eso te ahorrará mucho tiempo.</p>
+<h2 id="Convierte-tus-presentaciones-automáticamente">
+<a class="anchor" href="#Convierte-tus-presentaciones-autom%C3%A1ticamente" aria-hidden="true"><span class="octicon octicon-link"></span></a>Convierte tus presentaciones automáticamente<a class="anchor-link" href="#Convierte-tus-presentaciones-autom%C3%A1ticamente"> </a>
+</h2>
+<p>Cree un sitio que permite convertir una presentación powerpoint a jupyter notebook + rise de manera automática.
+Eso te ahorrará un buen tiempo de copiar y pegar texto. Ya incluye la opcion de 2 columnas, pero no código automático.</p>
 <p>IMAGEN CONVERTIR.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Teclado-inal&#225;mbrico">Teclado inal&#225;mbrico<a class="anchor-link" href="#Teclado-inal&#225;mbrico"> </a></h2><p>Un teclado inalámbrico ayuda en contextos presenciales. Ya no es tan importante. (Quizas eliminar).</p>
+<h2 id="¿Cómo-puedo-hacer-actividades-interactivas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-puedo-hacer-actividades-interactivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo puedo hacer actividades interactivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-puedo-hacer-actividades-interactivas?"> </a>
+</h2>
+<p>Usa IFrames.</p>
+<p>Es muy importante hacer 3 preguntas al finalizar toda presentación. 
+Termina tu presentación pidiendo retroalimentación.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Definiendo-el-aspecto-total-(overlay)-(Documentar-pero-no-presentar)">Definiendo el aspecto total (overlay) (Documentar pero no presentar)<a class="anchor-link" href="#Definiendo-el-aspecto-total-(overlay)-(Documentar-pero-no-presentar)"> </a></h2><p>If you define overlay, in which case you take full control,
-or you can define header, footer and backimage.
-So if you define overlay, the 3 latter options will be ignored.</p>
-<p>overlay
-It is possible to add the config option overlay to build a constant background. It is wrapped in a<div>, so it can be text or html. In this case, the user is entirely responsible for styling. For example:&lt;/p&gt;
-<div class="highlight"><pre><span></span><span class="p">{</span>
- <span class="err">...</span>
- <span class="nt">&quot;rise&quot;</span><span class="p">:</span> <span class="p">{</span>
-     <span class="nt">&quot;overlay&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;div class=&#39;myheader&#39;&gt;&lt;h2&gt;my company&lt;/h2&gt;&lt;/div&gt;&lt;div class=&#39;myfooter&#39;&gt;&lt;h2&gt;the date&lt;/h2&gt;&lt;/div&gt;&quot;</span>
- <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-<pre><code>header, footer and backimage</code></pre>
+<h2 id="Usa-un-teclado-inalámbrico">
+<a class="anchor" href="#Usa-un-teclado-inal%C3%A1mbrico" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usa un teclado inalámbrico<a class="anchor-link" href="#Usa-un-teclado-inal%C3%A1mbrico"> </a>
+</h2>
+<p>Un teclado inalámbrico ayuda en contextos presenciales, para que no necesites estar pegado al computador.</p>
+<p>En contextos de clases, permite que otros puedan completar código.</p>
 
 </div>
-&lt;/div&gt;
-&lt;/div&gt;
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Lo-avanzado">Lo avanzado<a class="anchor-link" href="#Lo-avanzado"> </a></h4><h2 id="Adding-custom-CSS">Adding custom CSS<a class="anchor-link" href="#Adding-custom-CSS"> </a></h2><p>RISE looks for two css files to apply CSS changes on top of the slideshow view:</p>
+<h2 id="Personalización-completa">
+<a class="anchor" href="#Personalizaci%C3%B3n-completa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personalización completa<a class="anchor-link" href="#Personalizaci%C3%B3n-completa"> </a>
+</h2>
+<p>Adding custom CSS
+RISE looks for two css files to apply CSS changes on top of the slideshow view:</p>
 <p>First, it attemps to load rise.css, and hence this will be applied to all notebooks in the current directory;
 Second, it attempts to load the_notebook_name.css and so this will hence be only applied to the_notebook_name.ipynb.
 Both files need to be placed alongside with the notebook of interest, i.e. in the same directory. You can see some examples using this customization with RISE/examples/showflow.ipynb.</p>
@@ -238,10 +234,8 @@ Both files need to be placed alongside with the notebook of interest, i.e. in th
 </div>
 </div>
 </div>
-&lt;/div&gt;
- 
+</div>
 
-</p></div></div></div></div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
