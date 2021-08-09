@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Tutorial de RISE - parte 2 | sebastiandres</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Tutorial de RISE - parte 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Aspectos intermedios para hacer presentaciones interactivas con jupyter notebooks" />
+<meta property="og:description" content="Aspectos intermedios para hacer presentaciones interactivas con jupyter notebooks" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/tutorial-rise-2/" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/tutorial-rise-2/" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/rise.gif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-02T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://sebastiandres.github.io/blog/tutorial-rise-2/","@type":"BlogPosting","headline":"Tutorial de RISE - parte 2","dateModified":"2021-08-02T00:00:00-05:00","datePublished":"2021-08-02T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/rise.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/tutorial-rise-2/"},"description":"Aspectos intermedios para hacer presentaciones interactivas con jupyter notebooks","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
+  <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HG9BYLK8FC');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/blog/assets/css/screen.css" rel="stylesheet">
+
+<link href="/blog/assets/css/main.css" rel="stylesheet">
+
+<script src="/blog/assets/js/jquery.min.js"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/buscar/">Buscar</a><a class="page-link" style="border: none" href="/blog/posts/">Entradas</a><a class="page-link" style="border: none" href="/blog/escritura/">Escribiendo</a><a class="page-link" style="border: none" href="/blog/lecturas/">Leyendo</a><a class="page-link" style="border: none" href="/blog/proyectos/">Charlas y Proyectos</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Tutorial de RISE - parte 2</h1><p class="page-description">Aspectos intermedios para hacer presentaciones interactivas con jupyter notebooks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-02T00:00:00-05:00" itemprop="datePublished">
+        Aug 2, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#rise">rise</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2021-08-02-tutorial-rise-parte-2.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=_notebooks%2F2021-08-02-tutorial-rise-parte-2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2021-08-02-tutorial-rise-parte-2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#¿Como-puedo-compartir-la-presentación?">¿Como puedo compartir la presentación? </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Repositorio">Repositorio </a></li>
+<li class="toc-entry toc-h3"><a href="#Comparte-con-mybinder">Comparte con mybinder </a></li>
+<li class="toc-entry toc-h3"><a href="#Exporta-a-html">Exporta a html </a></li>
+<li class="toc-entry toc-h3"><a href="#Exporta-a-pdf">Exporta a pdf </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-configuro-el-diseño-de-RISE?">¿Cómo configuro el diseño de RISE? </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#General">General </a></li>
+<li class="toc-entry toc-h3"><a href="#Lanzar-RISE-de-manera-automática">Lanzar RISE de manera automática </a></li>
+<li class="toc-entry toc-h3"><a href="#Eligiendo-un-tema">Eligiendo un tema </a></li>
+<li class="toc-entry toc-h3"><a href="#Eligiendo-una-transición">Eligiendo una transición </a></li>
+<li class="toc-entry toc-h3"><a href="#Definiendo-una-imagen-de-fondos">Definiendo una imagen de fondos </a></li>
+<li class="toc-entry toc-h3"><a href="#Definiendo-header-y-footer:">Definiendo header y footer: </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-activo-la-pizarra?">¿Cómo activo la pizarra? </a></li>
+<li class="toc-entry toc-h2"><a href="#Importante-consejo-final">Importante consejo final </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-08-02-tutorial-rise-parte-2.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta es la parte 2 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="¿Como-puedo-compartir-la-presentación?">
+<a class="anchor" href="#%C2%BFComo-puedo-compartir-la-presentaci%C3%B3n?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Como puedo compartir la presentación?<a class="anchor-link" href="#%C2%BFComo-puedo-compartir-la-presentaci%C3%B3n?"> </a>
+</h2>
+<p>Compartir la presentación suele ser uno de los pasos más importantes y sencillos. Existe la opción de
+compartir el código en un repositorio, en html dinámico e interactivo mediante mybinder, en html estático o en pdf.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Repositorio">
+<a class="anchor" href="#Repositorio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repositorio<a class="anchor-link" href="#Repositorio"> </a>
+</h3>
+<p>No trabajes en local. Siempre conviene armar un repositorio e ir respaldando la presentación en línea en github, bitbucket, gitlab o tu proveedor de preferencia. Asegúrate de tener un archivo <code>requirements.txt</code> que contenga las dependencias que se requieren para poder ejecutar las distintas celdas de código de tu presentación, y de incluir todo el código, datos e imágenes. Es un esfuerzo adicional en el presente que siempre se agradece.</p>
+<p>En particular en github resulta atractivo tener un archivo index.html (o un README.md) con las distintas opciones de visulización para el archivo. Yo he diseñado un template con un formato fijo que reutilizo para las distintas presentaciones, y que así se ve para una de mis charlas (Pycon Colombia 2020):</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-2/indexhtml.png" alt=""></p>
+<p>Creé el formato para para emular a linktree, de manera de reutilizarlo con mínimo esfuerzo. Escribí al respecto en este <a href="https://sebastiandres.github.io/blog/linktree/">post</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Comparte-con-mybinder">
+<a class="anchor" href="#Comparte-con-mybinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparte con mybinder<a class="anchor-link" href="#Comparte-con-mybinder"> </a>
+</h3>
+<p>LOREM IPSUM</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exporta-a-html">
+<a class="anchor" href="#Exporta-a-html" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporta a html<a class="anchor-link" href="#Exporta-a-html"> </a>
+</h3>
+<p>Para generar un html funcional de las diapositivas, tienes que hacer en el terminal:</p>
+
+<pre><code>jupyter nbconvert --to slides your_talk.ipynb</code></pre>
+<p>donde <code>you_talk.ipynb</code> es, por supuesto, el nombre de tu notebook-presentación.</p>
+<p>Se generará un archivo html estático de tu presentación, que puedes visualizar sin mayores dependencias.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exporta-a-pdf">
+<a class="anchor" href="#Exporta-a-pdf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporta a pdf<a class="anchor-link" href="#Exporta-a-pdf"> </a>
+</h3>
+<p><strong>TRADUCIR</strong></p>
+<p>Generar la presentación en pdf requiere más pasos:</p>
+<ul>
+<li>
+<p>Generate the slides and serve them using nbconvert:</p>
+
+<pre><code>jupyter nbconvert --to slides your_talk.ipynb --post serve</code></pre>
+<p>It opens up a webpage in the browser at <code>http://127.0.0.1:8000/your_talk.slides.html#/</code></p>
+</li>
+<li>
+<p>Add ?print-pdf to the query string as <code>http://127.0.0.1:8000/your_talk.slides.html?print-pdf</code></p>
+</li>
+</ul>
+<p>Note that you need to remove the # at the end. The page will render the slides vertically.</p>
+<ul>
+<li>Save to PDF in Chrome using the print option.<ul>
+<li>Open the in-browser print dialog (Cmd/Ctrl + P).</li>
+<li>Change the Destination setting to Save as PDF.</li>
+<li>Change the Layout to Landscape.</li>
+<li>Change the Margins to None.</li>
+<li>Enable the Background graphics option.</li>
+<li>Click Save.</li>
+</ul>
+</li>
+</ul>
+<p>Ejemplo GIF.</p>
+<p>La documentación oficial para exportar a pdf está <a href="https://rise.readthedocs.io/en/stable/exportpdf.html">acá</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="¿Cómo-configuro-el-diseño-de-RISE?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-configuro-el-dise%C3%B1o-de-RISE?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo configuro el diseño de RISE?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-configuro-el-dise%C3%B1o-de-RISE?"> </a>
+</h2>
+<h3 id="General">
+<a class="anchor" href="#General" aria-hidden="true"><span class="octicon octicon-link"></span></a>General<a class="anchor-link" href="#General"> </a>
+</h3>
+<p>Todas las configuraciones de RISE se realizan <strong>editando la metadata del notebook</strong>. Para ello, tienes que ir a <code>Edit/Edit notebook metadata</code> y agregar la(s) opcion(es) deseadas.</p>
+<p><strong>GIF</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La metadata es un diccionario json con las distintas opciones de todo el notebook, a lo cual hay que <strong>agregar</strong> las opciones que se quieren activar para rise:</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span>
+             <span class="nt">"opcion_1"</span><span class="p">:</span> <span class="err">valor_opcio</span><span class="kc">n</span><span class="err">_</span><span class="mi">1</span><span class="p">,</span>
+                      <span class="err">...</span>
+             <span class="nt">"opcion_n"</span><span class="p">:</span> <span class="err">valor_opcio</span><span class="kc">n</span><span class="err">_</span><span class="kc">n</span><span class="p">,</span>
+         <span class="p">}</span>
+<span class="err">`</span>
+</pre></div>
+<p><strong>Observación importante</strong>:</p>
+<p>Cada vez que editas la metadata, es necesario cerrar (apagar) el notebook y volver a abrirlo para que se recarguen las opciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lanzar-RISE-de-manera-automática">
+<a class="anchor" href="#Lanzar-RISE-de-manera-autom%C3%A1tica" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lanzar RISE de manera automática<a class="anchor-link" href="#Lanzar-RISE-de-manera-autom%C3%A1tica"> </a>
+</h3>
+<p>Permite que al activar un jupyter notebook, este se ejecute en modo presentación de manera automática. ¡Opción ampliamente recomendada!</p>
+<p>En la metadata del notebook se agrega la opción de "autolaunch" con valor <code>true</code> (todo en minúsculas, ¡es verdadero de javascript, no de Python!):</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"autolaunch"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+<span class="err">`</span>
+</pre></div>
+<p>De esta manera, si publicas tu jupyter notebook con mybinder.org, se mostrará en modo presentación automáticamente (audiencia no necesitará saber donde está el botón de “iniciar presentación").</p>
+<p><strong>GIF</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Eligiendo-un-tema">
+<a class="anchor" href="#Eligiendo-un-tema" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eligiendo un tema<a class="anchor-link" href="#Eligiendo-un-tema"> </a>
+</h3>
+<p>El tema de la presentación controla el aspecto general de la presentación.</p>
+<p>En la metadata del notebook se agrega la opción de "theme" con el nombre del tema deseado:</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"theme"</span><span class="p">:</span> <span class="s2">"sky"</span><span class="p">}</span>
+<span class="err">`</span>
+</pre></div>
+<p>Existen 11 opciones, que se heredan de la librería <a href="https://revealjs.com/themes/">revealjs</a>:</p>
+<ul>
+<li>black: Fondo negro, letras blancas, links azules.</li>
+<li>white: Fondo blanco, letras negras, links azules.</li>
+<li>league: Fondo gris, letras blancas, links zules.</li>
+<li>beige: Fondo beige, letras oscuras, links cafés.</li>
+<li>sky: Fondo celeste, letras oscuras, links azules. </li>
+<li>night: Fondo negro, letras blancas, links naranjos. </li>
+<li>serif: Fondo café, letras grises, links cafés. </li>
+<li>simple: Fondo blanco, letras negras, links azules. </li>
+<li>solarized: Fondo blanco crema, letras verde oscuro, links azules.</li>
+<li>blood: Fondo oscuro, letras blancas, links rojos.</li>
+<li>moon: Fondo azul oscuro, letras grises, links azules.</li>
+</ul>
+<p>Un <a href="https://dev.to/emmabostian/how-to-build-a-captivating-presentation-using-html-css--javascript-nno">blog</a> compiló las distintas versiones de los temas en una sola imagen:</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-2/themes.jpeg" alt="Themes"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Eligiendo-una-transición">
+<a class="anchor" href="#Eligiendo-una-transici%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eligiendo una transición<a class="anchor-link" href="#Eligiendo-una-transici%C3%B3n"> </a>
+</h3>
+<p>El tipo de transición entre slides se define de manera similar. En la metadata del notebook se agrega la opción de "transition" con el nombre de la transición deseada:</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"transition"</span><span class="p">:</span> <span class="s2">"zoom"</span><span class="p">}</span>
+</pre></div>
+<p>Las opciones  (heredadas de las existentes en la librería revealjs <a href="https://revealjs.com/themes/">https://revealjs.com/themes/</a> ) son:</p>
+<ul>
+<li>none: Cambiar intantáneamente.</li>
+<li>fade  Cross fade — default for background transitions</li>
+<li>slide Slide between backgrounds — default for slide transitions</li>
+<li>convex    Slide at a convex angle</li>
+<li>concave   Slide at a concave angle</li>
+<li>zoom  Scale the incoming slide up so it grows in from the center of the screen</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Definiendo-una-imagen-de-fondos">
+<a class="anchor" href="#Definiendo-una-imagen-de-fondos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definiendo una imagen de fondos<a class="anchor-link" href="#Definiendo-una-imagen-de-fondos"> </a>
+</h3>
+<p>Simplemente, usar:</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span>
+     <span class="nt">"backimage"</span><span class="p">:</span> <span class="s2">"mybackimage.png"</span><span class="p">,</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Esta opción es útil si quieres un fondo personalizado, como a veces se exige en algunos congresos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Definiendo-header-y-footer:">
+<a class="anchor" href="#Definiendo-header-y-footer:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definiendo header y footer:<a class="anchor-link" href="#Definiendo-header-y-footer:"> </a>
+</h3>
+<p>Simplemente, usar:</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span>
+     <span class="nt">"header"</span><span class="p">:</span> <span class="s2">"&lt;h1&gt;Hola&lt;/h1&gt;"</span><span class="p">,</span>
+     <span class="nt">"footer"</span><span class="p">:</span> <span class="s2">"&lt;h3&gt;Mundo&lt;/h3&gt;"</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="¿Cómo-activo-la-pizarra?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-activo-la-pizarra?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo activo la pizarra?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-activo-la-pizarra?"> </a>
+</h2>
+<p>Es posible activar una pizarra (chalkboard) para realizar anotaciones durante la presentación.</p>
+<p>Para eso, en Edit/Edit Notebook Metadata, es necesario agregar el siguiente texto a la metadata del jupyter notebook:</p>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="err">...</span>
+ <span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"enable_chalkboard"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Durante la presentación se puede utilizar la pizarra haciendo click en los íconos, que permiten dibujar en una pizarra o sobre las diapositivas.</p>
+<p>Es posible cambiar de color de lapiz presionando <code>s</code> y <code>q</code>. Se puede borrar la pizarra con <code>-</code>.</p>
+<p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-2/pizarra.gif" alt=""></p>
+<p>Las anotaciones se preservan incluso al cerrar el modo presentación. Sin embargo, no se guardan al cerrar el notebook.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Importante-consejo-final">
+<a class="anchor" href="#Importante-consejo-final" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importante consejo final<a class="anchor-link" href="#Importante-consejo-final"> </a>
+</h2>
+<p>Tantas opciones pueden ser sobrecogedoras y difíciles de recordar. Como no se puede tener comentarios en un json, resulta práctico tener todas las opciones y simplemente agregar un <code>_</code> antes de las opciones que no se desean usar.</p>
+<p>En mi caso, tengo el siguiente json en todos mis notebooks con lo cual no tengo que memorizar nada, y sólo adapto según necesito.</p>
+<div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"autolaunch"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">"enable_chalkboard"</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">"theme"</span><span class="p">:</span> <span class="s2">"black"</span><span class="p">,</span>
+        <span class="nt">"transition"</span><span class="p">:</span> <span class="s2">"zoom"</span><span class="p">,</span>
+        <span class="nt">"_header"</span><span class="p">:</span> <span class="s2">"&lt;h1&gt;PRESENTATION NAME // EVENTs&lt;/h1&gt;"</span><span class="p">,</span>
+        <span class="nt">"_footer"</span><span class="p">:</span> <span class="s2">"&lt;h3&gt;NAME, DATE&lt;/h3&gt;"</span><span class="p">,</span>
+        <span class="nt">"_backimage"</span><span class="p">:</span> <span class="s2">"path/to/mybackimage.png"</span><span class="p">,</span>
+        <span class="nt">"_theme_options"</span><span class="p">:</span> <span class="p">[</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"white"</span><span class="p">,</span> <span class="s2">"league"</span><span class="p">,</span> <span class="s2">"beige"</span><span class="p">,</span> 
+                           <span class="s2">"sky"</span><span class="p">,</span> <span class="s2">"night"</span><span class="p">,</span> <span class="s2">"serif"</span><span class="p">],</span> 
+        <span class="nt">"_transition_options"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"none"</span><span class="p">,</span> <span class="s2">"fade"</span><span class="p">,</span> <span class="s2">"slide"</span><span class="p">,</span> <span class="s2">"convex"</span><span class="p">,</span> <span class="s2">"concave"</span><span class="p">,</span> <span class="s2">"zoom"</span><span class="p">],</span>
+        <span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/tutorial-rise-2/" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
