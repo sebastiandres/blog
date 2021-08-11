@@ -103,7 +103,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -148,6 +148,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-configurar-texto-y-columnas?">¿Cómo puedo configurar texto y columnas? </a></li>
 <li class="toc-entry toc-h2"><a href="#Convierte-tus-presentaciones-automáticamente">Convierte tus presentaciones automáticamente </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-hacer-actividades-interactivas?">¿Cómo puedo hacer actividades interactivas? </a></li>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-hacer-encuestas?">¿Cómo hacer encuestas? </a></li>
 <li class="toc-entry toc-h2"><a href="#Usa-un-teclado-inalámbrico">Usa un teclado inalámbrico </a></li>
 <li class="toc-entry toc-h2"><a href="#Personalización-completa">Personalización completa </a></li>
 </ul><!--
@@ -162,7 +163,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta es la parte 3 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.  WORK-IN-PROGRESS.</p>
+<p>Esta es la parte 3 de 3 del <a href="https://sebastiandres.github.io/blog/tutorial-rise/">tutorial de presentaciones interactivas en jupyter notebook</a>.</p>
 
 </div>
 </div>
@@ -173,10 +174,43 @@ window.onload = wrap_img;
 <h2 id="¿Cómo-puedo-configurar-texto-y-columnas?">
 <a class="anchor" href="#%C2%BFC%C3%B3mo-puedo-configurar-texto-y-columnas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo puedo configurar texto y columnas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-puedo-configurar-texto-y-columnas?"> </a>
 </h2>
-<p>Como las celdas de markdown aceptan html, es posible usar varios trucos. 
-Como por ejemplo poner doble columna… para tener 1 columna con texto y otra con imagen.</p>
-<p>O por ejemplo, hacer animaciones...</p>
-<p>Pero en general, mi consejo: keep it simple. Gastar 1 hora en una slide de 1 minuto es una mala inversión.</p>
+<p>Como las celdas de markdown aceptan html, es posible usar todos sus trucos. Uno de éstos permite generar dos columnas, típicamente para tener una columna con texto y otra con una imagen (estática o gif).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+<div style="float: left; width: 50%;">
+<br> <br> <br> <br>
+<ul>
+<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+<li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+<li> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </li>
+<li> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </li>
+<li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+<li> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </li>
+</ul>    
+</div>
+<div style="float: right; width: 50%;">
+<figure>
+  
+    <img class="docimage" src="/blog/images/copied_from_nb/2020-03-19-rise-columns/lore_ipsum.png" alt="LoreIpsum">
+    
+    
+</figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero en general, hay que segur el consejo: <strong>keep it simple</strong>.</p>
+<p>Gastar 1 hora en una slide de 1 minuto es una mala inversión.</p>
 
 </div>
 </div>
@@ -187,9 +221,9 @@ Como por ejemplo poner doble columna… para tener 1 columna con texto y otra co
 <h2 id="Convierte-tus-presentaciones-automáticamente">
 <a class="anchor" href="#Convierte-tus-presentaciones-autom%C3%A1ticamente" aria-hidden="true"><span class="octicon octicon-link"></span></a>Convierte tus presentaciones automáticamente<a class="anchor-link" href="#Convierte-tus-presentaciones-autom%C3%A1ticamente"> </a>
 </h2>
-<p>Cree un sitio que permite convertir una presentación powerpoint a jupyter notebook + rise de manera automática.
-Eso te ahorrará un buen tiempo de copiar y pegar texto. Ya incluye la opcion de 2 columnas, pero no código automático.</p>
-<p>IMAGEN CONVERTIR.</p>
+<p>Uno de los primeros desafíos para comenzar a usar notebook + rise es convertir el contenido de las presentaciones que ya están en powerpoint. Para solucionar eso, creé un sitio que permite convertir una presentación powerpoint a jupyter notebook + rise de manera automática.  Ya incluye la opcion de 2 columnas. No es perfecto, pero te ahorrará un buen tiempo de copiar y pegar texto.</p>
+<p>Aplicación para convertir <a href="https://sebastiandres.github.io/streamlit_ppt2rise/">pptx a rise</a></p>
+<p>IMAGEN EJEMPLO</p>
 
 </div>
 </div>
@@ -200,21 +234,133 @@ Eso te ahorrará un buen tiempo de copiar y pegar texto. Ya incluye la opcion de
 <h2 id="¿Cómo-puedo-hacer-actividades-interactivas?">
 <a class="anchor" href="#%C2%BFC%C3%B3mo-puedo-hacer-actividades-interactivas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo puedo hacer actividades interactivas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-puedo-hacer-actividades-interactivas?"> </a>
 </h2>
-<p>Usa IFrames.</p>
-<p>Es muy importante hacer 3 preguntas al finalizar toda presentación. 
-Termina tu presentación pidiendo retroalimentación.</p>
+<p>Para incluir actividades interactivas es posible usar <code>IFrames</code> en una celda de código. De esa manera, es posible embeber dentro del notebook y una diapositiva una página web con una actividad.</p>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">"https://es.wikipedia.org/wiki/Iframe"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="1000" height="500" src="https://es.wikipedia.org/wiki/Iframe" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algunas alternativas son: <a href="https://www.mentimeter.com/">https://www.mentimeter.com/</a>, <a href="https://kahoot.com/">https://kahoot.com/</a> y <a href="https://quizizz.com/">https://quizizz.com/</a></p>
+<p>Importante: En la diapositiva coloca el IFrame donde se mostrarán los resultados de la actividad interactiva. Recuerda colocar una imagen QR o una descripción de cómo deben acceder.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">"https://es.wikipedia.org/wiki/Iframe"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="¿Cómo-hacer-encuestas?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-hacer-encuestas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo hacer encuestas?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-hacer-encuestas?"> </a>
+</h2>
+<p>Es muy importante recibir retroalimentación de la presentación para poder mejorar. Recomiendo hacer 3 preguntas al finalizar toda presentación:</p>
+<ul>
+<li>¿Qué fue lo que más te gustó?</li>
+<li>¿Qué cambiarías?</li>
+<li>¿</li>
+</ul>
+<p>Esto puedes lograrlo embebiendo una encuesta de Google Forms, Microsoft Forms u otros mediante un IFrame.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">"https://es.wikipedia.org/wiki/Iframe"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="1000" height="500" src="https://es.wikipedia.org/wiki/Iframe" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Usa-un-teclado-inalámbrico">
 <a class="anchor" href="#Usa-un-teclado-inal%C3%A1mbrico" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usa un teclado inalámbrico<a class="anchor-link" href="#Usa-un-teclado-inal%C3%A1mbrico"> </a>
 </h2>
-<p>Un teclado inalámbrico ayuda en contextos presenciales, para que no necesites estar pegado al computador.</p>
-<p>En contextos de clases, permite que otros puedan completar código.</p>
+<p>En charlas y clases resulta cómodo tener un teclado y mouse inalámbrico. Esto permite que no tengas que estar cerca del notebook, de manera de ocupar de mejor manera el escenario.</p>
+<p>Resulta práctico también para crear la posibilidad que un asistente de la charla pueda editar una celda de código.</p>
 
 </div>
 </div>
@@ -235,7 +381,9 @@ Both files need to be placed alongside with the notebook of interest, i.e. in th
 </div>
 </div>
 </div>
+ 
 
+</div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
