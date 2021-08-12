@@ -103,7 +103,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -145,10 +145,10 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#¿Como-puedo-compartir-la-presentación?">¿Como puedo compartir la presentación? </a>
+<li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-compartir-la-presentación?">¿Cómo puedo compartir la presentación? </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Repositorio">Repositorio </a></li>
-<li class="toc-entry toc-h3"><a href="#Comparte-con-mybinder">Comparte con mybinder </a></li>
+<li class="toc-entry toc-h3"><a href="#mybinder">mybinder </a></li>
 <li class="toc-entry toc-h3"><a href="#Exporta-a-html">Exporta a html </a></li>
 <li class="toc-entry toc-h3"><a href="#Exporta-a-pdf">Exporta a pdf </a></li>
 </ul>
@@ -185,11 +185,10 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="¿Como-puedo-compartir-la-presentación?">
-<a class="anchor" href="#%C2%BFComo-puedo-compartir-la-presentaci%C3%B3n?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Como puedo compartir la presentación?<a class="anchor-link" href="#%C2%BFComo-puedo-compartir-la-presentaci%C3%B3n?"> </a>
+<h2 id="¿Cómo-puedo-compartir-la-presentación?">
+<a class="anchor" href="#%C2%BFC%C3%B3mo-puedo-compartir-la-presentaci%C3%B3n?" aria-hidden="true"><span class="octicon octicon-link"></span></a>¿Cómo puedo compartir la presentación?<a class="anchor-link" href="#%C2%BFC%C3%B3mo-puedo-compartir-la-presentaci%C3%B3n?"> </a>
 </h2>
-<p>Compartir la presentación suele ser uno de los pasos más importantes y sencillos. Existe la opción de
-compartir el código en un repositorio, en html dinámico e interactivo mediante mybinder, en html estático o en pdf.</p>
+<p>Compartir la presentación suele ser uno de los pasos más importantes y sencillos. Existen muchas opciones: compartir el código en un repositorio, mediante mybinder de manera completamente interactiva, como html estático o como pdf.</p>
 
 </div>
 </div>
@@ -200,8 +199,18 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 <h3 id="Repositorio">
 <a class="anchor" href="#Repositorio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repositorio<a class="anchor-link" href="#Repositorio"> </a>
 </h3>
-<p>No trabajes en local. Siempre conviene armar un repositorio e ir respaldando la presentación en línea en github, bitbucket, gitlab o tu proveedor de preferencia. Asegúrate de tener un archivo <code>requirements.txt</code> que contenga las dependencias que se requieren para poder ejecutar las distintas celdas de código de tu presentación, y de incluir todo el código, datos e imágenes. Es un esfuerzo adicional en el presente que siempre se agradece.</p>
-<p>En particular en github resulta atractivo tener un archivo index.html (o un README.md) con las distintas opciones de visulización para el archivo. Yo he diseñado un template con un formato fijo que reutilizo para las distintas presentaciones, y que así se ve para una de mis charlas (Pycon Colombia 2020):</p>
+<p>No trabajes en local. Siempre es más conveniente ir versionando los archivos mediante <code>git</code> en un repositorio. Ese repositorio puede respaldarse en línea, en un proveedor como github, bitbucket, gitlab o tu u otro de tu preferencia. El proveedor <a href="https://github.com/">github</a> es una buena opción gratuita que tiene muchas integraciones y complementos.</p>
+<p>Asegúrate de tener un archivo <code>requirements.txt</code> que contenga las librerías que se requieren para poder ejecutar las distintas celdas de código de tu presentación. No olvides incluir todo el código, datos e imágenes.</p>
+<p>Resulta útil tener un archivo <code>README.md</code> con la descripción del repositorio, y enlaces a las distintas opciones de visulización para el archivo.</p>
+<p>En github, para un usuario <code>nombre_usuario</code> en un repo <code>nombre_repo</code>, puedes además crear una página <code>index.html</code> , y de esa manera al activar "Gitub Pages" la página estará accesible en <code>https://nombre_usuario.github.io/nombre_repo/</code>. De manera más general, un archivo en la ruta <code>/ruta_carpetas/nombre_archivo.html</code> se visualizará en <code>https://nombre_usuario.github.io/nombre_repo/ruta_carpetas/nombre_archivo.html</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Yo he diseñado un template con un formato fijo que reutilizo para las distintas presentaciones, y que así se ve para una de mis charlas (Pycon Colombia 2020):</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-2/indexhtml.png" alt=""></p>
 <p>Creé el formato para para emular a linktree, de manera de reutilizarlo con mínimo esfuerzo. Escribí al respecto en este <a href="https://sebastiandres.github.io/blog/linktree/">post</a>.</p>
 
@@ -211,10 +220,30 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparte-con-mybinder">
-<a class="anchor" href="#Comparte-con-mybinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparte con mybinder<a class="anchor-link" href="#Comparte-con-mybinder"> </a>
+<h3 id="mybinder">
+<a class="anchor" href="#mybinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>mybinder<a class="anchor-link" href="#mybinder"> </a>
 </h3>
-<p>LOREM IPSUM</p>
+<p><a href="https://mybinder.org">Binder</a> es un servicio que permite lanzar un jupyter notebook en el navegador y en la nube, sin consumir recursos de tu computador y de manera completamente gratuita. Resulta práctico para que otras personas pueden ver la presentación de manera interactiva sin tener que instalar nada en su computador, ¡incluso desde un smartphone o tablet!</p>
+<p>Para usar mybinder, debes tener tu repositorio en github.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En <a href="https://mybinder.org">Binder</a> puedes introducir los distintos parámetros:</p>
+<ul>
+<li>Usuario github: nombre_usuario</li>
+<li>Nombre repositorio: nombre_repositorio</li>
+<li>Nombre de la rama del repositorio: nombre_rama</li>
+<li>Ruta al archivo: ruta_carpetas</li>
+<li>Nombre del archivo: nombre_archivo.ipynb</li>
+<li>En la rama, en el directorio principal, debe existir el archivo <code>requirements.txt</code> </li>
+</ul>
+<p>Al acceder a la siguiente página se ejecutará el jupyter notebook, incluyendo la extensión RISE si la colocaste en los <code>requirements.txt</code>:</p>
+
+<pre><code>https://mybinder.org/v2/gh/nombre_usuario/nombre_repositorio/nombre_rama?filepath=ruta_carpetas/nombre_archivo.ipynb</code></pre>
 
 </div>
 </div>
@@ -227,9 +256,10 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 </h3>
 <p>Para generar un html funcional de las diapositivas, tienes que hacer en el terminal:</p>
 
-<pre><code>jupyter nbconvert --to slides your_talk.ipynb</code></pre>
-<p>donde <code>you_talk.ipynb</code> es, por supuesto, el nombre de tu notebook-presentación.</p>
-<p>Se generará un archivo html estático de tu presentación, que puedes visualizar sin mayores dependencias.</p>
+<pre><code>jupyter nbconvert --to slides ruta_carpeta/nombre_archivo.ipynb</code></pre>
+<p>donde <code>ruta_carpeta/nombre_archivo</code> es, por supuesto, la ruta a tu notebook-presentación.</p>
+<p>Se generará un archivo html estático de tu presentación, con el nombre <code>ruta_carpeta/nombre_archivo.slides.html</code>.
+Esta página web en html puedes visualizarse en el navegador sin mayores dependencias, pero donde no podrás editar o ejecutar las celdas. Si ya realisaste tu presentación, puedes guardarla en el repositorio como un respaldo adicional.</p>
 
 </div>
 </div>
@@ -240,32 +270,21 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 <h3 id="Exporta-a-pdf">
 <a class="anchor" href="#Exporta-a-pdf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporta a pdf<a class="anchor-link" href="#Exporta-a-pdf"> </a>
 </h3>
-<p><strong>TRADUCIR</strong></p>
-<p>Generar la presentación en pdf requiere más pasos:</p>
-<ul>
+<p>Para generar la presentación en pdf se requieren 3 pasos:</p>
+<ol>
 <li>
-<p>Generate the slides and serve them using nbconvert:</p>
+<p>Genera las diapositivas en html, usando nbconvert, para que queden "activas":</p>
 
-<pre><code>jupyter nbconvert --to slides your_talk.ipynb --post serve</code></pre>
-<p>It opens up a webpage in the browser at <code>http://127.0.0.1:8000/your_talk.slides.html#/</code></p>
+<pre><code>jupyter nbconvert --to slides ruta_carpeta/nombre_archivo.ipynb --post serve</code></pre>
+<p>Se abrirá una página web en el navegador, en la dirección <code>http://127.0.0.1:8000/nombre_archivo.slides.html#/</code></p>
 </li>
 <li>
-<p>Add ?print-pdf to the query string as <code>http://127.0.0.1:8000/your_talk.slides.html?print-pdf</code></p>
+<p>Edita la ruta, para que sea <code>http://127.0.0.1:8000/nombre_archivo.slides.html?print-pdf</code>. Nota que hay que reemplazar <code>#/</code> por <code>?print-pdf</code>. La página mostrará ahora las diapositivas de manera vertical.</p>
 </li>
-</ul>
-<p>Note that you need to remove the # at the end. The page will render the slides vertically.</p>
-<ul>
-<li>Save to PDF in Chrome using the print option.<ul>
-<li>Open the in-browser print dialog (Cmd/Ctrl + P).</li>
-<li>Change the Destination setting to Save as PDF.</li>
-<li>Change the Layout to Landscape.</li>
-<li>Change the Margins to None.</li>
-<li>Enable the Background graphics option.</li>
-<li>Click Save.</li>
-</ul>
+<li>
+<p>Finalmente, guarda la página web como pdf. Puedes jugar con distintas opciones según necesites (sin márgenes, activar imágenes de fondo, etc.)</p>
 </li>
-</ul>
-<p>Ejemplo GIF.</p>
+</ol>
 <p>La documentación oficial para exportar a pdf está <a href="https://rise.readthedocs.io/en/stable/exportpdf.html">acá</a>.</p>
 
 </div>
@@ -289,7 +308,7 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La metadata es un diccionario json con las distintas opciones de todo el notebook, a lo cual hay que <strong>agregar</strong> las opciones que se quieren activar para rise:</p>
+<p>La metadata es un diccionario json con las distintas opciones de todo el notebook. Por defecto, no trae ninguna opción cargada de RISE. Por eso, tenemos que <strong>agregar</strong> las opciones que se quieren configurar:</p>
 <div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span>
              <span class="nt">"opcion_1"</span><span class="p">:</span> <span class="err">valor_opcio</span><span class="kc">n</span><span class="err">_</span><span class="mi">1</span><span class="p">,</span>
                       <span class="err">...</span>
@@ -333,20 +352,39 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 </pre></div>
 <p>Existen 11 opciones, que se heredan de la librería <a href="https://revealjs.com/themes/">revealjs</a>:</p>
 <ul>
-<li>black: Fondo negro, letras blancas, links azules.</li>
-<li>white: Fondo blanco, letras negras, links azules.</li>
-<li>league: Fondo gris, letras blancas, links zules.</li>
-<li>beige: Fondo beige, letras oscuras, links cafés.</li>
-<li>sky: Fondo celeste, letras oscuras, links azules. </li>
-<li>night: Fondo negro, letras blancas, links naranjos. </li>
-<li>serif: Fondo café, letras grises, links cafés. </li>
-<li>simple: Fondo blanco, letras negras, links azules. </li>
-<li>solarized: Fondo blanco crema, letras verde oscuro, links azules.</li>
-<li>blood: Fondo oscuro, letras blancas, links rojos.</li>
-<li>moon: Fondo azul oscuro, letras grises, links azules.</li>
+<li>
+<strong>black</strong>: Fondo negro, letras blancas, links azules.</li>
+<li>
+<strong>white</strong>: Fondo blanco, letras negras, links celestes.</li>
+<li>
+<strong>league</strong>: Fondo gris, letras blancas, links celestes.</li>
+<li>
+<strong>sky</strong>: Fondo celeste, letras oscuras, links azules. </li>
+<li>
+<strong>beige</strong>: Fondo beige, letras oscuras, links cafés.</li>
+<li>
+<strong>simple</strong>: Fondo blanco, letras negras, links azules. </li>
+<li>
+<strong>serif</strong>: Fondo café, letras grises, links cafés. </li>
+<li>
+<strong>night</strong>: Fondo negro, letras blancas, links naranjos. </li>
+<li>
+<strong>blood</strong>: Fondo oscuro, letras blancas, links rojos.</li>
+<li>
+<strong>moon</strong>: Fondo azul oscuro, letras grises, links azules.</li>
+<li>
+<strong>solarized</strong>: Fondo blanco crema, letras verde oscuro, links azules.</li>
 </ul>
-<p>Un <a href="https://dev.to/emmabostian/how-to-build-a-captivating-presentation-using-html-css--javascript-nno">blog</a> compiló las distintas versiones de los temas en una sola imagen:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se pueden comparar los temas en la siguente imagen:</p>
 <p><img src="/blog/images/copied_from_nb/2021-08-02-tutorial-rise-parte-2/themes.jpeg" alt="Themes"></p>
+<p>La imagen fue compilada por el siguiente <a href="https://dev.to/emmabostian/how-to-build-a-captivating-presentation-using-html-css--javascript-nno">blog</a>.</p>
 
 </div>
 </div>
@@ -360,15 +398,23 @@ compartir el código en un repositorio, en html dinámico e interactivo mediante
 <p>El tipo de transición entre slides se define de manera similar. En la metadata del notebook se agrega la opción de "transition" con el nombre de la transición deseada:</p>
 <div class="highlight"><pre><span></span><span class="nt">"rise"</span><span class="p">:</span> <span class="p">{</span><span class="nt">"transition"</span><span class="p">:</span> <span class="s2">"zoom"</span><span class="p">}</span>
 </pre></div>
-<p>Las opciones  (heredadas de las existentes en la librería revealjs <a href="https://revealjs.com/themes/">https://revealjs.com/themes/</a> ) son:</p>
+<p>Las opciones, heredadas de las <a href="https://revealjs.com/transitions/">transiciones</a> existentes en la librería revealjs, son:</p>
 <ul>
-<li>none: Cambiar intantáneamente.</li>
-<li>fade  Cross fade — default for background transitions</li>
-<li>slide Slide between backgrounds — default for slide transitions</li>
-<li>convex    Slide at a convex angle</li>
-<li>concave   Slide at a concave angle</li>
-<li>zoom  Scale the incoming slide up so it grows in from the center of the screen</li>
+<li>
+<strong>none</strong>: Sin animación.</li>
+<li>
+<strong>fade</strong>: Animar con Cross fade — default for background transitions</li>
+<li>
+<strong>slide</strong>:    Slide between backgrounds — default for slide transitions</li>
+<li>
+<strong>convex</strong>: Animar con ángulo convexo.</li>
+<li>
+<strong>concave</strong>: Animar con ángulo convexo.</li>
+<li>
+<strong>zoom</strong>: Animar para que la diapositiva siguiente crezca desde el centro de la pantalla.</li>
 </ul>
+<p>El siguiente gif muestra cada transición:</p>
+<p>GIF</p>
 
 </div>
 </div>
