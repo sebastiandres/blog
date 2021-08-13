@@ -25,11 +25,12 @@ layout: default
 
   {{ content | markdownify }}
 
-  <button onclick="show_hide('.story','.notebook, .post')">No Ficción - Simples</button> 
-  <button onclick="show_hide('.notebook','.story, .post')">No Ficción - Notebooks</button>
-  <button onclick="show_hide('.story, .notebook, .post','')">Ficción</button>
-  <button onclick="show_hide('.post','.notebook, .story')">Todo</button>
-
+  <button onclick="show_hide('.post', '.notebook, .story')">No Ficción - Simples</button> 
+  <button onclick="show_hide('.notebook', '.story, .post')">No Ficción - Notebooks</button>
+  <button onclick="show_hide('.story', '.notebook, .post')">Ficción</button>
+  <button onclick="show_hide('.story, .notebook, .post', '')">Todo</button>
+  <br>
+  
   <!-- Assign all posts to variable -->
   {% assign rawposts = site.posts %}
 
