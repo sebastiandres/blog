@@ -22,7 +22,7 @@
             <h4 class="card-text"> {{ post.genre}} </h4>
             <h4 class="card-text"> {{ post.author }} </h4>
             {% endif %}
-            <h5 class="card-text"> {{ post.description | strip_html | truncatewords:20  }} </h5>
+            <h4 class="card-text"> {{ post.description | strip_html | truncatewords:20  }} </h4>
         </div>
 
         <div class="card-footer bg-white">
