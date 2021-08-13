@@ -7,6 +7,7 @@ title: Atomic Habits
 author: James Clear 
 genre: "No ficción"
 description: "No ficción"
+rating: 4.5
 categories: [lectura]
 image: images/preview/book-review.jpg
 comments: false

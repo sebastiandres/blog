@@ -7,6 +7,7 @@ title: Flying Free
 author: Cecilia Aragon
 genre: Biografía
 description: "Biografía"
+rating: 4.5
 categories: [lectura]
 image: images/preview/book-review.jpg
 comments: false
