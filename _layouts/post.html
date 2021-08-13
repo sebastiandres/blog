@@ -55,6 +55,9 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% if page.toc == true %}
+    <h4> Contenidos </h4>
+    {% endif -%}
     {{ content | toc  }}
   </div>
   {%- if page.comments -%}
