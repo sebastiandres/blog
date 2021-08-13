@@ -9,6 +9,18 @@ layout: default
 
   {{ content | markdownify }}
 
+  <section class="recent-posts">
+    <div class="row listrecent">
+        {% for post in site.posts %}
+          {% if post.layout == "book-review" %}
+            {% if post.hide == false %}
+              {% include mediumify_postbox.html %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    </div>
+  </section>
+
   <!-- Assign all posts to variable -->
   {% assign rawposts = site.posts %}
 
