@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Nuevo favicon | sebastiandres</title>
+<title>Cambiando fontsize en código | sebastiandres</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Nuevo favicon" />
+<meta property="og:title" content="Cambiando fontsize en código" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="De python a sebastiandres en 1 paso." />
-<meta property="og:description" content="De python a sebastiandres en 1 paso." />
-<link rel="canonical" href="https://sebastiandres.github.io/blog/fastpages/favicon/2021/08/04/post-favicon.html" />
-<meta property="og:url" content="https://sebastiandres.github.io/blog/fastpages/favicon/2021/08/04/post-favicon.html" />
+<meta name="description" content="Más personalización en fastpages" />
+<meta property="og:description" content="Más personalización en fastpages" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/fastpages/css/2021/08/13/code-fontsize.html" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/fastpages/css/2021/08/13/code-fontsize.html" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/images/2021-08-04-favicon/preview.png" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/fastpages.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-04T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-08-13T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/fastpages/favicon/2021/08/04/post-favicon.html","@type":"BlogPosting","headline":"Nuevo favicon","dateModified":"2021-08-04T00:00:00-05:00","datePublished":"2021-08-04T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/2021-08-04-favicon/preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/fastpages/favicon/2021/08/04/post-favicon.html"},"description":"De python a sebastiandres en 1 paso.","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/fastpages/css/2021/08/13/code-fontsize.html","@type":"BlogPosting","headline":"Cambiando fontsize en código","dateModified":"2021-08-13T00:00:00-05:00","datePublished":"2021-08-13T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/fastpages.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/fastpages/css/2021/08/13/code-fontsize.html"},"description":"Más personalización en fastpages","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -97,8 +97,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Nuevo favicon</h1><p class="page-description">De python a sebastiandres en 1 paso.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-04T00:00:00-05:00" itemprop="datePublished">
-        Aug 4, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Cambiando fontsize en código</h1><p class="page-description">Más personalización en fastpages</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-13T00:00:00-05:00" itemprop="datePublished">
+        Aug 13, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -113,7 +113,7 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/blog/categories/#fastpages">fastpages</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/blog/categories/#favicon">favicon</a>
+        <a class="category-tags-link" href="/blog/categories/#css">css</a>
         
       
       </p>
@@ -122,26 +122,41 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Ya había reemplazado el favicon del sitio, pero no me terminaba de convencer.
-Hoy mirando el logo de python me di cuenta que podía facilmente transformarse en una S,
-que me pareció muy adecuado para un favicon simple pero memorable.</p>
+    <p>La configuración por defecto de fastpages para el código no es de mi agrado.
+En efecto, me molestaba que incluso cuando la línea no es muy larga, 
+al ser de gran tamaño de todas maneras se ocultaba parte del código.</p>
 
-<p><img src="/blog/images/2021-08-04-favicon/transformacion.png" alt="" title="Transformación del logo de python al favicon" /></p>
+<p>Esto más que nada, porque el tamaño de la fuente era mayor que la del texto. 
+Al mirar el css, se ve que los textos de código están definidos como el 
+105% o 110% del tamaño normal de la fuente.
+Yo pensaría que debe ser al revés: el código está para ser mirado pero no analizado en profundidad.<br />
+Para eso alguien la descargará y revisará en su editor de peferencia. Es mejor que 
+se vea todo el código, a que haya que hacer scroll.</p>
 
-<p>La imagen final tiene algunos detalles en los bordes, pero no es relevante
-dado que al convertirlo a favicon se reduce enormemente el tamaño.</p>
+<p>¿Qué tan dificil es el cambio?</p>
 
-<p><img src="/blog/images/2021-08-04-favicon/preview.png" alt="" title="Favicon obtenido" /></p>
+<p>Googleando llegué a 
+https://forums.fast.ai/t/fastpages-how-to-change-font-size/67095
+donde se explica que, sólo hay que editar en <code class="language-plaintext highlighter-rouge">_sass/minima/custom-styles.scss</code>.</p>
 
-<p>Hay varios servicios para generar un favicon a partir de una imagen, en este caso obtuve mejores resultados con <a href="https://favicon.io/">favicon.io</a>.</p>
+<p>Agregué el siguiente código, para reducir el tamaño de la fuente al 75%. 
+Hay 3 tipos de ajuste: celdas de código, código inline de markdown y código normal de markdown.</p>
 
-<p>El favicon se puede modificar reemplazando directamente <code class="language-plaintext highlighter-rouge">images/favicon.ico</code>, o bien,
-editando el archivo <code class="language-plaintext highlighter-rouge">_includes/favicons.html</code> para definir una ruta diferente.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.highlight</span> <span class="nt">pre</span><span class="o">,</span> <span class="nc">.highlight</span> <span class="nt">code</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">75%</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
 
-<p><strong>Test final</strong>: el siguiente texto con 80 chars debería verse completo…</p>
+<span class="nc">.input_area</span> <span class="nt">pre</span><span class="o">,</span> <span class="nc">.input_area</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">75%</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 
+<span class="nt">p</span> <span class="nt">code</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">75%</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div></div>
+
+<p>He visto que <code class="language-plaintext highlighter-rouge">!important</code> se desaconseja, pero bueno, podremos hacer una excepción en virtud del tiempo
+y de la humildad de este blog.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -151,7 +166,7 @@ editando el archivo <code class="language-plaintext highlighter-rouge">_includes
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/fastpages/favicon/2021/08/04/post-favicon.html" hidden></a>
+</script><a class="u-url" href="/blog/fastpages/css/2021/08/13/code-fontsize.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
