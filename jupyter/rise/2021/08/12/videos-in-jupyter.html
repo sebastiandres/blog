@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Usando columnas en RISE | sebastiandres</title>
+<title>Videos en Jupyter Notebook | sebastiandres</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Usando columnas en RISE" />
+<meta property="og:title" content="Videos en Jupyter Notebook" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="¿Cómo poner se pueden usar columnas en RISE?" />
-<meta property="og:description" content="¿Cómo poner se pueden usar columnas en RISE?" />
+<meta name="description" content="¿Cómo poner se pueden incrustar videos en jupyter notebook?" />
+<meta property="og:description" content="¿Cómo poner se pueden incrustar videos en jupyter notebook?" />
 <link rel="canonical" href="https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html" />
 <meta property="og:site_name" content="sebastiandres" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-12T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html","@type":"BlogPosting","headline":"Usando columnas en RISE","dateModified":"2021-08-12T00:00:00-05:00","datePublished":"2021-08-12T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/jupyter.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html"},"description":"¿Cómo poner se pueden usar columnas en RISE?","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html","@type":"BlogPosting","headline":"Videos en Jupyter Notebook","dateModified":"2021-08-12T00:00:00-05:00","datePublished":"2021-08-12T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/jupyter.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html"},"description":"¿Cómo poner se pueden incrustar videos en jupyter notebook?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -97,7 +97,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Usando columnas en RISE</h1><p class="page-description">¿Cómo poner se pueden usar columnas en RISE?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-12T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Videos en Jupyter Notebook</h1><p class="page-description">¿Cómo poner se pueden incrustar videos en jupyter notebook?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-12T00:00:00-05:00" itemprop="datePublished">
         Aug 12, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -208,16 +208,46 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tratemos ahora con un video, según el tutorial de <a href="https://www.w3schools.com/html/html5_video.asp">w3school</a>:</p>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;video width=&quot;400&quot; controls&gt;</span>
+<span class="s2">  &lt;source src=&quot;https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
+<span class="s2">&lt;/video&gt;&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
 <video width="400" controls="">
   <source src="https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4" type="video/mp4" />
-</video><p>?</p>
+</video>
+</div>
+
+</div>
 
 </div>
 </div>
+
 </div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Pero también podemos ponerlo directamente en la celda:</p>
