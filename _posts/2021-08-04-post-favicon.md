@@ -25,3 +25,9 @@ Hay varios servicios para generar un favicon a partir de una imagen, en este cas
 
 El favicon se puede modificar reemplazando directamente `images/favicon.ico`, o bien,
 editando el archivo `_includes/favicons.html` para definir una ruta diferente. 
+
+**Test final**: el siguiente texto con 80 chars debería verse completo...
+
+```
+123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 
+```

@@ -1,4 +1,3 @@
-
 ---
 featured: false
 hide: false
