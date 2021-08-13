@@ -6,7 +6,7 @@ layout: book-review
 title: Flying Free
 author: Cecilia Aragon
 genre: Biografía
-description: "Biografía"
+description: "Usando la matemática como herramienta de superación personal"
 rating: 4.5
 categories: [lectura]
 image: images/preview/book-review.jpg
