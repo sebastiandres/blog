@@ -1,10 +1,4 @@
 /*-----------------------------------*/
-/*--- IMPORT STYLES FOR FASTPAGES ---*/
-@import "minima/fastpages-styles";   
-
-
-
-/*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 .highlight pre, .highlight code {
     font-size: 75%;
@@ -17,6 +11,10 @@
 p code {
     font-size: 75%;
 }
+
+/*-----------------------------------*/
+/*--- IMPORT STYLES FOR FASTPAGES ---*/
+@import "minima/fastpages-styles";   
 
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
