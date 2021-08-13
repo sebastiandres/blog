@@ -86,7 +86,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/buscar/">Buscar</a><a class="page-link" style="border: none" href="/blog/fe/">Escribiendo</a><a class="page-link" style="border: none" href="/blog/lecturas/">Leyendo</a><a class="page-link" style="border: none" href="/blog/proyectos/">Charlas y Proyectos</a></div>
+        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/proyectos/">Charlas y Proyectos</a><a class="page-link" style="border: none" href="/blog/fe/">Escribiendo</a><a class="page-link" style="border: none" href="/blog/lecturas/">Leyendo</a><a class="page-link" style="border: none" href="/blog/buscar/">Buscar</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -111,11 +111,12 @@ window.onload = wrap_img;
 <div class="home"><h1 class="page-heading">Escribiendo</h1><p>Puedes buscar entre post de no-ficción simples o notebooks (con más código), o posts de ficción (narrativa).</p>
 
 
-  <button onclick="show_hide('.story','.notebook, .post')">No Ficción - Simples</button> 
-  <button onclick="show_hide('.notebook','.story, .post')">No Ficción - Notebooks</button>
-  <button onclick="show_hide('.story, .notebook, .post','')">Ficción</button>
-  <button onclick="show_hide('.post','.notebook, .story')">Todo</button>
-
+  <button onclick="show_hide('.post', '.notebook, .story')">No Ficción - Simples</button> 
+  <button onclick="show_hide('.notebook', '.story, .post')">No Ficción - Notebooks</button>
+  <button onclick="show_hide('.story', '.notebook, .post')">Ficción</button>
+  <button onclick="show_hide('.story, .notebook, .post', '')">Todo</button>
+  <br>
+  
   <!-- Assign all posts to variable -->
   
 
