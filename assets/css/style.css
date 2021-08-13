@@ -323,11 +323,11 @@ table td { border: 1px solid #e8e8e8; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.highlight pre, .highlight code { font-size: 75%; }
+.highlight pre, .highlight code { font-size: 75% !important; }
 
-.input_area pre, .input_area { font-size: 75%; }
+.input_area pre, .input_area { font-size: 75% !important; }
 
-p code { font-size: 75%; }
+p code { font-size: 75% !important; }
 
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
