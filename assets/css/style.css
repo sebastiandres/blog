@@ -429,7 +429,11 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.highlight pre, .highlight code { font-size: 85%; }
+.highlight pre, .highlight code { font-size: 75%; }
+
+.input_area pre, .input_area { font-size: 75%; }
+
+p code { font-size: 75%; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
