@@ -23,12 +23,12 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <button onclick="show_hide('.story','.notebook, .post')">Show Book</button> 
-  <button onclick="show_hide('.notebook','.story, .post')">Show Notebooks</button>
-  <button onclick="show_hide('.post','.notebook, .story')">Show Posts</button>
-  <button onclick="show_hide('.story, .notebook, .post','')">Show All</button>
-
   {{ content | markdownify }}
+
+  <button onclick="show_hide('.story','.notebook, .post')">No Ficción - Simples</button> 
+  <button onclick="show_hide('.notebook','.story, .post')">No Ficción - Notebooks</button>
+  <button onclick="show_hide('.story, .notebook, .post','')">Ficción</button>
+  <button onclick="show_hide('.post','.notebook, .story')">Todo</button>
 
   <!-- Assign all posts to variable -->
   {% assign rawposts = site.posts %}
