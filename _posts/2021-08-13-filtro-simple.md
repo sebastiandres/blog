@@ -10,7 +10,7 @@ image: images/2021-08-13-filtro-simple/boton.gif
 comments: true
 ---
 
-El menu superior del blog empezaba a tener demasiadas opciones, y tenía ganas de simplificarlo.
+El menú superior del blog empezaba a tener demasiadas opciones, y tenía ganas de simplificarlo.
 Me dí cuenta que en realidad habían 2 grandes temáticas: lo que escribo y lo que leo. 
 Lo que estoy leyendo tiene siempre el mismo formato: opinión de libro. Lo que escribo puede
 ser un post simple (en markdown) o algo más sofisticado en un notebok, o bien ser algún escrito de ficción.
