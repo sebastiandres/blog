@@ -4,8 +4,6 @@ title: Charlas y Proyectos
 permalink: /proyectos/
 ---
 
-<img src="{{ site.baseurl }}/images/monty_python_foot.png" height=800px class="monty-python-foot" />
-
 ## Charlas
 
 * [UNSA Argentina](https://sebastiandres.github.io/talk_2021_04_UNSA_Argentina/) - 09 Abril 2021. Charla _"Sin límites con Python"_ realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer.

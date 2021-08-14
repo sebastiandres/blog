@@ -6,7 +6,7 @@ layout: post
 title: "Agregando un filtro en fastpages"
 description: "Más personalización en fastpages 2"
 categories: [fastpages, css, javascript]
-image: images/preview/fastpages.png
+image: images/2021-08-13-filtro-simple/boton.gif
 comments: true
 ---
 
@@ -93,4 +93,9 @@ Como los botones se veian un poco feos, les puse el css de un botón de streamli
     border: 1px solid rgba(38, 39, 48, 0.2);
 }
 ```
+
+Finalmente, el resultado se ve muy profesional para lo sencillo del código:
+
+![]({{ site.baseurl}}/images/2021-08-13-filtro-simple/escribiendo-final.gif "Resultado final")
+
 
