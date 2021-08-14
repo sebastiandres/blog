@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Videos en Jupyter Notebook" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="¿Cómo poner se pueden incrustar videos en jupyter notebook?" />
-<meta property="og:description" content="¿Cómo poner se pueden incrustar videos en jupyter notebook?" />
+<meta name="description" content="¿Cómo poner se pueden incrustar videos en markdown o jupyter notebook?" />
+<meta property="og:description" content="¿Cómo poner se pueden incrustar videos en markdown o jupyter notebook?" />
 <link rel="canonical" href="https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html" />
 <meta property="og:site_name" content="sebastiandres" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-12T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html","@type":"BlogPosting","headline":"Videos en Jupyter Notebook","dateModified":"2021-08-12T00:00:00-05:00","datePublished":"2021-08-12T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/jupyter.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html"},"description":"¿Cómo poner se pueden incrustar videos en jupyter notebook?","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html","@type":"BlogPosting","headline":"Videos en Jupyter Notebook","dateModified":"2021-08-12T00:00:00-05:00","datePublished":"2021-08-12T00:00:00-05:00","image":"https://sebastiandres.github.io/blog/images/preview/jupyter.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/jupyter/rise/2021/08/12/videos-in-jupyter.html"},"description":"¿Cómo poner se pueden incrustar videos en markdown o jupyter notebook?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -97,7 +97,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Videos en Jupyter Notebook</h1><p class="page-description">¿Cómo poner se pueden incrustar videos en jupyter notebook?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-12T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Videos en Jupyter Notebook</h1><p class="page-description">¿Cómo poner se pueden incrustar videos en markdown o jupyter notebook?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-12T00:00:00-05:00" itemprop="datePublished">
         Aug 12, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -155,11 +155,9 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?">&#160;&#191;C&#243;mo se ponen videos en un notebook?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?"> </a></h2><p>Para nuestros ejemplos usaremos 2 videos:</p>
-<ul>
-<li>Video en local: 2020-03-19-rise-columns/mov_bbb.mp4 </li>
-<li>Video de internet: <a href="https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4">https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4</a></li>
-</ul>
+<h2 id="&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?">&#160;&#191;C&#243;mo se ponen videos en un notebook?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?"> </a></h2><p>Es posible usar un video en local (de tu disco duro) o en línea. Sin embargo, resulta aconsejable subir el video en línea y enlazar ese video. ¿Por qué? Porque así la ruta no cambia al ejecutarlo como notebook en local y al convertirlo mediante fastpages en página web.</p>
+<p>Usaremos el video que usan de ejemplo en <a href="https://www.w3schools.com/html/html5_video.asp">w3school</a>: Sita_Sings_the_Blues_small.mp4</p>
+<p>Agregando el repositorio en github, obtenemos la ruta del archivo (notar que tiene que estar en version raw):</p>
 <p>El código html para incrustar un video es:</p>
 <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">controls</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path_to/video_name.mp4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
 </pre></div>
@@ -168,46 +166,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;video width=&quot;400&quot; controls&gt;</span>
-<span class="s2">  &lt;source src=&quot;2020-03-19-rise-columns/mov_bbb.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
-<span class="s2">&lt;/video&gt;&quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-
-<video width="400" controls="">
-  <source src="2020-03-19-rise-columns/mov_bbb.mp4" type="video/mp4" />
-</video>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -252,28 +210,7 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Pero también podemos ponerlo directamente en la celda:</p>
 <p>Por ejemplo</p>
-<video controls="" src="2020-03-19-rise-columns/mov_bbb.mp4"></video><p>y</p>
 <video controls="" src="https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4"></video>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Observación</strong>:</p>
-<h3 id="&#160;&#191;Qu&#233;-m&#225;s-me-gustar&#237;a?">&#160;&#191;Qu&#233; m&#225;s me gustar&#237;a?<a class="anchor-link" href="#&#160;&#191;Qu&#233;-m&#225;s-me-gustar&#237;a?"> </a></h3><ul>
-<li><p>Código: A pesar que puedo poner código en las columnas (código "muerto" pues se puede escribir codigo en el markdown), me gustaría más que la columna fueran una celda de python ejecutable.</p>
-</li>
-<li><p>Videos: Podría ser útil tener el video en una columna, aunque en general mostrar el video usando el código de python y luego maximizando el video.</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Update:">Update:<a class="anchor-link" href="#Update:"> </a></h2><p>Existe una extensión que permite tener 2 celdas de jupyter notebook lado a lado: split cells.</p>
-
 </div>
 </div>
 </div>
