@@ -155,14 +155,22 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Poner un video en markdown o jupyter notebook es sencillo, pero hay varias opciones y no todas funcionan. ¡La opción que pongo acá funciona en todos los casos!</p>
 <h2 id="&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?">&#160;&#191;C&#243;mo se ponen videos en un notebook?<a class="anchor-link" href="#&#160;&#191;C&#243;mo-se-ponen-videos-en-un-notebook?"> </a></h2><p>Es posible usar un video en local (de tu disco duro) o en línea. Sin embargo, resulta aconsejable subir el video en línea y enlazar ese video. ¿Por qué? Porque así la ruta no cambia al ejecutarlo como notebook en local y al convertirlo mediante fastpages en página web.</p>
-<p>Usaremos el video que usan de ejemplo en <a href="https://www.w3schools.com/html/html5_video.asp">w3school</a>: Sita_Sings_the_Blues_small.mp4</p>
+<p>Usaremos el video que usan de ejemplo en <a href="https://www.w3schools.com/html/html5_video.asp">w3school</a>: mov_bbb.mp4</p>
 <p>Agregando el repositorio en github, obtenemos la ruta del archivo (notar que tiene que estar en version raw):</p>
-<p>El código html para incrustar un video es:</p>
-<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">controls</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path_to/video_name.mp4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+<p><a href="https://github.com/sebastiandres/blog/blob/master/videos/mov_bbb.mp4?raw=true">https://github.com/sebastiandres/blog/blob/master/videos/mov_bbb.mp4?raw=true</a></p>
+<p>El código html para incrustar un video en html o markdown es:</p>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">controls</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path_to/video_name.mp4&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;800&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
 </pre></div>
 <p>Como siempre, podemos usar el html en la celda:</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<video controls="" src="https://github.com/sebastiandres/blog/blob/master/videos/mov_bbb.mp4?raw=true" width="800"></video>
 </div>
 </div>
 </div>
@@ -176,8 +184,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;video width=&quot;400&quot; controls&gt;</span>
-<span class="s2">  &lt;source src=&quot;https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
+<span class="s2">&lt;video controls src=&quot;https://github.com/sebastiandres/blog/blob/master/videos/mov_bbb.mp4?raw=true&quot; width=&quot;800&quot;&gt;</span>
 <span class="s2">&lt;/video&gt;&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -193,8 +200,7 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<video width="400" controls="">
-  <source src="https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4" type="video/mp4" />
+<video controls="" src="https://github.com/sebastiandres/blog/blob/master/videos/mov_bbb.mp4?raw=true" width="800">
 </video>
 </div>
 
@@ -208,9 +214,9 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pero también podemos ponerlo directamente en la celda:</p>
-<p>Por ejemplo</p>
-<video controls="" src="https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_small.mp4"></video>
+<p>Todas las opciones del tag <code>&lt;video&gt;</code> están en la 
+<a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video">documentación</a>.</p>
+
 </div>
 </div>
 </div>
