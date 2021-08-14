@@ -327,6 +327,8 @@ code { font-size: 75% !important; }
 
 pre { font-size: 75% !important; }
 
+.css-qbe2hs { /* display: inline-flex; */ /* -webkit-box-align: center; */ /* align-items: center; */ /* -webkit-box-pack: center; */ justify-content: center; /* font-weight: 400; */ /* padding: 0.25rem 0.75rem; */ border-radius: 0.25rem; /* margin: 0px; */ line-height: 1.6; color: inherit; width: auto; background-color: white; border: 1px solid rgba(38, 39, 48, 0.2); }
+
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
 .post img { display: block; vertical-align: top; margin-left: auto; margin-right: auto; }
