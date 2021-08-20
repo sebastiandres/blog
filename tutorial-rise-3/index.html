@@ -103,7 +103,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -149,6 +149,7 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-configurar-texto-y-columnas?">¿Cómo puedo configurar texto y columnas? </a></li>
 <li class="toc-entry toc-h2"><a href="#Convierte-tus-presentaciones-automáticamente">Convierte tus presentaciones automáticamente </a></li>
+<li class="toc-entry toc-h2"><a href="#Ocultando-código">Ocultando código </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-puedo-hacer-actividades-interactivas?">¿Cómo puedo hacer actividades interactivas? </a></li>
 <li class="toc-entry toc-h2"><a href="#¿Cómo-hacer-encuestas?">¿Cómo hacer encuestas? </a></li>
 <li class="toc-entry toc-h2"><a href="#Usa-un-teclado-inalámbrico">Usa un teclado inalámbrico </a></li>
@@ -262,6 +263,322 @@ Texto posterior.&lt;/p&gt;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ocultando-código">
+<a class="anchor" href="#Ocultando-c%C3%B3digo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ocultando código<a class="anchor-link" href="#Ocultando-c%C3%B3digo"> </a>
+</h2>
+<p>A veces quieres ejecutar una celda pero no mostrar largas filas de código.</p>
+<p>Hay 2 formas de hacerlo:</p>
+<ul>
+<li>Creando función auxiliar y ejecutándola.</li>
+<li>Usando una función específica para ocultar código.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Opción 1: Si tenemos una función muy larga, podemos simplemente definirla en un archivo, importarla y ejecutarla:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"LOREM IPSUM"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>LOREM IPSUM
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Opción 2: Usando esta función específica para ocultar código</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Working version</span>
+<span class="k">def</span> <span class="nf">hide_code</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span>
+    <span class="kn">import</span> <span class="nn">binascii</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">hexlify</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
+    <span class="n">my_html</span> <span class="o">=</span> <span class="s1">'''</span>
+<span class="s1">    &lt;div id="</span><span class="si">%s</span><span class="s1">"&gt;&lt;/div&gt;</span>
+<span class="s1">    &lt;script&gt;</span>
+<span class="s1">    function code_toggle() {</span>
+<span class="s1">            var p = $("#</span><span class="si">%s</span><span class="s1">");</span>
+<span class="s1">            if (p.length==0) return;</span>
+<span class="s1">            while (!p.hasClass("cell")) {</span>
+<span class="s1">                p=p.parent();</span>
+<span class="s1">                if (p.prop("tagName") =="body") return;</span>
+<span class="s1">            }</span>
+<span class="s1">            var cell = p;</span>
+<span class="s1">     cell.find(".input").toggle();</span>
+<span class="s1">    } </span>
+<span class="s1">    $( document ).ready(code_toggle);</span>
+<span class="s1">    &lt;/script&gt;</span>
+<span class="s1">    &lt;form action="javascript:code_toggle()"&gt;&lt;input type="submit" value="Código"&gt;&lt;/form&gt;'''</span> <span class="o">%</span> <span class="p">(</span><span class="n">uid</span><span class="p">,</span> <span class="n">uid</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">display_html</span><span class="p">(</span><span class="n">my_html</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hide_code</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"HMMM"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8b1edbaa9a3d8543
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    <script>
+    function code_hide() {
+            var p = $("#8b1edbaa9a3d8543");
+            if (p.length==0) return;
+            while (!p.hasClass("cell")) {
+                p=p.parent();
+                if (p.prop("tagName") =="body") return;
+            }
+            var cell = p;
+    cell.hide()
+    }
+    $( document ).ready(code_toggle);
+    function code_show() {
+            var p = $("#8b1edbaa9a3d8543");
+            if (p.length==0) return;
+            while (!p.hasClass("cell")) {
+                p=p.parent();
+                if (p.prop("tagName") =="body") return;
+            }
+            var cell = p;
+    cell.show()
+    } 
+    $( document ).ready(code_toggle);
+    </script>
+    <form action="javascript:code_hide()"><input type="submit" value="Hide" id="8b1edbaa9a3d8543"></form>
+    <form action="javascript:code_show()"><input type="submit" value="Show" id="8b1edbaa9a3d8543"></form>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HMMM
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hide_code</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"HMMM"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>740eda39c26b3df5
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    <script>
+    function code_hide() {
+            var p = $("#740eda39c26b3df5");
+            if (p.length==0) return;
+            while (!p.hasClass("cell")) {
+                p=p.parent();
+                if (p.prop("tagName") =="body") return;
+            }
+            var cell = p;
+    cell.hide()
+    }
+    $( document ).ready(code_toggle);
+    function code_show() {
+            var p = $("#740eda39c26b3df5");
+            if (p.length==0) return;
+            while (!p.hasClass("cell")) {
+                p=p.parent();
+                if (p.prop("tagName") =="body") return;
+            }
+            var cell = p;
+    cell.show()
+    } 
+    $( document ).ready(code_toggle);
+    </script>
+    <form action="javascript:code_hide()"><input type="submit" value="Hide" id="740eda39c26b3df5"></form>
+    <form action="javascript:code_show()"><input type="submit" value="Show" id="740eda39c26b3df5"></form>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HMMM
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hide_code</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hmmm444"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>886216a64d679f3b
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    <script>
+    function code_toggle() {
+            var p = $("#886216a64d679f3b");
+            if (p.length==0) return;
+            while (!p.hasClass("cell")) {
+                p=p.parent();
+                if (p.prop("tagName") =="body") return;
+            }
+            var cell = p;
+    cell.toggle()
+    } 
+    $( document ).ready(code_toggle);
+    </script>
+    <form action="javascript:code_toggle()"><input type="submit" value="Código" id="886216a64d679f3b"></form>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hmmm444
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
