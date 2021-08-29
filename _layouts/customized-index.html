@@ -31,7 +31,7 @@ Estos son los últimos 3 contenidos destacados:
 <!-- Assign all posts to variable -->
 {% assign rawposts = site.posts %}
 <!-- Hide posts if front matter flag hide:true -->
-{% assign featurerd_posts = '' | split:'' %}
+{% assign featured_posts = '' | split:'' %}
 {% for post in rawposts %}
   {% if post.featured == true %}
     {% if post.hide == false %}
