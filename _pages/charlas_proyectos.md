@@ -6,7 +6,7 @@ permalink: /proyectos/
 
 ## Charlas
 
-* [Pycon Latam 2021](https://sebastiandres.github.io/talk_2021_08_pylatam/) - 28 Agosto 2021. Charla _"Presentaciones Interactivas con Jupyter Notebook + RISE. Todo lo que necesitas saber en 30 minutos."_  En esta charla resumí los conocimientos que necesitas saber para hacer una presentación completamente interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y su extensión RISE.
+* [Pycon Latam 2021](https://sebastiandres.github.io/talk_2021_08_pylatam/) - 28 Agosto 2021. Charla _"Presentaciones Interactivas con Jupyter Notebook + RISE. Todo lo que necesitas saber en 30 minutos."_  En esta charla resumí los conocimientos que necesitas para hacer una presentación completamente interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y su extensión RISE.
 * [UNSA Argentina](https://sebastiandres.github.io/talk_2021_04_UNSA_Argentina/) - 09 Abril 2021. Charla _"Sin límites con Python"_ realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer.
 * [PyCon Argentina 2020](https://sebastiandres.github.io/talk_2020_11_pycon_argentina/) - Noviembre 2020. Charla _"Coding as a Service: Librería pypsdier, aprendizajes y metodología"_ realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos.
 * [Pycon Colombia 2020](https://sebastiandres.github.io/talk_2020_02_pycon_colombia_rise_and_poll/) - 8 Mayo 2020. Charla _"¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos"_ realizada en la Pycon Colombia 2020, sobre como mezclar Jupyter, RISE y encuestas.
@@ -18,7 +18,8 @@ En cada caso, en el enlace podrás seleccionar el modo de visualización del con
 
 ## Proyectos
 
-* [Gráficos xkcd](https://share.streamlit.io/sebastiandres/streamlit_ppt2rise/main): Un web app para convertir presentaciones de powerpoint (pptx) a jupyter notebooks para poder presentaros con RISE. 
+* [PPTX a RISE](https://share.streamlit.io/sebastiandres/streamlit_ppt2rise/main): Un web app para convertir presentaciones de powerpoint (pptx) a jupyter notebooks para poder presentarlos con RISE. 
+* [Gráficos xkcd](https://share.streamlit.io/sebastiandres/xkcd_streamlit/main): Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. 
 * [Code snippets](https://share.streamlit.io/sebastiandres/streamlit_code_snippets/main): Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app.
 * [linktree emulator](https://github.com/sebastiandres/linktree): El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github.
 * ppt to rise [library](https://github.com/sebastiandres/pptx_to_RISE) y [web app](https://ppt2rise.sebastiandres.xyz/): Para convertir una presentación powerpoint a RISE (Jupyter Notebook).
