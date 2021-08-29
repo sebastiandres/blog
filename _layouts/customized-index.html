@@ -38,7 +38,10 @@ Estos son los últimos 3 contenidos destacados:
   {% endif %}
 {% endfor %}
 
+{{ featured_posts }}
+
 {% for post in featured_posts[0:3] %}
+  {{ post }}
   {% include mediumify_postbox.html %}
 {% endfor %}
 
