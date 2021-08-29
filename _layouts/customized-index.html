@@ -31,11 +31,11 @@ Estos son los últimos 3 contenidos destacados:
 <!-- Assign all posts to variable -->
 {% assign rawposts = site.posts %}
 <!-- Hide posts if front matter flag hide:true -->
-{% assign featured_posts = '' | split:'' %}
+{% set featured_posts = [] %}
 {% for post in rawposts %}
   {% if post.featured == true %}
     {% if post.hide == false %}
-      {% assign featured_posts = featured_posts | push:post%}
+      {% set featured_posts = featured_posts.append(post) %}
     {% endif %}
   {% endif %}
 {% endfor %}
