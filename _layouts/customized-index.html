@@ -11,6 +11,7 @@ layout: default
 </div>
 
 <!-- Posts Index ================================================== -->
+<h2> Original </h2>
 <section class="recent-posts">
   <div class="row listrecent">
       {% for post in site.posts %}
@@ -22,3 +23,25 @@ layout: default
       {% endfor %}
   </div>
 </section>
+
+
+<!-- Featured content ================================================== -->
+<h2> Contenido destacado </h2>
+Estos son los últimos 3 contenidos destacados:
+<!-- Assign all posts to variable -->
+{% assign rawposts = site.posts %}
+<!-- Hide posts if front matter flag hide:true -->
+{% assign featurerd_posts = '' | split:'' %}
+{% for post in rawposts %}
+  {% if post.featured == true %}
+    {% if post.hide == false %}
+      {% assign featured_posts = featured_posts | push:post%}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% for post in featured_posts[0:3] %}
+  {% include mediumify_postbox.html %}
+{% endif %}
+
+

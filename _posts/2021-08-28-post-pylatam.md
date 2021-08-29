@@ -1,5 +1,5 @@
 ---
-featured: false
+featured: true
 hide: false
 toc: false
 layout: post
