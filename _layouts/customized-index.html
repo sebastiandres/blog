@@ -42,7 +42,9 @@ Estos son los últimos 3 contenidos destacados:
   {% endif %}
 {% endfor %}
 
-<div> {{ featured_posts }} </div>
+{% for post in site.posts %}
+  <h3>post.title</h3>
+{% endfor %}
 
 
 <section class="recent-posts">
@@ -54,3 +56,6 @@ Estos son los últimos 3 contenidos destacados:
   </div>
 </section>
 
+{% for post in featured_posts %}
+  <h3>post.title</h3>
+{% endfor %}
