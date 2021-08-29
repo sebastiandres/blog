@@ -25,6 +25,10 @@ layout: default
 </section>
 
 
+<div> {{ site.posts }} </div>
+
+
+
 <!-- Featured content ================================================== -->
 <h2> Contenido destacado </h2>
 Estos son los últimos 3 contenidos destacados:
@@ -38,11 +42,15 @@ Estos son los últimos 3 contenidos destacados:
   {% endif %}
 {% endfor %}
 
-{{ featured_posts }}
+<div> {{ featured_posts }} </div>
 
-{% for post in featured_posts[0:3] %}
-  {{ post }}
-  {% include mediumify_postbox.html %}
-{% endfor %}
 
+<section class="recent-posts">
+  <div class="row listrecent">
+  {% for post in featured_posts[0:3] %}
+    {{ post }}
+    {% include mediumify_postbox.html %}
+  {% endfor %}
+  </div>
+</section>
 
