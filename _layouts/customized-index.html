@@ -11,7 +11,8 @@ layout: default
 </div>
 
 <!-- Posts Index ================================================== -->
-<h2> Original </h2>
+<h2> Contenido destacado </h2>
+
 <section class="recent-posts">
   <div class="row listrecent">
       {% for post in site.posts %}
@@ -25,6 +26,7 @@ layout: default
 </section>
 
 <!-- Featured content ================================================== -->
+<!--
 <h2> Contenido destacado </h2>
 Estos son los últimos 3 contenidos destacados:
 
@@ -38,9 +40,8 @@ Estos son los últimos 3 contenidos destacados:
 {% endfor %}
 
 {% for post in site.posts %}
-  <h3>post.title</h3>
+  <h3> {{ post.title }} </h3>
 {% endfor %}
-
 
 <section class="recent-posts">
   <div class="row listrecent">
@@ -53,3 +54,4 @@ Estos son los últimos 3 contenidos destacados:
 {% for post in featured_posts %}
   <h3>post.title</h3>
 {% endfor %}
+-->
