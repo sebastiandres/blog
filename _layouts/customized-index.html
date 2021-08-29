@@ -28,14 +28,12 @@ layout: default
 <!-- Featured content ================================================== -->
 <h2> Contenido destacado </h2>
 Estos son los últimos 3 contenidos destacados:
-<!-- Assign all posts to variable -->
-{% assign rawposts = site.posts %}
-<!-- Hide posts if front matter flag hide:true -->
-{% set featured_posts = [] %}
-{% for post in rawposts %}
+
+{% assign featured_posts = [] %}
+{% for post in site.posts %}
   {% if post.featured == true %}
     {% if post.hide == false %}
-      {% set featured_posts = featured_posts.append(post) %}
+      {% assign featured_posts = featured_posts.append(post) %}
     {% endif %}
   {% endif %}
 {% endfor %}
