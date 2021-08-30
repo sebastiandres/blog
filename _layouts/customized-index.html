@@ -10,24 +10,10 @@ layout: default
   {{ content | markdownify }}
 </div>
 
-<!-- Posts Index ================================================== 
-<h2> Contenido destacado </h2>
-
-<section class="recent-posts">
-  <div class="row listrecent">
-      {% for post in site.posts %}
-        {% if post.featured == true %}
-          {% if post.hide != true %}
-            {% include mediumify_postbox.html %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-  </div>
-</section>
--->
-
 <!-- Latest Content ================================================== -->
 <h2> Últimos escritos </h2>
+Los últimos tres contenidos son:
+
 {% assign last_posts = ''|split:'' %}
 {% for post in site.posts %}
   {% if post.hide != true %}
@@ -45,6 +31,8 @@ layout: default
 
 <!-- Featured content ================================================== -->
 <h2> Contenido destacada </h2>
+Los últimos 3 contenidos destacados:
+
 {% assign featured_posts = ''|split:'' %}
 {% for post in site.posts %}
   {% if post.featured == true %}
