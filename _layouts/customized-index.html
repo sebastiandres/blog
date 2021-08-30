@@ -36,44 +36,8 @@ layout: default
 
 <section class="recent-posts">
   <div class="row listrecent">
-      {% for post in featured_posts[:3] %}
+      {% for post in featured_posts | slice 0, 3 %}
             {% include mediumify_postbox.html %}
       {% endfor %}
   </div>
 </section>
-
-<ul>
-{% for recent in site.posts[-5:] %}
-  {% for post in recent %}
-      <li> <a href="/{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-{% endfor %}
-</ul>
-<!--
-Estos son los últimos 3 contenidos destacados:
-
-{% assign featured_posts = [] %}
-{% for post in site.posts %}
-  {% if post.featured == true %}
-    {% if post.hide == false %}
-      {% assign featured_posts = featured_posts.append(post) %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-{% for post in site.posts %}
-  <h3> {{ post.title }} </h3>
-{% endfor %}
-
-<section class="recent-posts">
-  <div class="row listrecent">
-  {% for post in featured_posts[0:3] %}
-    {% include mediumify_postbox.html %}
-  {% endfor %}
-  </div>
-</section>
-
-{% for post in featured_posts %}
-  <h3>post.title</h3>
-{% endfor %}
--->
