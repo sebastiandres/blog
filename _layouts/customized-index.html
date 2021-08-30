@@ -26,7 +26,7 @@ layout: default
 </section>
 
 <!-- Featured content ================================================== -->
-<h2> Contenido destacado </h2>
+<h2> Últimos escritos </h2>
 {% assign featured_posts = ''|split:'' %}
 {% for post in site.posts %}
   {% if post.hide != true %}
@@ -36,7 +36,7 @@ layout: default
 
 <section class="recent-posts">
   <div class="row listrecent">
-      {% for post in featured_posts %}
+      {% for post in featured_posts[:3] %}
             {% include mediumify_postbox.html %}
       {% endfor %}
   </div>
