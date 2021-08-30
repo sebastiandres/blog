@@ -26,8 +26,23 @@ layout: default
 </section>
 
 <!-- Featured content ================================================== -->
-<!--
 <h2> Contenido destacado </h2>
+{% assign featured_posts = ''|split:'' %}
+{% for post in site.posts %}
+  {% if post.hide != true %}
+    {% assign featured_posts = featured_posts|push:post%}
+  {% endif %}
+{% endfor %}
+
+<section class="recent-posts">
+  <div class="row listrecent">
+      {% for post in featured_posts %}
+            {% include mediumify_postbox.html %}
+      {% endfor %}
+  </div>
+</section>
+
+<!--
 Estos son los últimos 3 contenidos destacados:
 
 {% assign featured_posts = [] %}
