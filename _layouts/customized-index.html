@@ -10,33 +10,53 @@ layout: default
   {{ content | markdownify }}
 </div>
 
-<!-- Posts Index ================================================== -->
+<!-- Posts Index ================================================== 
 <h2> Contenido destacado </h2>
 
 <section class="recent-posts">
   <div class="row listrecent">
       {% for post in site.posts %}
         {% if post.featured == true %}
-          {% if post.hide == false %}
+          {% if post.hide != true %}
             {% include mediumify_postbox.html %}
           {% endif %}
         {% endif %}
       {% endfor %}
   </div>
 </section>
+-->
 
-<!-- Featured content ================================================== -->
+<!-- Latest Content ================================================== -->
 <h2> Últimos escritos </h2>
-{% assign featured_posts = ''|split:'' %}
+{% assign last_posts = ''|split:'' %}
 {% for post in site.posts %}
   {% if post.hide != true %}
-    {% assign featured_posts = featured_posts|push:post%}
+    {% assign last_posts = last_posts|push:post%}
   {% endif %}
 {% endfor %}
 
 <section class="recent-posts">
   <div class="row listrecent">
-      {% for post in featured_posts | slice 0, 3 %}
+      {% for post in last_posts limit:3 %}
+            {% include mediumify_postbox.html %}
+      {% endfor %}
+  </div>
+</section>
+
+<!-- Featured content ================================================== -->
+<h2> Contenido destacada </h2>
+{% assign featured_posts = ''|split:'' %}
+{% for post in site.posts %}
+  {% if post.featured == true %}
+    {% if post.hide != true %}
+      {% assign featured_posts = featured_posts|push:post%}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<section class="recent-posts">
+  <div class="row listrecent">
+      {% for post in featured_posts limit:3 %}
             {% include mediumify_postbox.html %}
       {% endfor %}
   </div>
