@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>PyCon Chile 2021 | sebastiandres</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="PyCon Chile 2021" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Taller y charla de Streamlit" />
+<meta property="og:description" content="Taller y charla de Streamlit" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/streamlit/slides/pycon/2021/11/08/post-plconcl.html" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/streamlit/slides/pycon/2021/11/08/post-plconcl.html" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/2021-11-08-pyconcl.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-08T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://sebastiandres.github.io/blog/streamlit/slides/pycon/2021/11/08/post-plconcl.html","@type":"BlogPosting","headline":"PyCon Chile 2021","dateModified":"2021-11-08T00:00:00-06:00","datePublished":"2021-11-08T00:00:00-06:00","image":"https://sebastiandres.github.io/blog/images/preview/2021-11-08-pyconcl.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/streamlit/slides/pycon/2021/11/08/post-plconcl.html"},"description":"Taller y charla de Streamlit","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
+  <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HG9BYLK8FC');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/blog/assets/css/screen.css" rel="stylesheet">
+
+<link href="/blog/assets/css/main.css" rel="stylesheet">
+
+<script src="/blog/assets/js/jquery.min.js"></script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" style="border: none" href="/blog/about/">Acerca de</a><a class="page-link" style="border: none" href="/blog/proyectos/">Charlas y Proyectos</a><a class="page-link" style="border: none" href="/blog/escribiendo/">Escribiendo</a><a class="page-link" style="border: none" href="/blog/leyendo/">Leyendo</a><a class="page-link" style="border: none" href="/blog/buscar/">Buscar</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">PyCon Chile 2021</h1><p class="page-description">Taller y charla de Streamlit</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-11-08T00:00:00-06:00" itemprop="datePublished">
+        Nov 8, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#streamlit">streamlit</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#slides">slides</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#pycon">pycon</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Terminó la PyCon Chile 2021, y fue una tremenda experiencia. El evento estuvo impecablemente organizado, con gran nivel técnico para la transmisión de las charlas y de los ponentes. Realmente, un lujo tener un evento de esta calidad, gratis y abierto a todo quien quiera aprender.</p>
+
+<p>El viernes 5 de Noviembre participé en el taller de streamlit que organizaba José Manuel Nápoles - <a href="https://twitter.com/napoles3D">@napoles3D</a>. Inicialmente iba a dictar una la sección B del taller, porque se habían inscrito +70 personas en el taller y una única sección no era suficiente, pero finalmente no llegaron todos los inscritos y me dediqué a hacer apoyo técnico y moderar el chat. El taller fue dictado directamente en discord, que para una cantidad baja de asistentes funciona bastante bien. El material creado por JM está muy bueno, y aprovecho de compartirlo. Lamentablemente, el taller no fue grabado :(</p>
+
+<ul>
+  <li>Apuntes del taller: <a href="https://www.notion.so/Pycon-Chile-Streamlit-Tutorial-2-hrs-cc17e56b22844a3a92638c44db06da47">notion</a></li>
+  <li>Código: <a href="https://github.com/napoles-uach/Pycon_cl_taller">github</a></li>
+</ul>
+
+<p>El domingo 7 dicté mi charla sobre streamlit. La charla tenía una duración de 25 mins, y la presentación en sí misma es una app de streamlit. Eso me permitió mostrar las funcionalidades de streamlit de manera nativa. Me sentí un poco traidor de no usar RISE, pero era más natural (y un buen desafío de programación) el construir la presentación directamente en python con streamlit.</p>
+
+<ul>
+  <li>Video: <a href="https://www.youtube.com/watch?v=qSn8in4QJYI&amp;t=10907s">youtube</a></li>
+  <li>App online en streamlit: <a href="https://share.streamlit.io/sebastiandres/talk_2021_11_pyconcl/main">webapp</a></li>
+  <li>Código: <a href="https://github.com/sebastiandres/talk_2021_11_pyconcl">github</a></li>
+</ul>
+
+<p>La presentación tuvo una muy buena recepción, lo que me deja muy contento por haber generado contenido en español para la comunidad. Invertí muchas horas creando y aprendiendo, y creo que definitivamente fue tiepo bien invertido. La charla-app fue destacada en <a href="https://twitter.com/DataChaz/status/1457658699305082881">twitter</a> y por el equipo de streamlit en su <a href="https://discuss.streamlit.io/t/weekly-roundup-streamlit-as-a-powerpoint-google-trends-excel-file-updates-and-more/19045">weekly roundup</a>.</p>
+
+<p>Y todo comenzó el 27 de Junio, con un comentario de JM en el discord de Python en Españo.</p>
+
+<p><img src="/blog/images/2021-11-08-pyconcl/streamlit_start.png" alt="" /></p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/streamlit/slides/pycon/2021/11/08/post-plconcl.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/sebastiandres" title="sebastiandres"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
