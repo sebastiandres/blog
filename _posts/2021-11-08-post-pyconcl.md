@@ -23,7 +23,7 @@ El domingo 7 dicté mi charla sobre streamlit. La charla tenía una duración de
 * App online en streamlit: [webapp](https://share.streamlit.io/sebastiandres/talk_2021_11_pyconcl/main)
 * Código: [github](https://github.com/sebastiandres/talk_2021_11_pyconcl)
 
-La presentación tuvo una muy buena recepción, lo que me deja muy contento por haber generado contenido en español para la comunidad. Invertí muchas horas creando y aprendiendo, y creo que definitivamente fue tiepo bien invertido. La charla-app fue destacada en [twitter](https://twitter.com/DataChaz/status/1457658699305082881) y por el equipo de streamlit en su [weekly roundup](https://discuss.streamlit.io/t/weekly-roundup-streamlit-as-a-powerpoint-google-trends-excel-file-updates-and-more/19045).
+La presentación tuvo una muy buena recepción, lo que me deja muy contento por haber generado contenido en español para la comunidad. Invertí muchas horas creando y aprendiendo, y creo que definitivamente fue tiepo bien invertido. La charla-app fue incluso destacada en [twitter](https://twitter.com/DataChaz/status/1457658699305082881) y por el equipo de streamlit en su [weekly roundup](https://discuss.streamlit.io/t/weekly-roundup-streamlit-as-a-powerpoint-google-trends-excel-file-updates-and-more/19045).
 
 Y todo comenzó el 27 de Junio, con un comentario de JM en el discord de Python en Españo.
 
