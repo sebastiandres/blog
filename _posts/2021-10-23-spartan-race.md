@@ -6,7 +6,7 @@ layout: post
 title: "Spartan Race"
 description: "Desafíos físicos y sicológicos"
 categories: [deporte, running, spartan]
-image: images/preview/2021-10-23-spartan-race.png
+image: images/preview/2021-10-23-spartan-race.jpg
 comments: true
 ---
 
@@ -24,4 +24,4 @@ Al inicio, cuando corrimos por un terreno con barro y agua, pensé en lo incómo
 Por último: **fortaleza mental sobre física**
 Me gustó ver que en la carrera habían todo tipo de cuerpos: más o menos tonificados, más delgados y más gruesos, hombres y mujeres, todos unidos por un deseo de superación. La carrera se corría más en la cabeza que en los pies: Los obstáculos estaban diseñados para probar tanto tu fortaleza física como mental. Y creo que más allá de la medalla, me llevo aprenizajes sobre mi percepción de mi mismo, de mis límites auto-impuestos, y de como superarlos.
 
-![]({{ site.baseurl }}/images/2021-10-23-spartan-race/2021-10-23-spartan-race.png "Spartan Race")
+![]({{ site.baseurl }}/images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg "Spartan Race")
