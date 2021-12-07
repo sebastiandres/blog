@@ -5,7 +5,7 @@ toc: false
 layout: post
 title: "Tercer trimestre del 2021"
 description: "Balance de lo que han sido estos meses"
-categories: [python, streamlit, notebook]
+categories: [balance, cuenta, reflexión]
 image: images/preview/rutina-optima.jpg
 comments: true
 ---
