@@ -12,11 +12,11 @@
 <link rel="canonical" href="https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html" />
 <meta property="og:url" content="https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html" />
 <meta property="og:site_name" content="sebastiandres" />
-<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/2021-11-19-streamlit.png" />
+<meta property="og:image" content="https://sebastiandres.github.io/blog/images/preview/2021-12-14-excel-unmerge-excel-python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-12-14T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html","@type":"BlogPosting","headline":"Unmerging celdas de excel","dateModified":"2021-12-14T00:00:00-06:00","datePublished":"2021-12-14T00:00:00-06:00","image":"https://sebastiandres.github.io/blog/images/preview/2021-11-19-streamlit.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html"},"description":"Cuando pandas se quedó corto","@context":"https://schema.org"}</script>
+{"url":"https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html","@type":"BlogPosting","headline":"Unmerging celdas de excel","dateModified":"2021-12-14T00:00:00-06:00","datePublished":"2021-12-14T00:00:00-06:00","image":"https://sebastiandres.github.io/blog/images/preview/2021-12-14-excel-unmerge-excel-python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/balance/cuenta/reflexi%C3%B3n/2021/12/14/excel-unmerge.html"},"description":"Cuando pandas se quedó corto","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/monty-python-foot.css">
   <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" /><!-- the google_analytics_id gets auto inserted from the config file -->
@@ -127,21 +127,21 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p>Hace poco necesitaba procesar una gran cantidad de archivos excel que tenía muchas celdas fusionadas (merged cells). Algo así como muestro en la imagen:</p>
 
-<p><img src="/blog/images/2021-12-14-excel-unmerge/ejemplo.png" alt="" title="Excel unmerge" /></p>
+<p><img src="/blog/images/2021-12-14-excel-unmerge/ejemplo.png" alt="" title="Ejemplo del problema" /></p>
 
 <p>Pensé que vieja confiable librería de pandas sería suficiente, pero no. Al abrir el archivo con pandas, el valor de la celda se asigna sólo a la primera:</p>
 
-<p><img src="/blog/images/2021-12-14-excel-unmerge/pandas1.png" alt="" title="Excel unmerge" /></p>
+<p><img src="/blog/images/2021-12-14-excel-unmerge/pandas1.png" alt="" title="Pandas se queda corto" /></p>
 
 <p>Ingenuamente intenté llenar con fillna y reemplazar los NaNs, pero el resultado no era el desado:</p>
 
-<p><img src="/blog/images/2021-12-14-excel-unmerge/pandas.png" alt="" title="Excel unmerge" /></p>
+<p><img src="/blog/images/2021-12-14-excel-unmerge/pandas2.png" alt="" title="Pandas no completa correctamente los datos" /></p>
 
 <p>Ninguno de los métodos para llenar las celdas contiguas (<code class="language-plaintext highlighter-rouge">fillna</code> con opciones <code class="language-plaintext highlighter-rouge">‘backfill’, ‘bfill’, ‘pad’, ‘ffill’, None</code>) sirve, porque hay celdas no fusionadas que deberían mantenerse sin datos.</p>
 
-<p>¿Qué hacer entonces? Después de mucho googlear, la solución correcta está dada como siempre en <a href="https://stackoverflow.com/questions/46426662/openpyxl-assign-value-to-range-of-cells-during-unmerge">stackoverflow</a>. La librería <code class="language-plaintext highlighter-rouge">openpyxl</code> es increíblemente flexible y permite la manipulación celda a celda:</p>
+<p>¿Qué hacer entonces? Después de mucho googlear, encontré la solución correcta en <a href="https://stackoverflow.com/questions/46426662/openpyxl-assign-value-to-range-of-cells-during-unmerge">stackoverflow</a>. La librería <code class="language-plaintext highlighter-rouge">openpyxl</code> es increíblemente flexible y permite la manipulación celda a celda.</p>
 
-<p>La siguiente función removerá las celdas fusionadas copiando los valores correspondientes. Lo realizará para todas las pestañas del archivo, y marcará en rojo las celdas que fueron intervenidas:</p>
+<p>La siguiente función que es una versión mejorada de la propuesta en stackoverflow removerá las celdas fusionadas copiando los valores correspondientes. Lo realizará para todas las pestañas del archivo, y marcará en rojo las celdas que fueron intervenidas:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">openpyxl</span> 
 <span class="kn">from</span> <span class="nn">openpyxl.styles</span> <span class="kn">import</span> <span class="n">Alignment</span>
@@ -157,23 +157,23 @@ window.onload = wrap_img;
     <span class="n">RED_FONT</span> <span class="o">=</span> <span class="n">Font</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s">"FF0000"</span><span class="p">)</span>
     <span class="c1"># data_only is required to evaluate the cells and store the correct value
 </span>    <span class="n">wb</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="p">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="n">my_file</span><span class="p">,</span> <span class="n">data_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">sheets</span> <span class="o">=</span> <span class="n">wb</span><span class="p">.</span><span class="n">sheetnames</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sheet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sheets</span><span class="p">):</span>
-        <span class="n">ws</span> <span class="o">=</span> <span class="n">wb</span><span class="p">[</span><span class="n">sheets</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
-
-        <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">ws</span><span class="p">.</span><span class="n">merged_cells</span><span class="p">.</span><span class="n">ranges</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">sheet</span> <span class="ow">in</span> <span class="n">wb</span><span class="p">.</span><span class="n">sheetnames</span><span class="p">:</span>
+        <span class="n">ws</span> <span class="o">=</span> <span class="n">wb</span><span class="p">[</span><span class="n">sheet</span><span class="p">]</span>
+        <span class="c1"># It's weird, but the  for loop do not capture all the groups
+</span>        <span class="c1"># So we iterate with a while loop to reduce all merged cells
+</span>        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">ws</span><span class="p">.</span><span class="n">merged_cells</span><span class="p">.</span><span class="n">ranges</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">group</span> <span class="o">=</span> <span class="n">ws</span><span class="p">.</span><span class="n">merged_cells</span><span class="p">.</span><span class="n">ranges</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">min_col</span><span class="p">,</span> <span class="n">min_row</span><span class="p">,</span> <span class="n">max_col</span><span class="p">,</span> <span class="n">max_row</span> <span class="o">=</span> <span class="n">group</span><span class="p">.</span><span class="n">bounds</span>
             <span class="n">top_left_cell_value</span> <span class="o">=</span> <span class="n">ws</span><span class="p">.</span><span class="n">cell</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">min_row</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="n">min_col</span><span class="p">).</span><span class="n">value</span>
-            <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">top_left_cell_value</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
-                <span class="n">top_left_cell_value</span> <span class="o">=</span> <span class="n">top_left_cell_value</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">" "</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">"  "</span><span class="p">,</span> <span class="s">" "</span><span class="p">)</span>
-            <span class="n">ws</span><span class="p">.</span><span class="n">unmerge_cells</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">group</span><span class="p">))</span>   <span class="c1"># you need to unmerge before writing (see explanation #1 below)
-</span>            <span class="k">for</span> <span class="n">irow</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">min_row</span><span class="p">,</span> <span class="n">max_row</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="c1"># unmerge before asigning a the value
+</span>            <span class="n">ws</span><span class="p">.</span><span class="n">unmerge_cells</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">group</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">irow</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">min_row</span><span class="p">,</span> <span class="n">max_row</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
                 <span class="k">for</span> <span class="n">jcol</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">min_col</span><span class="p">,</span> <span class="n">max_col</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
                     <span class="n">cell</span> <span class="o">=</span> <span class="n">ws</span><span class="p">.</span><span class="n">cell</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">irow</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="n">jcol</span><span class="p">)</span>
-                    <span class="n">cell</span><span class="p">.</span><span class="n">alignment</span> <span class="o">=</span> <span class="n">LEFT_ALIGN</span>
                     <span class="n">cell</span><span class="p">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">top_left_cell_value</span>
-                    <span class="n">cell</span><span class="p">.</span><span class="n">font</span> <span class="o">=</span> <span class="n">RED_FONT</span> <span class="c1"># My addition: align to left to see if all data is there    
-</span>
+                    <span class="n">cell</span><span class="p">.</span><span class="n">alignment</span> <span class="o">=</span> <span class="n">LEFT_ALIGN</span>
+                    <span class="n">cell</span><span class="p">.</span><span class="n">font</span> <span class="o">=</span> <span class="n">RED_FONT</span>
+
     <span class="n">output_file</span> <span class="o">=</span> <span class="n">my_file</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"input"</span><span class="p">,</span> <span class="s">"tmp"</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">".xlsx"</span><span class="p">,</span> <span class="s">" UNMERGED.xlsx"</span><span class="p">)</span>
     <span class="n">wb</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span>
     <span class="k">return</span>
@@ -181,9 +181,11 @@ window.onload = wrap_img;
 
 <p>El excel resultante es el siguiente:</p>
 
-<p><img src="/blog/images/2021-12-14-excel-unmerge/.png" alt="" title="Excel unmerge" /></p>
+<p><img src="/blog/images/2021-12-14-excel-unmerge/resultado.png" alt="" title="Excel unmerge" /></p>
 
 <p>Desde ese punto, ya es posible trabajar con pandas sin problemas.</p>
+
+<p>Observación: Hay que usar una versión reciente de pyopenxl, ya que en la versión anterior arroja un error.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
