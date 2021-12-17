@@ -5,8 +5,9 @@ toc: false
 layout: post
 title: "Unmerging celdas de excel"
 description: "Cuando pandas se quedó corto"
-categories: [balance, cuenta, reflexión]
+categories: [python, excel, cells]
 image: images/preview/2021-12-14-excel-unmerge-excel-python.png
+permalink: /unmerging-cells/
 comments: true
 ---
 
