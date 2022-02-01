@@ -6,7 +6,7 @@ layout: post
 title: "Balance anual"
 description: "El año 2021 en la balanza"
 categories: [balance, cuenta, reflexión]
-image: images/preview/2021-12-31-balance-anual.png
+image: images/preview/2021-12-31-balance-anual.jpg
 comments: true
 ---
 

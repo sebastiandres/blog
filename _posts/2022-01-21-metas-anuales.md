@@ -39,24 +39,24 @@ Tengo la meta de leer 10 libros de no-ficción y otros 10 libros de no ficción 
 En los libros de ficción, seleccioné los que Derek Sivers ha marcado 10/10: https://sive.rs/book
 
 Tema: El mundo
-1. Open Borders - por Bryan Caplan
+1.- Open Borders - por Bryan Caplan
 
 Tema: Escritura
-2. On Writing Well - por William Zinsser
+2.- On Writing Well - por William Zinsser
 
 Tema: la mente
-3. Mindwise: How We Understand What Others Think, Believe, Feel, and Want - por Nicholas Epley
-4. The Time Paradox - por Philip Zimbardo y John Boyd
+3.- Mindwise: How We Understand What Others Think, Believe, Feel, and Want - por Nicholas Epley
+4.- The Time Paradox - por Philip Zimbardo y John Boyd
 
 Tema: Aprendizaje
-5. The Listening Book - por W.A. Mathieu
-6. How Buildings Learn - por Stewart Brand
-7. E-Myth Revisited - por Michael Gerber
+5.- The Listening Book - por W.A. Mathieu
+6.- How Buildings Learn - por Stewart Brand
+7.- E-Myth Revisited - por Michael Gerber
 
 Tema: Vida y muerte
-8. Forty Tales from the Afterlives - por David Eagleman
-9. The War of Art - por Steven Pressfield
-10. A Guide to the Good Life: The Ancient Art of Stoic Joy - por William Irvine
+8.- Forty Tales from the Afterlives - por David Eagleman
+9.- The War of Art - por Steven Pressfield
+10.- A Guide to the Good Life: The Ancient Art of Stoic Joy - por William Irvine
 
 Otros libros:
 1. Non designer design book
