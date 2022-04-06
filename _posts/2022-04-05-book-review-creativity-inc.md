@@ -50,7 +50,7 @@ Muy buen libro, aunque creo que no habla tanto de la creatividad en sí misma, s
 
 **Sobre los errores:**
 
-   This principle eludes most people, but it is critical: You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged. To set up a healthy feedback system, you must remove power dynamics from the equation — you must enable yourself, in other words, to focus on the problem, not the person.
+> This principle eludes most people, but it is critical: You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged. To set up a healthy feedback system, you must remove power dynamics from the equation — you must enable yourself, in other words, to focus on the problem, not the person.
 
 > I always feel like whatever notes you’re giving should inspire the recipient — like, ‘How do I get that kid to want to redo his homework?’ So, you’ve got to act like a teacher. Sometimes you talk about the problems in fifty different ways until you find that one sentence that you can see makes their eyes pop, as if they’re thinking, ‘Oh, I want to do it.’
 
