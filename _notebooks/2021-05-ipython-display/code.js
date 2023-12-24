@@ -1,1 +1,0 @@
-$c = \sqrt{a^2 + b^2}$ pero $\alpha > \beta$
